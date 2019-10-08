@@ -56,32 +56,32 @@
             <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
-                    <span>HOME</span>
+                    <span>主页</span>
                 </a>
             </li>
             <li >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
-                    <span>TAGS</span>
+                    <span>标签</span>
                 </a>
             </li>
             <li >
                 <a href="/archives">
                     <i class="iconfont icon-guidang2"></i>
-                    <span>ARCHIVES</span>
+                    <span>存档</span>
                 </a>
             </li>
             <li >
                 <a href="/about/">
                     <i class="iconfont icon-guanyu2"></i>
-                    <span>ABOUT</span>
+                    <span>关于</span>
                 </a>
             </li>
             
             <li>
                 <a id="search">
                     <i class="iconfont icon-sousuo1"></i>
-                    <span>SEARCH</span>
+                    <span>搜索</span>
                 </a>
             </li>
             
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#v2ray网络安全代理-book"><span class="toc-text">v2ray网络安全代理:book:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接："><span class="toc-text">参考链接：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意事项"><span class="toc-text">注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7、Caddyfile配置"><span class="toc-text">7、Caddyfile配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、启动Caddy和V2Ray"><span class="toc-text">8、启动Caddy和V2Ray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V2RayN客户端"><span class="toc-text">V2RayN客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#链接"><span class="toc-text">链接</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bbr一键安装脚本"><span class="toc-text">bbr一键安装脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IOS客户端"><span class="toc-text">IOS客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Shadowrocket（小火箭）"><span class="toc-text">Shadowrocket（小火箭）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#混淆为websocket"><span class="toc-text">混淆为websocket</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
 </div>
     
 </div>
@@ -100,7 +100,7 @@
         <div class="search-input">
             <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
             <input id="search-input"/>
-            <span id="begin-search">search</span>
+            <span id="begin-search">搜索</span>
         </div>
         <div class="search-result-container" id="search-result-container">
 
@@ -124,15 +124,55 @@
     </div>
 
     <div class="post-meta">
-        <span class="attr">Post：<span>2019-10-08 19:21:50</span></span>
+        <span class="attr">发布于：<span>2019-10-08 19:28:31</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#bbr/v2ray/Shadowrocket" title="bbr/v2ray/Shadowrocket">bbr/v2ray/Shadowrocket</a>
+        <span>/</span>
+        
         
         </span>
-        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
 </span>
 </span>
     </div>
     <div class="post-content no-indent">
-        
+        <h1 id="v2ray网络安全代理-book"><a href="#v2ray网络安全代理-book" class="headerlink" title="v2ray网络安全代理:book:"></a>v2ray网络安全代理:book:</h1><h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><ul>
+<li><a href="https://www.conum.cn/share/191.html" target="_blank" rel="noopener">基于v2ray的websocket+tls+web实现安全网络代理</a></li>
+</ul>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="7、Caddyfile配置"><a href="#7、Caddyfile配置" class="headerlink" title="7、Caddyfile配置"></a>7、Caddyfile配置</h3><ul>
+<li>这个文件位置在/etc/caddy/Caddyfile</li>
+</ul>
+<h3 id="8、启动Caddy和V2Ray"><a href="#8、启动Caddy和V2Ray" class="headerlink" title="8、启动Caddy和V2Ray"></a>8、启动Caddy和V2Ray</h3><ul>
+<li><p>如果Caddy启动失败时，除了你的Caddyfile有问题之外，还有下面这个解决方案。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">caddy -conf /etc/caddy/Caddyfile &amp; </span><br><span class="line">disown %1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第一句代码就是直接使用caddy　+　配置文件　＆　这个后台运行</p>
+</li>
+<li><p>第二句是直接释放权限给系统。</p>
+</li>
+<li><p>关闭语句如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep caddy</span><br><span class="line">kill 进程ID号码</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="V2RayN客户端"><a href="#V2RayN客户端" class="headerlink" title="V2RayN客户端"></a>V2RayN客户端</h3><ul>
+<li>这个客户端是没有v2ray-core的，需要在使用时安装或者提前安装。<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4></li>
+<li><a href="https://github.com/v2ray/v2ray-core/releases" target="_blank" rel="noopener">v2ray-core传送门</a></li>
+<li><a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">v2rayN传送门</a></li>
+</ul>
+<h3 id="bbr一键安装脚本"><a href="#bbr一键安装脚本" class="headerlink" title="bbr一键安装脚本"></a>bbr一键安装脚本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh</span><br></pre></td></tr></table></figure>
+
+<h3 id="IOS客户端"><a href="#IOS客户端" class="headerlink" title="IOS客户端"></a>IOS客户端</h3><ul>
+<li>除了参考链接推荐那几个，还有一个可以使用。<h4 id="Shadowrocket（小火箭）"><a href="#Shadowrocket（小火箭）" class="headerlink" title="Shadowrocket（小火箭）"></a>Shadowrocket（小火箭）</h4></li>
+<li>Vmess KCP注意不支持。</li>
+<li>算法你随意（我的aes-128-cfb）。</li>
+<li>打开TLS。</li>
+<li>关闭允许不安全。<h5 id="混淆为websocket"><a href="#混淆为websocket" class="headerlink" title="混淆为websocket"></a>混淆为websocket</h5></li>
+<li>路径为 /v2ray</li>
+</ul>
+
         
         <br />
         <div id="comment-container">
