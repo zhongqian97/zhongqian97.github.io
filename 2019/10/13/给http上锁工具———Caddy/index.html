@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="记录所做所想。">
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        给http上锁工具———Caddy - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 一个INTJ的博客；订阅我，你能知道你不知道的 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#简介"><span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#http是什么？"><span class="toc-text">http是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#https是什么？"><span class="toc-text">https是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为何使用https？"><span class="toc-text">为何使用https？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#回到最后，Caddy是什么？"><span class="toc-text">回到最后，Caddy是什么？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装教程"><span class="toc-text">安装教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装与配置"><span class="toc-text">安装与配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置Caddyfile（重要！！！）"><span class="toc-text">设置Caddyfile（重要！！！）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动-修改配置后重新第一次启动！"><span class="toc-text">启动(修改配置后重新第一次启动！)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结语"><span class="toc-text">结语</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> 一个INTJ的博客；订阅我，你能知道你不知道的 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        给http上锁工具———Caddy
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-10-13 23:18:56</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#Caddy" title="Caddy">Caddy</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h2 id="http是什么？"><a href="#http是什么？" class="headerlink" title="http是什么？"></a>http是什么？</h2><ul>
+<li><a href="https://www.runoob.com/http/http-tutorial.html" target="_blank" rel="noopener">菜鸟教程传送门</a><blockquote>
+<p>HTTP是一个基于TCP/IP通信协议</p>
+</blockquote>
+</li>
+<li>因为http在网络上传输是明文形式的，任何抓到这个传输文件的人都能看到这个包的内容，因此有了加密版http-https<h2 id="https是什么？"><a href="#https是什么？" class="headerlink" title="https是什么？"></a>https是什么？</h2></li>
+<li><a href="https://baike.baidu.com/item/https/285356?fr=aladdin" target="_blank" rel="noopener">百度百科传送门</a><blockquote>
+<p>HTTPS（全称：Hyper Text Transfer Protocol over Secure Socket Layer 或 Hypertext Transfer Protocol Secure，超文本传输安全协议），是以安全为目标的HTTP通道，简单讲是HTTP的安全版。即HTTP下加入SSL层，HTTPS的安全基础是SSL，因此加密的详细内容就需要SSL。 </p>
+</blockquote>
+<h2 id="为何使用https？"><a href="#为何使用https？" class="headerlink" title="为何使用https？"></a>为何使用https？</h2></li>
+<li>通信使用明文，内容可能会被窃听；</li>
+<li>不验证通信方的身份，因此有可能遭遇伪装；（搜索：中间人攻击！）</li>
+<li>无法证明报文的完整性，有可能已遭篡改。(通信运营商的日常修改！！)<h2 id="回到最后，Caddy是什么？"><a href="#回到最后，Caddy是什么？" class="headerlink" title="回到最后，Caddy是什么？"></a>回到最后，Caddy是什么？</h2><blockquote>
+<p>Caddy是一个易于使用的通用web服务器。</p>
+</blockquote>
+</li>
+<li>我的定义：Caddy就是一个管理https的自动化工具。<h1 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h1></li>
+<li><a href="https://dengxiaolong.com/caddy/zh/" target="_blank" rel="noopener">Caddy中文文档</a></li>
+<li><a href="https://www.conum.cn/share/191.html" target="_blank" rel="noopener">智在于行’S BLOG</a></li>
+</ul>
+<h2 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h2><ul>
+<li><p>安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://getcaddy.com | bash -s personal</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/caddy</span><br><span class="line">touch /etc/caddy/Caddyfile</span><br><span class="line">chown -R root:www-data /etc/caddy</span><br><span class="line">mkdir /etc/ssl/caddy</span><br><span class="line">chown -R www-data:root /etc/ssl/caddy</span><br><span class="line">chmod 0770 /etc/ssl/caddy</span><br><span class="line">mkdir /var/log/caddy/</span><br><span class="line">touch /var/log/caddy/caddy.log</span><br><span class="line">chown -R root:www-data /var/log/caddy/</span><br><span class="line">chmod 777 /var/log/caddy/caddy.log</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将Caddy配置成一个服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 从 github 下载 systemd 配置文件 sudo systemctl daemon-reload # 重新加载 systemd 配置</span><br><span class="line">curl -s https://raw.githubusercontent.com/mholt/caddy/master/dist/init/linux-systemd/caddy.service -o /etc/systemd/system/caddy.service</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开caddy.service配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 打开caddy.service</span><br><span class="line">nano /etc/systemd/system/caddy.service</span><br><span class="line"># vim /etc/systemd/system/caddy.service</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>以下三项配置选项的注释符#删除，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CapabilityBoundingSet=CAP_NET_BIND_SERVICE</span><br><span class="line">AmbientCapabilities=CAP_NET_BIND_SERVICE</span><br><span class="line">NoNewPrivileges=true</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable caddy.service # 设置 caddy 服务自启动</span><br><span class="line">systemctl status caddy.service # 查看 caddy 状态</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="设置Caddyfile（重要！！！）"><a href="#设置Caddyfile（重要！！！）" class="headerlink" title="设置Caddyfile（重要！！！）"></a>设置Caddyfile（重要！！！）</h2><ul>
+<li><p><a href="https://dengxiaolong.com/caddy/zh/caddyfile.html" target="_blank" rel="noopener">先看入门</a></p>
+</li>
+<li><p><a href="https://dengxiaolong.com/caddy/zh/" target="_blank" rel="noopener">再看文档</a></p>
+<h2 id="启动-修改配置后重新第一次启动！"><a href="#启动-修改配置后重新第一次启动！" class="headerlink" title="启动(修改配置后重新第一次启动！)"></a>启动(修改配置后重新第一次启动！)</h2></li>
+<li><p>第一次启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caddy -conf /etc/caddy/Caddyfile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>之后启动直接用以下方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start caddy # 打开</span><br><span class="line">systemctl status caddy # 查看状态</span><br><span class="line">systemctl stop caddy # 停止</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><ul>
+<li>学习完这个，加上后面的frp反向代理结合有着更多的玩法哦！</li>
+<li>Linux不懂的建议先学习如何使用Linux（最少nano要会吧）</li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>

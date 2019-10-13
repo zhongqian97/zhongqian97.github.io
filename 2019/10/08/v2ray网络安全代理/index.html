@@ -35,7 +35,7 @@
 </div>
 
 <div class="index-about">
-    <i> 一个INTJ的博客 </i>
+    <i> 一个INTJ的博客；订阅我，你能知道你不知道的 </i>
 </div>
 
 <div class="index-container">
@@ -56,32 +56,32 @@
             <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
-                    <span>主页</span>
+                    <span>HOME</span>
                 </a>
             </li>
             <li >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
-                    <span>标签</span>
+                    <span>TAGS</span>
                 </a>
             </li>
             <li >
                 <a href="/archives">
                     <i class="iconfont icon-guidang2"></i>
-                    <span>存档</span>
+                    <span>ARCHIVES</span>
                 </a>
             </li>
             <li >
                 <a href="/about/">
                     <i class="iconfont icon-guanyu2"></i>
-                    <span>关于</span>
+                    <span>ABOUT</span>
                 </a>
             </li>
             
             <li>
                 <a id="search">
                     <i class="iconfont icon-sousuo1"></i>
-                    <span>搜索</span>
+                    <span>SEARCH</span>
                 </a>
             </li>
             
@@ -100,7 +100,7 @@
         <div class="search-input">
             <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
             <input id="search-input"/>
-            <span id="begin-search">搜索</span>
+            <span id="begin-search">search</span>
         </div>
         <div class="search-result-container" id="search-result-container">
 
@@ -109,7 +109,7 @@
 </div>
 
         <div class="index-about-mobile">
-            <i> 一个INTJ的博客 </i>
+            <i> 一个INTJ的博客；订阅我，你能知道你不知道的 </i>
         </div>
     </div>
     
@@ -124,12 +124,9 @@
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2019-10-08 19:28:31</span></span>
+        <span class="attr">Post：<span>2019-10-08 19:28:31</span></span>
         
-        <span class="attr">标签：/
-        
-        <a class="tag" href="/tags/#Shadowrocket" title="Shadowrocket">Shadowrocket</a>
-        <span>/</span>
+        <span class="attr">Tags：/
         
         <a class="tag" href="/tags/#bbr" title="bbr">bbr</a>
         <span>/</span>
@@ -137,19 +134,33 @@
         <a class="tag" href="/tags/#v2ray" title="v2ray">v2ray</a>
         <span>/</span>
         
+        <a class="tag" href="/tags/#Shadowrocket" title="Shadowrocket">Shadowrocket</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#Caddy" title="Caddy">Caddy</a>
+        <span>/</span>
+        
         
         </span>
-        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
 </span>
 </span>
     </div>
     <div class="post-content no-indent">
         <h1 id="v2ray网络安全代理-book"><a href="#v2ray网络安全代理-book" class="headerlink" title="v2ray网络安全代理:book:"></a>v2ray网络安全代理:book:</h1><h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><ul>
-<li><a href="https://www.conum.cn/share/191.html" target="_blank" rel="noopener">基于v2ray的websocket+tls+web实现安全网络代理（一下子可能打不开）</a></li>
+<li><a href="https://www.conum.cn/share/191.html" target="_blank" rel="noopener">基于v2ray的websocket+tls+web实现安全网络代理（一下子可能打不开）</a><br>或者直接复制打开<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.conum.cn/share/191.html</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
 <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="7、Caddyfile配置"><a href="#7、Caddyfile配置" class="headerlink" title="7、Caddyfile配置"></a>7、Caddyfile配置</h3><ul>
-<li>这个文件位置在/etc/caddy/Caddyfile</li>
+<li><p>这个文件位置在/etc/caddy/Caddyfile</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@:~# touch /var/log/caddy/caddy.log</span><br><span class="line">touch: cannot touch &apos;/var/log/caddy/caddy.log&apos;: No such file or directory</span><br><span class="line">root@:~# chown -R root:www-data /var/log/caddy/</span><br><span class="line">chown: cannot access &apos;/var/log/caddy/&apos;: No such file or directory</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解决方案</p>
+</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /var/log/caddy/</span><br></pre></td></tr></table></figure>
+
 <h3 id="8、启动Caddy和V2Ray"><a href="#8、启动Caddy和V2Ray" class="headerlink" title="8、启动Caddy和V2Ray"></a>8、启动Caddy和V2Ray</h3><ul>
 <li><p>如果Caddy启动失败时，除了你的Caddyfile有问题之外，还有下面这个解决方案。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">caddy -conf /etc/caddy/Caddyfile &amp; </span><br><span class="line">disown %1</span><br></pre></td></tr></table></figure>
