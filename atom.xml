@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>记录</title>
+  <icon>https://www.gravatar.com/avatar/adac92b1aa66646075eba3c4e2de8518</icon>
+  <subtitle>一个INTJ的博客；订阅我，你能知道你不知道的</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://mastermind.ink/"/>
+  <updated>2019-10-13T16:02:30.606Z</updated>
+  <id>http://mastermind.ink/</id>
+  
+  <author>
+    <name>Joshua Tim-仲谦</name>
+    <email>aitim97@iCloud.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给http上锁工具———Caddy</title>
+    <link href="http://mastermind.ink/2019/10/13/%E7%BB%99http%E4%B8%8A%E9%94%81%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94%E2%80%94Caddy/"/>
+    <id>http://mastermind.ink/2019/10/13/给http上锁工具———Caddy/</id>
+    <published>2019-10-13T15:18:56.000Z</published>
+    <updated>2019-10-13T16:02:30.606Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MBTI职业性格测试</title>
+    <link href="http://mastermind.ink/2019/10/12/MBTI%E8%81%8C%E4%B8%9A%E6%80%A7%E6%A0%BC%E6%B5%8B%E8%AF%95/"/>
+    <id>http://mastermind.ink/2019/10/12/MBTI职业性格测试/</id>
+    <published>2019-10-12T13:50:03.000Z</published>
+    <updated>2019-10-12T14:13:55.933Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="MBTI" scheme="http://mastermind.ink/tags/MBTI/"/>
+    
+      <category term="INTJ" scheme="http://mastermind.ink/tags/INTJ/"/>
+    
+      <category term="心理学" scheme="http://mastermind.ink/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RSS是什么？能干嘛？</title>
+    <link href="http://mastermind.ink/2019/10/11/RSS%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E5%B9%B2%E5%98%9B%EF%BC%9F/"/>
+    <id>http://mastermind.ink/2019/10/11/RSS是什么？能干嘛？/</id>
+    <published>2019-10-11T04:14:05.000Z</published>
+    <updated>2019-10-11T08:23:40.100Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="RSS" scheme="http://mastermind.ink/tags/RSS/"/>
+    
+      <category term="ttrss" scheme="http://mastermind.ink/tags/ttrss/"/>
+    
+      <category term="feed43" scheme="http://mastermind.ink/tags/feed43/"/>
+    
+      <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
+    
+      <category term="miniflux" scheme="http://mastermind.ink/tags/miniflux/"/>
+    
+      <category term="inoreader" scheme="http://mastermind.ink/tags/inoreader/"/>
+    
+      <category term="feeder" scheme="http://mastermind.ink/tags/feeder/"/>
+    
+      <category term="unread" scheme="http://mastermind.ink/tags/unread/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>考研英语二真题2010-2019</title>
+    <link href="http://mastermind.ink/2019/10/10/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%BA%8C%E7%9C%9F%E9%A2%982010-2019/"/>
+    <id>http://mastermind.ink/2019/10/10/考研英语二真题2010-2019/</id>
+    <published>2019-10-10T12:43:03.000Z</published>
+    <updated>2019-10-10T12:44:55.483Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="考研英语二" scheme="http://mastermind.ink/tags/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%BA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>考研英语二2010-2019词汇汇总+词频</title>
+    <link href="http://mastermind.ink/2019/10/10/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%BA%8C2010-2019%E8%AF%8D%E6%B1%87%E6%B1%87%E6%80%BB-%E8%AF%8D%E9%A2%91/"/>
+    <id>http://mastermind.ink/2019/10/10/考研英语二2010-2019词汇汇总-词频/</id>
+    <published>2019-10-10T12:39:37.000Z</published>
+    <updated>2019-10-10T12:40:53.362Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="考研英语二" scheme="http://mastermind.ink/tags/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%BA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>rsshub安装教程</title>
+    <link href="http://mastermind.ink/2019/10/09/rsshub%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://mastermind.ink/2019/10/09/rsshub安装教程/</id>
+    <published>2019-10-09T04:51:55.000Z</published>
+    <updated>2019-10-11T08:25:34.210Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
+    
+      <category term="rss" scheme="http://mastermind.ink/tags/rss/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云应用服务器搭建安全代理</title>
+    <link href="http://mastermind.ink/2019/10/09/%E9%98%BF%E9%87%8C%E4%BA%91%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%AE%89%E5%85%A8%E4%BB%A3%E7%90%86/"/>
+    <id>http://mastermind.ink/2019/10/09/阿里云应用服务器搭建安全代理/</id>
+    <published>2019-10-09T02:30:50.000Z</published>
+    <updated>2019-10-09T04:03:05.707Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="VPS" scheme="http://mastermind.ink/tags/VPS/"/>
+    
+      <category term="阿里云" scheme="http://mastermind.ink/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker使用脚本自动安装</title>
+    <link href="http://mastermind.ink/2019/10/08/docker%E4%BD%BF%E7%94%A8%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85/"/>
+    <id>http://mastermind.ink/2019/10/08/docker使用脚本自动安装/</id>
+    <published>2019-10-08T11:38:06.000Z</published>
+    <updated>2019-10-08T11:50:33.625Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="docker-compose" scheme="http://mastermind.ink/tags/docker-compose/"/>
+    
+      <category term="docker" scheme="http://mastermind.ink/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>v2ray网络安全代理</title>
+    <link href="http://mastermind.ink/2019/10/08/v2ray%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%BB%A3%E7%90%86/"/>
+    <id>http://mastermind.ink/2019/10/08/v2ray网络安全代理/</id>
+    <published>2019-10-08T11:28:31.000Z</published>
+    <updated>2019-10-13T15:21:35.280Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="bbr" scheme="http://mastermind.ink/tags/bbr/"/>
+    
+      <category term="v2ray" scheme="http://mastermind.ink/tags/v2ray/"/>
+    
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
+    
+      <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用docker compose部署miniflux</title>
+    <link href="http://mastermind.ink/2019/10/08/%E4%BD%BF%E7%94%A8docker-compose%E9%83%A8%E7%BD%B2miniflux/"/>
+    <id>http://mastermind.ink/2019/10/08/使用docker-compose部署miniflux/</id>
+    <published>2019-10-08T11:22:26.000Z</published>
+    <updated>2019-10-08T11:40:14.415Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="miniflux" scheme="http://mastermind.ink/tags/miniflux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shadowsocks</title>
+    <link href="http://mastermind.ink/2019/10/08/shadowsocks/"/>
+    <id>http://mastermind.ink/2019/10/08/shadowsocks/</id>
+    <published>2019-10-08T11:14:00.000Z</published>
+    <updated>2019-10-08T11:45:29.405Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
+    
+      <category term="Shadowsocks" scheme="http://mastermind.ink/tags/Shadowsocks/"/>
+    
+      <category term="美区APPID" scheme="http://mastermind.ink/tags/%E7%BE%8E%E5%8C%BAAPPID/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>以前的页面</title>
+    <link href="http://mastermind.ink/2019/10/07/%E4%BB%A5%E5%89%8D%E7%9A%84%E9%A1%B5%E9%9D%A2/"/>
+    <id>http://mastermind.ink/2019/10/07/以前的页面/</id>
+    <published>2019-10-07T13:16:27.000Z</published>
+    <updated>2019-10-08T11:45:03.989Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="工具" scheme="http://mastermind.ink/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="书籍推荐" scheme="http://mastermind.ink/tags/%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="几分钟学新语言" scheme="http://mastermind.ink/tags/%E5%87%A0%E5%88%86%E9%92%9F%E5%AD%A6%E6%96%B0%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+</feed>
