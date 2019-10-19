@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mastermind.ink/"/>
-  <updated>2019-10-16T06:07:39.653Z</updated>
+  <updated>2019-10-19T01:54:39.692Z</updated>
   <id>http://mastermind.ink/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>考研政治选择题anki实践教程</title>
+    <link href="http://mastermind.ink/2019/10/19/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E9%80%89%E6%8B%A9%E9%A2%98anki%E5%AE%9E%E8%B7%B5%E6%95%99%E7%A8%8B/"/>
+    <id>http://mastermind.ink/2019/10/19/考研政治选择题anki实践教程/</id>
+    <published>2019-10-19T01:27:21.000Z</published>
+    <updated>2019-10-19T01:54:39.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="anki" scheme="http://mastermind.ink/tags/anki/"/>
+    
+      <category term="考研政治" scheme="http://mastermind.ink/tags/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>按键精灵-几乎零门槛的办公室自动化工具</title>
@@ -338,11 +365,11 @@
     
     
     
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
+    
       <category term="bbr" scheme="http://mastermind.ink/tags/bbr/"/>
     
       <category term="v2ray" scheme="http://mastermind.ink/tags/v2ray/"/>
-    
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
       <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
     
@@ -394,11 +421,11 @@
     
     
     
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
-    
       <category term="Shadowsocks" scheme="http://mastermind.ink/tags/Shadowsocks/"/>
     
       <category term="美区APPID" scheme="http://mastermind.ink/tags/%E7%BE%8E%E5%8C%BAAPPID/"/>
+    
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
   </entry>
   
