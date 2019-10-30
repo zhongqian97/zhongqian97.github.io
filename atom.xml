@@ -46,13 +46,25 @@
     <link href="http://mastermind.ink/2019/10/23/%E6%A0%91%E8%8E%93%E6%B4%BE-%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
     <id>http://mastermind.ink/2019/10/23/树莓派-智能实验室入门配置教程/</id>
     <published>2019-10-23T06:38:46.000Z</published>
-    <updated>2019-10-23T06:38:46.544Z</updated>
+    <updated>2019-10-30T13:15:00.334Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
     
     </summary>
     
     
+    
+      <category term="树莓派" scheme="http://mastermind.ink/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+      <category term="智能实验室" scheme="http://mastermind.ink/tags/%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4/"/>
     
   </entry>
   
@@ -405,11 +417,11 @@
     
     
     
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
+    
       <category term="bbr" scheme="http://mastermind.ink/tags/bbr/"/>
     
       <category term="v2ray" scheme="http://mastermind.ink/tags/v2ray/"/>
-    
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
       <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
     
@@ -461,11 +473,11 @@
     
     
     
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
-    
       <category term="Shadowsocks" scheme="http://mastermind.ink/tags/Shadowsocks/"/>
     
       <category term="美区APPID" scheme="http://mastermind.ink/tags/%E7%BE%8E%E5%8C%BAAPPID/"/>
+    
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
   </entry>
   
