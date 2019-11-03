@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mastermind.ink/"/>
-  <updated>2019-11-02T00:45:28.711Z</updated>
+  <updated>2019-11-03T13:39:19.325Z</updated>
   <id>http://mastermind.ink/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xkeymacs + sharpkeys完美将Emacs融入Windows的配置方案</title>
+    <link href="http://mastermind.ink/2019/11/03/xkeymacs-sharpkeys%E5%AE%8C%E7%BE%8E%E5%B0%86Emacs%E8%9E%8D%E5%85%A5Windows%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/"/>
+    <id>http://mastermind.ink/2019/11/03/xkeymacs-sharpkeys完美将Emacs融入Windows的配置方案/</id>
+    <published>2019-11-03T13:21:21.000Z</published>
+    <updated>2019-11-03T13:39:19.325Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="emacs" scheme="http://mastermind.ink/tags/emacs/"/>
+    
+      <category term="sharpkeys" scheme="http://mastermind.ink/tags/sharpkeys/"/>
+    
+      <category term="xkeymacs" scheme="http://mastermind.ink/tags/xkeymacs/"/>
+    
+  </entry>
   
   <entry>
     <title>982程序设计-C语言部分</title>
