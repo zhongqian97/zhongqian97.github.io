@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>记录</title>
+  <title>Record the INTJ&#39;s live</title>
   <icon>https://www.gravatar.com/avatar/adac92b1aa66646075eba3c4e2de8518</icon>
-  <subtitle>一个INTJ的博客；订阅我，你能知道你不知道的</subtitle>
+  <subtitle>An INTJ blog; subscribe to me, you can know what you never knew</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mastermind.ink/"/>
