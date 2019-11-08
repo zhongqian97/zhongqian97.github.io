@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mastermind.ink/"/>
-  <updated>2019-11-03T13:39:19.325Z</updated>
+  <updated>2019-11-08T04:36:26.634Z</updated>
   <id>http://mastermind.ink/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>贪吃蛇在输入框里玩？！？？？</title>
+    <link href="http://mastermind.ink/2019/11/08/%E8%B4%AA%E5%90%83%E8%9B%87%E5%9C%A8%E8%BE%93%E5%85%A5%E6%A1%86%E9%87%8C%E7%8E%A9%EF%BC%9F%EF%BC%81%EF%BC%9F%EF%BC%9F%EF%BC%9F/"/>
+    <id>http://mastermind.ink/2019/11/08/贪吃蛇在输入框里玩？！？？？/</id>
+    <published>2019-11-08T04:31:11.000Z</published>
+    <updated>2019-11-08T04:36:26.634Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>xkeymacs + sharpkeys完美将Emacs融入Windows的配置方案</title>
@@ -473,11 +496,11 @@
     
     
     
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
-    
       <category term="bbr" scheme="http://mastermind.ink/tags/bbr/"/>
     
       <category term="v2ray" scheme="http://mastermind.ink/tags/v2ray/"/>
+    
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
       <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
     
@@ -529,40 +552,11 @@
     
     
     
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
+    
       <category term="Shadowsocks" scheme="http://mastermind.ink/tags/Shadowsocks/"/>
     
       <category term="美区APPID" scheme="http://mastermind.ink/tags/%E7%BE%8E%E5%8C%BAAPPID/"/>
-    
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>以前的页面</title>
-    <link href="http://mastermind.ink/2019/10/07/%E4%BB%A5%E5%89%8D%E7%9A%84%E9%A1%B5%E9%9D%A2/"/>
-    <id>http://mastermind.ink/2019/10/07/以前的页面/</id>
-    <published>2019-10-07T13:16:27.000Z</published>
-    <updated>2019-10-08T11:45:03.989Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="工具" scheme="http://mastermind.ink/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="书籍推荐" scheme="http://mastermind.ink/tags/%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/"/>
-    
-      <category term="几分钟学新语言" scheme="http://mastermind.ink/tags/%E5%87%A0%E5%88%86%E9%92%9F%E5%AD%A6%E6%96%B0%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
