@@ -326,13 +326,13 @@
     
     
     
+      <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
+    
       <category term="RSS" scheme="http://mastermind.ink/tags/RSS/"/>
     
       <category term="ttrss" scheme="http://mastermind.ink/tags/ttrss/"/>
     
       <category term="feed43" scheme="http://mastermind.ink/tags/feed43/"/>
-    
-      <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
     
       <category term="miniflux" scheme="http://mastermind.ink/tags/miniflux/"/>
     
@@ -415,9 +415,9 @@
     
     
     
-      <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
-    
       <category term="rss" scheme="http://mastermind.ink/tags/rss/"/>
+    
+      <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
     
   </entry>
   
@@ -496,11 +496,11 @@
     
     
     
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
-    
       <category term="bbr" scheme="http://mastermind.ink/tags/bbr/"/>
     
       <category term="v2ray" scheme="http://mastermind.ink/tags/v2ray/"/>
+    
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
       <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
     
@@ -552,11 +552,11 @@
     
     
     
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
+    
       <category term="Shadowsocks" scheme="http://mastermind.ink/tags/Shadowsocks/"/>
     
       <category term="美区APPID" scheme="http://mastermind.ink/tags/%E7%BE%8E%E5%8C%BAAPPID/"/>
-    
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
   </entry>
   
