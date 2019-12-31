@@ -11,7 +11,7 @@
 
     <title>
         
-        rsshub安装教程 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        黑苹果的一些总结与配置 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#rsshub安装教程"><span class="toc-text">rsshub安装教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方链接"><span class="toc-text">官方链接</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用建议"><span class="toc-text">使用建议</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一些BB的话"><span class="toc-text">一些BB的话</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我的配置"><span class="toc-text">我的配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我踩的坑（有一部分都是准备踩上去了的）"><span class="toc-text">我踩的坑（有一部分都是准备踩上去了的）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#硬件配置"><span class="toc-text">硬件配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件配置"><span class="toc-text">软件配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#店家链接（无广告）"><span class="toc-text">店家链接（无广告）</span></a></li></ol>
 </div>
     
 </div>
@@ -120,20 +120,11 @@
 
 <div class="post-container">
     <div class="post-title">
-        rsshub安装教程
+        黑苹果的一些总结与配置
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2019-10-09 12:51:55</span></span>
-        
-        <span class="attr">标签：/
-        
-        <a class="tag" href="/tags/#rsshub" title="rsshub">rsshub</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#rss" title="rss">rss</a>
-        <span>/</span>
-        
+        <span class="attr">发布于：<span>2020-01-01 01:41:25</span></span>
         
         </span>
         <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
@@ -141,9 +132,34 @@
 </span>
     </div>
     <div class="post-content no-indent">
-        <h1 id="rsshub安装教程"><a href="#rsshub安装教程" class="headerlink" title="rsshub安装教程"></a>rsshub安装教程</h1><h2 id="官方链接"><a href="#官方链接" class="headerlink" title="官方链接"></a>官方链接</h2><ul>
-<li><a href="https://docs.rsshub.app/install/#docker-compose-bu-shu" target="_blank" rel="noopener">传送门（建议docker-compose部署）</a><h1 id="使用建议"><a href="#使用建议" class="headerlink" title="使用建议"></a>使用建议</h1></li>
-<li>在你的浏览器安装rsshub rader。(瞬间起飞。)</li>
+        <h1 id="一些BB的话"><a href="#一些BB的话" class="headerlink" title="一些BB的话"></a>一些BB的话</h1><ul>
+<li>安装黑苹果要么就找个好教程一步到位，要么研究好了在安装，别东搞一些西搞一些，流程得搞清楚。最好会一些基本装系统常识。</li>
+<li>从决定安装黑苹果的时候开始，你就必须有足够的理由，足够的需求，因为这个东西真的是永无止境，即使白苹果都要迭代更新更何况是黑苹果，不可能100%像白苹果一样。教程也不是万能的，每台电脑都有可能出BUG（我的就是这样），so。。。</li>
+</ul>
+<h1 id="我的配置"><a href="#我的配置" class="headerlink" title="我的配置"></a>我的配置</h1><ul>
+<li>CPU：amd ryzen 1600</li>
+<li>内存：8G（有钱就升级）</li>
+<li>主硬盘：建兴T10（有钱最好直接上三星，但是有一个三星盘是装不了黑苹果，我查了下海康威视的c2000跟c2000pro都行，支持国货呗。主要是比三星便宜一半）</li>
+<li>显卡：蓝宝石超白金rx580（2304sp）（我为什么在这显卡里备注了，请看下面）</li>
+<li>网卡：带转接板的PCIE接口，bcm94331cd</li>
+<li>机箱：乔思伯V4（大电源 + 24.4cm*24.4cm的板子到2020年1月1日时全网最小容积没有之一！）</li>
+</ul>
+<h1 id="我踩的坑（有一部分都是准备踩上去了的）"><a href="#我踩的坑（有一部分都是准备踩上去了的）" class="headerlink" title="我踩的坑（有一部分都是准备踩上去了的）"></a>我踩的坑（有一部分都是准备踩上去了的）</h1><h2 id="硬件配置"><a href="#硬件配置" class="headerlink" title="硬件配置"></a>硬件配置</h2><ul>
+<li>显卡最好（必须）是Amd的卡（免驱无敌），英伟达的大部分（有一小小小部分是可以上10.14）只能到10.13.6（夜间模式是没有的了）。而且英伟达只能用webDriver（听闻1080用了这个驱动跟1050的性能差不多？？？）</li>
+<li>ryzen1600部分可以超频到3.8G，然而蓝牙就GG了。（刚刚发现的一个bug），我只能调回3.2（难受）。</li>
+<li>装机U盘听说不能少于8G？我直接上了32G</li>
+<li>rx580想要直接免驱就用2304sp的，在网上卖的大多数是2048sp阉割卡！！不过2048的阉割卡可以刷bios改成rx570使用免驱（rx570跟rx5802048sp显卡天梯图是一样的。）</li>
+<li>显卡用A卡还要注意牌子牌子！！！蓝宝石跟纳兰恒进是直接免驱，XFX是有几率凉凉的，注意注意！最好选这两个牌子吧。</li>
+<li>网卡一定要选PCIE的，usb用的十分不稳定，特别容易翻车。如果实在没钱可以买我的型号，不再转接口板某宝也就50左右，还送蓝牙。有钱肯定上好的。但是我没太大需求也没钱。</li>
+<li>蓝牙都是走USB通道的，其实买usb跟Wi-Fi蓝牙一体板差不多，不过一体板的外接有根天线，信号比较好。</li>
+</ul>
+<h2 id="软件配置"><a href="#软件配置" class="headerlink" title="软件配置"></a>软件配置</h2><ul>
+<li>大部分都是教程自带的，不会的也问了卖教程的，售后服务是真的赞。链接我会附在最后（某宝9.9 30天售后牛皮）</li>
+<li>amd安装专用的，Intel安装原版的</li>
+<li>蓝牙一直断断续续，问了店家，店家给出了几个方案，都试过没用，用百度找也不行，最后是tonymacx86论坛找帖子找出来的，有一部分跟店家的方案类似，但是又多了一些东西。所以，教程只能有绝大部分作用，关键还是自己得知道怎么找。</li>
+</ul>
+<h1 id="店家链接（无广告）"><a href="#店家链接（无广告）" class="headerlink" title="店家链接（无广告）"></a>店家链接（无广告）</h1><ul>
+<li><a href="https://m.tb.cn/h.eAepHxE?sm=7ddf61" target="_blank" rel="noopener">传送门</a></li>
 </ul>
 
         

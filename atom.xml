@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mastermind.ink/"/>
-  <updated>2019-11-08T04:57:50.899Z</updated>
+  <updated>2019-12-31T19:25:44.572Z</updated>
   <id>http://mastermind.ink/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>黑苹果的一些总结与配置</title>
+    <link href="http://mastermind.ink/2020/01/01/%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    <id>http://mastermind.ink/2020/01/01/黑苹果的一些总结与配置/</id>
+    <published>2019-12-31T17:41:25.000Z</published>
+    <updated>2019-12-31T19:25:44.572Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>贪吃蛇在输入框里玩？！？？？</title>
     <link href="http://mastermind.ink/2019/11/08/%E8%B4%AA%E5%90%83%E8%9B%87%E5%9C%A8%E8%BE%93%E5%85%A5%E6%A1%86%E9%87%8C%E7%8E%A9%EF%BC%9F%EF%BC%81%EF%BC%9F%EF%BC%9F%EF%BC%9F/"/>
     <id>http://mastermind.ink/2019/11/08/贪吃蛇在输入框里玩？！？？？/</id>
     <published>2019-11-08T04:31:11.000Z</published>
-    <updated>2019-11-08T04:57:50.899Z</updated>
+    <updated>2019-11-08T04:57:50.000Z</updated>
     
     <summary type="html">
     
@@ -44,7 +67,7 @@
     <link href="http://mastermind.ink/2019/11/03/xkeymacs-sharpkeys%E5%AE%8C%E7%BE%8E%E5%B0%86Emacs%E8%9E%8D%E5%85%A5Windows%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/"/>
     <id>http://mastermind.ink/2019/11/03/xkeymacs-sharpkeys完美将Emacs融入Windows的配置方案/</id>
     <published>2019-11-03T13:21:21.000Z</published>
-    <updated>2019-11-03T13:39:19.325Z</updated>
+    <updated>2019-11-03T13:39:19.000Z</updated>
     
     <summary type="html">
     
@@ -73,7 +96,7 @@
     <link href="http://mastermind.ink/2019/10/31/982%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-C%E8%AF%AD%E8%A8%80%E9%83%A8%E5%88%86/"/>
     <id>http://mastermind.ink/2019/10/31/982程序设计-C语言部分/</id>
     <published>2019-10-31T01:32:38.000Z</published>
-    <updated>2019-11-02T00:45:28.711Z</updated>
+    <updated>2019-11-02T00:45:28.000Z</updated>
     
     <summary type="html">
     
@@ -100,7 +123,7 @@
     <link href="http://mastermind.ink/2019/10/30/%E8%A7%82%E4%BB%8A%E5%A4%9C%E5%A4%A9%E8%B1%A1/"/>
     <id>http://mastermind.ink/2019/10/30/观今夜天象/</id>
     <published>2019-10-30T12:49:39.000Z</published>
-    <updated>2019-10-30T13:07:44.837Z</updated>
+    <updated>2019-10-30T13:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -125,7 +148,7 @@
     <link href="http://mastermind.ink/2019/10/23/%E6%A0%91%E8%8E%93%E6%B4%BE-%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
     <id>http://mastermind.ink/2019/10/23/树莓派-智能实验室入门配置教程/</id>
     <published>2019-10-23T06:38:46.000Z</published>
-    <updated>2019-10-30T13:15:00.334Z</updated>
+    <updated>2019-10-30T13:15:00.000Z</updated>
     
     <summary type="html">
     
@@ -152,7 +175,7 @@
     <link href="http://mastermind.ink/2019/10/19/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E9%80%89%E6%8B%A9%E9%A2%98anki%E5%AE%9E%E8%B7%B5%E6%95%99%E7%A8%8B/"/>
     <id>http://mastermind.ink/2019/10/19/考研政治选择题anki实践教程/</id>
     <published>2019-10-19T01:27:21.000Z</published>
-    <updated>2019-10-19T02:01:41.246Z</updated>
+    <updated>2019-10-19T02:01:41.000Z</updated>
     
     <summary type="html">
     
@@ -179,7 +202,7 @@
     <link href="http://mastermind.ink/2019/10/16/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B5-%E5%87%A0%E4%B9%8E%E9%9B%B6%E9%97%A8%E6%A7%9B%E7%9A%84%E5%8A%9E%E5%85%AC%E5%AE%A4%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
     <id>http://mastermind.ink/2019/10/16/按键精灵-几乎零门槛的办公室自动化工具/</id>
     <published>2019-10-16T05:51:08.000Z</published>
-    <updated>2019-10-16T06:07:39.653Z</updated>
+    <updated>2019-10-16T06:07:39.000Z</updated>
     
     <summary type="html">
     
@@ -204,7 +227,7 @@
     <link href="http://mastermind.ink/2019/10/15/anki-%E8%AE%B0%E5%BF%86%E5%8D%A1%E7%A5%9E%E5%99%A8%E7%AE%80%E4%BB%8B%E7%AF%87/"/>
     <id>http://mastermind.ink/2019/10/15/anki-记忆卡神器简介篇/</id>
     <published>2019-10-15T10:20:52.000Z</published>
-    <updated>2019-10-15T10:59:43.560Z</updated>
+    <updated>2019-10-15T10:59:43.000Z</updated>
     
     <summary type="html">
     
@@ -229,7 +252,7 @@
     <link href="http://mastermind.ink/2019/10/14/markdown-windows%E5%B7%A5%E5%85%B7-boostnote/"/>
     <id>http://mastermind.ink/2019/10/14/markdown-windows工具-boostnote/</id>
     <published>2019-10-14T03:41:02.000Z</published>
-    <updated>2019-10-14T03:49:46.085Z</updated>
+    <updated>2019-10-14T03:49:46.000Z</updated>
     
     <summary type="html">
     
@@ -256,7 +279,7 @@
     <link href="http://mastermind.ink/2019/10/13/%E7%BB%99http%E4%B8%8A%E9%94%81%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94%E2%80%94Caddy/"/>
     <id>http://mastermind.ink/2019/10/13/给http上锁工具———Caddy/</id>
     <published>2019-10-13T15:18:56.000Z</published>
-    <updated>2019-10-13T16:02:30.606Z</updated>
+    <updated>2019-10-13T16:02:30.000Z</updated>
     
     <summary type="html">
     
@@ -281,7 +304,7 @@
     <link href="http://mastermind.ink/2019/10/12/MBTI%E8%81%8C%E4%B8%9A%E6%80%A7%E6%A0%BC%E6%B5%8B%E8%AF%95/"/>
     <id>http://mastermind.ink/2019/10/12/MBTI职业性格测试/</id>
     <published>2019-10-12T13:50:03.000Z</published>
-    <updated>2019-10-12T14:13:55.933Z</updated>
+    <updated>2019-10-12T14:13:55.000Z</updated>
     
     <summary type="html">
     
@@ -310,7 +333,7 @@
     <link href="http://mastermind.ink/2019/10/11/RSS%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E5%B9%B2%E5%98%9B%EF%BC%9F/"/>
     <id>http://mastermind.ink/2019/10/11/RSS是什么？能干嘛？/</id>
     <published>2019-10-11T04:14:05.000Z</published>
-    <updated>2019-10-11T08:23:40.100Z</updated>
+    <updated>2019-10-11T08:23:40.000Z</updated>
     
     <summary type="html">
     
@@ -326,15 +349,15 @@
     
     
     
-      <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
-    
-      <category term="miniflux" scheme="http://mastermind.ink/tags/miniflux/"/>
-    
       <category term="RSS" scheme="http://mastermind.ink/tags/RSS/"/>
     
       <category term="ttrss" scheme="http://mastermind.ink/tags/ttrss/"/>
     
       <category term="feed43" scheme="http://mastermind.ink/tags/feed43/"/>
+    
+      <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
+    
+      <category term="miniflux" scheme="http://mastermind.ink/tags/miniflux/"/>
     
       <category term="inoreader" scheme="http://mastermind.ink/tags/inoreader/"/>
     
@@ -349,7 +372,7 @@
     <link href="http://mastermind.ink/2019/10/10/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%BA%8C%E7%9C%9F%E9%A2%982010-2019/"/>
     <id>http://mastermind.ink/2019/10/10/考研英语二真题2010-2019/</id>
     <published>2019-10-10T12:43:03.000Z</published>
-    <updated>2019-10-10T12:44:55.483Z</updated>
+    <updated>2019-10-10T12:44:55.000Z</updated>
     
     <summary type="html">
     
@@ -374,7 +397,7 @@
     <link href="http://mastermind.ink/2019/10/10/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%BA%8C2010-2019%E8%AF%8D%E6%B1%87%E6%B1%87%E6%80%BB-%E8%AF%8D%E9%A2%91/"/>
     <id>http://mastermind.ink/2019/10/10/考研英语二2010-2019词汇汇总-词频/</id>
     <published>2019-10-10T12:39:37.000Z</published>
-    <updated>2019-10-10T12:40:53.362Z</updated>
+    <updated>2019-10-10T12:40:53.000Z</updated>
     
     <summary type="html">
     
@@ -399,7 +422,7 @@
     <link href="http://mastermind.ink/2019/10/09/rsshub%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
     <id>http://mastermind.ink/2019/10/09/rsshub安装教程/</id>
     <published>2019-10-09T04:51:55.000Z</published>
-    <updated>2019-10-11T08:25:34.210Z</updated>
+    <updated>2019-10-11T08:25:34.000Z</updated>
     
     <summary type="html">
     
@@ -415,9 +438,9 @@
     
     
     
-      <category term="rss" scheme="http://mastermind.ink/tags/rss/"/>
-    
       <category term="rsshub" scheme="http://mastermind.ink/tags/rsshub/"/>
+    
+      <category term="rss" scheme="http://mastermind.ink/tags/rss/"/>
     
   </entry>
   
@@ -426,7 +449,7 @@
     <link href="http://mastermind.ink/2019/10/09/%E9%98%BF%E9%87%8C%E4%BA%91%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%AE%89%E5%85%A8%E4%BB%A3%E7%90%86/"/>
     <id>http://mastermind.ink/2019/10/09/阿里云应用服务器搭建安全代理/</id>
     <published>2019-10-09T02:30:50.000Z</published>
-    <updated>2019-10-09T04:03:05.707Z</updated>
+    <updated>2019-10-09T04:03:05.000Z</updated>
     
     <summary type="html">
     
@@ -453,7 +476,7 @@
     <link href="http://mastermind.ink/2019/10/08/docker%E4%BD%BF%E7%94%A8%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85/"/>
     <id>http://mastermind.ink/2019/10/08/docker使用脚本自动安装/</id>
     <published>2019-10-08T11:38:06.000Z</published>
-    <updated>2019-10-08T11:50:33.625Z</updated>
+    <updated>2019-10-08T11:50:33.000Z</updated>
     
     <summary type="html">
     
@@ -480,7 +503,7 @@
     <link href="http://mastermind.ink/2019/10/08/v2ray%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%BB%A3%E7%90%86/"/>
     <id>http://mastermind.ink/2019/10/08/v2ray网络安全代理/</id>
     <published>2019-10-08T11:28:31.000Z</published>
-    <updated>2019-10-13T15:21:35.280Z</updated>
+    <updated>2019-10-13T15:21:35.000Z</updated>
     
     <summary type="html">
     
@@ -496,11 +519,11 @@
     
     
     
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
-    
       <category term="bbr" scheme="http://mastermind.ink/tags/bbr/"/>
     
       <category term="v2ray" scheme="http://mastermind.ink/tags/v2ray/"/>
+    
+      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
       <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
     
@@ -511,7 +534,7 @@
     <link href="http://mastermind.ink/2019/10/08/%E4%BD%BF%E7%94%A8docker-compose%E9%83%A8%E7%BD%B2miniflux/"/>
     <id>http://mastermind.ink/2019/10/08/使用docker-compose部署miniflux/</id>
     <published>2019-10-08T11:22:26.000Z</published>
-    <updated>2019-10-08T11:40:14.415Z</updated>
+    <updated>2019-10-08T11:40:14.000Z</updated>
     
     <summary type="html">
     
@@ -528,35 +551,6 @@
     
     
       <category term="miniflux" scheme="http://mastermind.ink/tags/miniflux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>shadowsocks</title>
-    <link href="http://mastermind.ink/2019/10/08/shadowsocks/"/>
-    <id>http://mastermind.ink/2019/10/08/shadowsocks/</id>
-    <published>2019-10-08T11:14:00.000Z</published>
-    <updated>2019-10-08T11:45:29.405Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Shadowsocks" scheme="http://mastermind.ink/tags/Shadowsocks/"/>
-    
-      <category term="美区APPID" scheme="http://mastermind.ink/tags/%E7%BE%8E%E5%8C%BAAPPID/"/>
-    
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
     
   </entry>
   
