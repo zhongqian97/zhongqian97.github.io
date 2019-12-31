@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Record what you do and what you think.">
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        982程序设计-C语言部分 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#程序设计-C语言部分"><span class="toc-text">程序设计-C语言部分</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、基本知识"><span class="toc-text">1、基本知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）C语言的数据类型"><span class="toc-text">（1）C语言的数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#void类型："><span class="toc-text">void类型：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#整数类型（算术类型下的一个）："><span class="toc-text">整数类型（算术类型下的一个）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#浮点类型："><span class="toc-text">浮点类型：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）C语言中各种类型常量的表示法"><span class="toc-text">（2）C语言中各种类型常量的表示法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#整数常量"><span class="toc-text">整数常量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#浮点常量"><span class="toc-text">浮点常量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#字符串常量"><span class="toc-text">字符串常量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#定义常量"><span class="toc-text">定义常量</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）各类数值型数据间的混合运算"><span class="toc-text">（3）各类数值型数据间的混合运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（4）C运算符"><span class="toc-text">（4）C运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#算术运算符"><span class="toc-text">算术运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关系运算符"><span class="toc-text">关系运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#逻辑运算符"><span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#位运算符"><span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#赋值运算符"><span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#杂项运算符"><span class="toc-text">杂项运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#运算符优先级"><span class="toc-text">运算符优先级</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（5）关系表达式及运算，逻辑表达式及运算"><span class="toc-text">（5）关系表达式及运算，逻辑表达式及运算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、顺序、选择与循环结构程序设计"><span class="toc-text">2、顺序、选择与循环结构程序设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）赋值语句，格式输入与输出"><span class="toc-text">（1）赋值语句，格式输入与输出</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#标准文件-输入输出的前提"><span class="toc-text">标准文件(输入输出的前提)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三个输入与输出函数"><span class="toc-text">三个输入与输出函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#getchar-amp-putchar-函数"><span class="toc-text">getchar() &amp; putchar() 函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#gets-amp-puts-函数"><span class="toc-text">gets() &amp; puts() 函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#scanf-和-printf-函数"><span class="toc-text">scanf() 和 printf() 函数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）if语句，switch语句"><span class="toc-text">（2）if语句，switch语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#if语句"><span class="toc-text">if语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#switch语句"><span class="toc-text">switch语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#运算符-三元运算符"><span class="toc-text">? : 运算符(三元运算符)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）goto、while、do-while、for、break、continue语句"><span class="toc-text">（3）goto、while、do-while、for、break、continue语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#goto"><span class="toc-text">goto</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#while"><span class="toc-text">while</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#do-while"><span class="toc-text">do-while</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#for"><span class="toc-text">for</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#break"><span class="toc-text">break</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#continue"><span class="toc-text">continue</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、数组"><span class="toc-text">3、数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）一维数组的定义和引用"><span class="toc-text">（1）一维数组的定义和引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）二维数组的定义和引用"><span class="toc-text">（2）二维数组的定义和引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）字符数组的定义和引用"><span class="toc-text">（3）字符数组的定义和引用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、函数"><span class="toc-text">4、函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）函数定义与调用"><span class="toc-text">（1）函数定义与调用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#函数定义"><span class="toc-text">函数定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#函数调用"><span class="toc-text">函数调用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）局部变量和全局变量"><span class="toc-text">（2）局部变量和全局变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）变量的存储类型"><span class="toc-text">（3）变量的存储类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#auto-存储类"><span class="toc-text">auto 存储类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#register-存储类（建议存放在寄存器）"><span class="toc-text">register 存储类（建议存放在寄存器）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#static-存储类"><span class="toc-text">static 存储类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#extern-存储类（函数-or-变量）"><span class="toc-text">extern 存储类（函数 or 变量）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（4）内部函数与外部函数"><span class="toc-text">（4）内部函数与外部函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、指针"><span class="toc-text">5、指针</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）地址和指针的概念"><span class="toc-text">（1）地址和指针的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）数组的指针和指向数组的指针变量"><span class="toc-text">（2）数组的指针和指向数组的指针变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）字符串的指针和指向字符串的指针变量"><span class="toc-text">（3）字符串的指针和指向字符串的指针变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（4）函数的指针和指向函数的指针变量"><span class="toc-text">（4）函数的指针和指向函数的指针变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（5）指针数组和指向指针的数组"><span class="toc-text">（5）指针数组和指向指针的数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、结构体和共同体"><span class="toc-text">6、结构体和共同体</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）结构体变量的定义和使用方法（位段）"><span class="toc-text">（1）结构体变量的定义和使用方法（位段）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）指向结构体类型变量的指针"><span class="toc-text">（2）指向结构体类型变量的指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）用指针处理链表"><span class="toc-text">（3）用指针处理链表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（4）共同体变量的定义和使用方法"><span class="toc-text">（4）共同体变量的定义和使用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（5）枚举类型"><span class="toc-text">（5）枚举类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、位运算"><span class="toc-text">7、位运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）位运算符和位运算"><span class="toc-text">（1）位运算符和位运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）位段"><span class="toc-text">（2）位段</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8、文件"><span class="toc-text">8、文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）文件类型指针"><span class="toc-text">（1）文件类型指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）文件操作，包括打开、关闭、读写和定位等。"><span class="toc-text">（2）文件操作，包括打开、关闭、读写和定位等。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#打开文件"><span class="toc-text">打开文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭文件"><span class="toc-text">关闭文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#写入文件"><span class="toc-text">写入文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#读取文件"><span class="toc-text">读取文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#定位文件"><span class="toc-text">定位文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#fseek函数："><span class="toc-text">fseek函数：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ftell函数："><span class="toc-text">ftell函数：</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考链接："><span class="toc-text">参考链接：</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        982程序设计-C语言部分
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2019-10-31 09:32:38</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#C语言" title="C语言">C语言</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#982程序设计" title="982程序设计">982程序设计</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="程序设计-C语言部分"><a href="#程序设计-C语言部分" class="headerlink" title="程序设计-C语言部分"></a>程序设计-C语言部分</h1><h2 id="1、基本知识"><a href="#1、基本知识" class="headerlink" title="1、基本知识"></a>1、基本知识</h2><h3 id="（1）C语言的数据类型"><a href="#（1）C语言的数据类型" class="headerlink" title="（1）C语言的数据类型"></a>（1）C语言的数据类型</h3><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>基本类型：它们是算术类型，包括两种类型：整数类型和浮点类型。<br>枚举类型：它们也是算术类型，被用来定义在程序中只能赋予其一定的离散整数值的变量。<br>void 类型：类型说明符 void 表明没有可用的值。<br>派生类型：它们包括：指针类型、数组类型、结构类型、共用体类型和函数类型。</p>
+<h4 id="void类型："><a href="#void类型：" class="headerlink" title="void类型："></a>void类型：</h4><ul>
+<li>函数返回为空：C 中有各种函数都不返回值，或者您可以说它们返回空。不返回值的函数的返回类型为空。<blockquote>
+<p>例如 void exit (int status);</p>
+</blockquote>
+</li>
+<li>函数参数为空：C 中有各种函数不接受任何参数。不带参数的函数可以接受一个 void。<blockquote>
+<p>例如 int rand(void);</p>
+</blockquote>
+</li>
+<li>指针指向 void：类型为 void * 的指针代表对象的地址，而不是类型。<blockquote>
+<p>例如，内存分配函数 void *malloc( size_t size ); 返回指向 void 的指针，可以转换为任何数据类型。    </p>
+</blockquote>
+</li>
+</ul>
+<h4 id="整数类型（算术类型下的一个）："><a href="#整数类型（算术类型下的一个）：" class="headerlink" title="整数类型（算术类型下的一个）："></a>整数类型（算术类型下的一个）：</h4><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储大小</th>
+<th>值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>char</td>
+<td>1 字节</td>
+<td>-128 到 127 或 0 到 255</td>
+</tr>
+<tr>
+<td>unsigned char</td>
+<td>1 字节</td>
+<td>0 到 255</td>
+</tr>
+<tr>
+<td>signed char</td>
+<td>1 字节</td>
+<td>-128 到 127</td>
+</tr>
+<tr>
+<td>int</td>
+<td>2 或 4 字节</td>
+<td>-32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647</td>
+</tr>
+<tr>
+<td>unsigned int</td>
+<td>2 或 4 字节</td>
+<td>0 到 65,535 或 0 到 4,294,967,295</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2 字节</td>
+<td>-32,768 到 32,767</td>
+</tr>
+<tr>
+<td>unsigned short</td>
+<td>2 字节</td>
+<td>0 到 65,535</td>
+</tr>
+<tr>
+<td>long</td>
+<td>4 字节</td>
+<td>-2,147,483,648 到 2,147,483,647</td>
+</tr>
+<tr>
+<td>unsigned long</td>
+<td>4 字节</td>
+<td>0 到 4,294,967,295</td>
+</tr>
+</tbody></table>
+<h4 id="浮点类型："><a href="#浮点类型：" class="headerlink" title="浮点类型："></a>浮点类型：</h4><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储大小</th>
+<th>值范围</th>
+<th>精度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float</td>
+<td>4 字节</td>
+<td>1.2E-38 到 3.4E+38</td>
+<td>6 位小数</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8 字节</td>
+<td>2.3E-308 到 1.7E+308</td>
+<td>15 位小数</td>
+</tr>
+<tr>
+<td>long double</td>
+<td>16 字节</td>
+<td>3.4E-4932 到 1.1E+4932</td>
+<td>19 位小数</td>
+</tr>
+</tbody></table>
+<h3 id="（2）C语言中各种类型常量的表示法"><a href="#（2）C语言中各种类型常量的表示法" class="headerlink" title="（2）C语言中各种类型常量的表示法"></a>（2）C语言中各种类型常量的表示法</h3><h4 id="整数常量"><a href="#整数常量" class="headerlink" title="整数常量"></a>整数常量</h4><blockquote>
+<p>整数常量可以是十进制、八进制或十六进制的常量。前缀指定基数：0x 或 0X 表示十六进制，0 表示八进制，不带前缀则默认表示十进制。<br>整数常量也可以带一个后缀，后缀是 U 和 L 的组合，U 表示无符号整数（unsigned），L 表示长整数（long）。后缀可以是大写，也可以是小写，U 和 L 的顺序任意。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">85         /* 十进制 */</span><br><span class="line">0213       /* 八进制 */</span><br><span class="line">0x4b       /* 十六进制 */</span><br><span class="line">30         /* 整数 */</span><br><span class="line">30u        /* 无符号整数 */</span><br><span class="line">30l        /* 长整数 */</span><br><span class="line">30ul       /* 无符号长整数 */</span><br></pre></td></tr></table></figure>
+
+<h4 id="浮点常量"><a href="#浮点常量" class="headerlink" title="浮点常量"></a>浮点常量</h4><blockquote>
+<p>浮点常量由整数部分、小数点、小数部分和指数部分组成。您可以使用小数形式或者指数形式来表示浮点常量。<br>当使用小数形式表示时，必须包含整数部分、小数部分，或同时包含两者。当使用指数形式表示时， 必须包含小数点、指数，或同时包含两者。带符号的指数是用 e 或 E 引入的。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>转义序列(\与其他之间无空格！)</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\ \</td>
+<td>\ 字符</td>
+</tr>
+<tr>
+<td>\ ‘</td>
+<td>‘ 字符</td>
+</tr>
+<tr>
+<td>\ “</td>
+<td>“ 字符</td>
+</tr>
+<tr>
+<td>\ ?</td>
+<td>? 字符</td>
+</tr>
+<tr>
+<td>\ a</td>
+<td>警报铃声</td>
+</tr>
+<tr>
+<td>\ b</td>
+<td>退格键</td>
+</tr>
+<tr>
+<td>\ f</td>
+<td>换页符</td>
+</tr>
+<tr>
+<td>\ n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\ r</td>
+<td>回车</td>
+</tr>
+<tr>
+<td>\ t</td>
+<td>水平制表符</td>
+</tr>
+<tr>
+<td>\ v</td>
+<td>垂直制表符</td>
+</tr>
+<tr>
+<td>\ ooo</td>
+<td>一到三位的八进制数</td>
+</tr>
+<tr>
+<td>\ xhh . . .</td>
+<td>一个或多个数字的十六进制数</td>
+</tr>
+</tbody></table>
+<h4 id="字符串常量"><a href="#字符串常量" class="headerlink" title="字符串常量"></a>字符串常量</h4><blockquote>
+<p>字符串字面值或常量是括在双引号 “” 中的。一个字符串包含类似于字符常量的字符：普通的字符、转义序列和通用的字符。</p>
+</blockquote>
+<h4 id="定义常量"><a href="#定义常量" class="headerlink" title="定义常量"></a>定义常量</h4><p>在 C 中，有两种简单的定义常量的方式：</p>
+<ul>
+<li>使用 #define 预处理器。<blockquote>
+<p>#define identifier value</p>
+</blockquote>
+</li>
+<li>使用 const 关键字。<blockquote>
+<p>const type variable = value;</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="（3）各类数值型数据间的混合运算"><a href="#（3）各类数值型数据间的混合运算" class="headerlink" title="（3）各类数值型数据间的混合运算"></a>（3）各类数值型数据间的混合运算</h3><ul>
+<li>运算符的优先级问题</li>
+<li>数据类型归一问题：</li>
+</ul>
+<blockquote>
+<p>1 当参加运算的数据的类型不同时，编译系统会自动将他们转换为同一类型，然后再运算，但是问题是转换的时候是谁转换成谁？转换的规则“按照数据长度增加的方向转换”，以保证精度不降低。比如 int 型 数据和 long 型数据进行相加或者相减运算时，系统会先将 int 型数据转换为 long 型，然后再进行运算。这样的话运算结果的精度就不会降低。long 是 “大水桶”，int 就是“小水桶”。int 能存放的，long 肯定能存放，而long 能存放的，int 不一定能存放。<br>2 所有的浮点运算都是以双精度进行的，在运算时，程序中所有的 float 类数据全部都进行转换为 double 型。即使只有一个float 型数据，也会被转换为 double。然后再进行计算</p>
+</blockquote>
+<h3 id="（4）C运算符"><a href="#（4）C运算符" class="headerlink" title="（4）C运算符"></a>（4）C运算符</h3><h4 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h4><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>把两个操作数相加</td>
+<td>A + B 将得到 30</td>
+</tr>
+<tr>
+<td>-</td>
+<td>从第一个操作数中减去第二个操作数</td>
+<td>A - B 将得到 -10</td>
+</tr>
+<tr>
+<td>*</td>
+<td>把两个操作数相乘</td>
+<td>A * B 将得到 200</td>
+</tr>
+<tr>
+<td>/</td>
+<td>分子除以分母</td>
+<td>B / A 将得到 2</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取模运算符，整除后的余数</td>
+<td>B % A 将得到 0</td>
+</tr>
+<tr>
+<td>++</td>
+<td>自增运算符，整数值增加 1</td>
+<td>A++ 将得到 11</td>
+</tr>
+<tr>
+<td>- -</td>
+<td>自减运算符，整数值减少 1</td>
+<td>A- - 将得到 9</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>++ - - 前与后的问题</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"> </span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">   int c;</span><br><span class="line">   int a = 10;</span><br><span class="line">   c = a++; </span><br><span class="line">   printf(&quot;先赋值后运算：\n&quot;);</span><br><span class="line">   printf(&quot;Line 1 - c 的值是 %d\n&quot;, c );</span><br><span class="line">   printf(&quot;Line 2 - a 的值是 %d\n&quot;, a );</span><br><span class="line">   a = 10;</span><br><span class="line">   c = a--; </span><br><span class="line">   printf(&quot;Line 3 - c 的值是 %d\n&quot;, c );</span><br><span class="line">   printf(&quot;Line 4 - a 的值是 %d\n&quot;, a );</span><br><span class="line"> </span><br><span class="line">   printf(&quot;先运算后赋值：\n&quot;);</span><br><span class="line">   a = 10;</span><br><span class="line">   c = ++a; </span><br><span class="line">   printf(&quot;Line 5 - c 的值是 %d\n&quot;, c );</span><br><span class="line">   printf(&quot;Line 6 - a 的值是 %d\n&quot;, a );</span><br><span class="line">   a = 10;</span><br><span class="line">   c = --a; </span><br><span class="line">   printf(&quot;Line 7 - c 的值是 %d\n&quot;, c );</span><br><span class="line">   printf(&quot;Line 8 - a 的值是 %d\n&quot;, a );</span><br><span class="line">   return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">以上程序执行输出结果为：</span><br><span class="line"></span><br><span class="line">先赋值后运算：</span><br><span class="line">Line 1 - c 的值是 10</span><br><span class="line">Line 2 - a 的值是 11</span><br><span class="line">Line 3 - c 的值是 10</span><br><span class="line">Line 4 - a 的值是 9</span><br><span class="line">先运算后赋值：</span><br><span class="line">Line 5 - c 的值是 11</span><br><span class="line">Line 6 - a 的值是 11</span><br><span class="line">Line 7 - c 的值是 9</span><br><span class="line">Line 8 - a 的值是 9</span><br></pre></td></tr></table></figure>
+
+<h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==</td>
+<td>检查两个操作数的值是否相等，如果相等则条件为真。</td>
+<td>(A == B) 为假。</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>检查两个操作数的值是否相等，如果不相等则条件为真。</td>
+<td>(A != B) 为真。</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>检查左操作数的值是否大于右操作数的值，如果是则条件为真。</td>
+<td>(A &gt; B) 为假。</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>检查左操作数的值是否小于右操作数的值，如果是则条件为真。</td>
+<td>(A &lt; B) 为真。</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>检查左操作数的值是否大于或等于右操作数的值，如果是则条件为真。</td>
+<td>(A &gt;= B) 为假。</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>检查左操作数的值是否小于或等于右操作数的值，如果是则条件为真。</td>
+<td>(A &lt;= B) 为真。</td>
+</tr>
+</tbody></table>
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;&amp;</td>
+<td>称为逻辑与运算符。如果两个操作数都非零，则条件为真。</td>
+<td>(A &amp;&amp; B) 为假。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>!</td>
+<td>称为逻辑非运算符。用来逆转操作数的逻辑状态。如果条件为真则逻辑非运算符将使其为假。</td>
+<td>!(A &amp;&amp; B) 为真。</td>
+</tr>
+</tbody></table>
+<h4 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h4><blockquote>
+<p>或 = |<br>与 = &amp;<br>异或 = ^</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p &amp; q</th>
+<th>p | q</th>
+<th>p ^ q</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>~</td>
+<td>取反运算符，按二进制位进行”取反”运算。</td>
+<td>(~A ) 将得到 -61，即为 1100 0011，一个有符号二进制数的补码形式。</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>二进制左移运算符。将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边补0）。</td>
+<td>A &lt;&lt; 2 将得到 240，即为 1111 0000</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>二进制右移运算符。将一个数的各二进制位全部右移若干位，正数左补0，负数左补1，右边丢弃。</td>
+<td>A &gt;&gt; 2 将得到 15，即为 0000 1111</td>
+</tr>
+</tbody></table>
+<h4 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h4><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=</td>
+<td>简单的赋值运算符，把右边操作数的值赋给左边操作数</td>
+<td>C = A + B 将把 A + B 的值赋给 C</td>
+</tr>
+<tr>
+<td>+=</td>
+<td>加且赋值运算符，把右边操作数加上左边操作数的结果赋值给左边操作数</td>
+<td>C += A 相当于 C = C + A</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>减且赋值运算符，把左边操作数减去右边操作数的结果赋值给左边操作数</td>
+<td>C -= A 相当于 C = C - A</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>乘且赋值运算符，把右边操作数乘以左边操作数的结果赋值给左边操作数</td>
+<td>C *= A 相当于 C = C * A</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>除且赋值运算符，把左边操作数除以右边操作数的结果赋值给左边操作数</td>
+<td>C /= A 相当于 C = C / A</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>求模且赋值运算符，求两个操作数的模赋值给左边操作数</td>
+<td>C %= A 相当于 C = C % A</td>
+</tr>
+<tr>
+<td>&lt;&lt;=</td>
+<td>左移且赋值运算符</td>
+<td>C &lt;&lt;= 2 等同于 C = C &lt;&lt; 2</td>
+</tr>
+<tr>
+<td>&gt;&gt;=</td>
+<td>右移且赋值运算符</td>
+<td>C &gt;&gt;= 2 等同于 C = C &gt;&gt; 2</td>
+</tr>
+<tr>
+<td>&amp;=</td>
+<td>按位与且赋值运算符</td>
+<td>C &amp;= 2 等同于 C = C &amp; 2</td>
+</tr>
+<tr>
+<td>^=</td>
+<td>按位异或且赋值运算符</td>
+<td>C ^= 2 等同于 C = C ^ 2</td>
+</tr>
+<tr>
+<td>|=</td>
+<td>按位或且赋值运算符</td>
+<td>C |= 2 等同于 C = C | 2</td>
+</tr>
+</tbody></table>
+<h4 id="杂项运算符"><a href="#杂项运算符" class="headerlink" title="杂项运算符"></a>杂项运算符</h4><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sizeof()</td>
+<td>返回变量的大小。</td>
+<td>sizeof(a) 将返回 4，其中 a 是整数。</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>返回变量的地址。</td>
+<td>&a; 将给出变量的实际地址。</td>
+</tr>
+<tr>
+<td>*</td>
+<td>指向一个变量。</td>
+<td>*a; 将指向一个变量。</td>
+</tr>
+<tr>
+<td>? :</td>
+<td>条件表达式</td>
+<td>如果条件为真 ? 则值为 X : 否则值为 Y</td>
+</tr>
+</tbody></table>
+<h4 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h4><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>运算符</th>
+<th>结合性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>后缀</td>
+<td>() [] -&gt; . ++ - -</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>一元</td>
+<td>+ - ! ~ ++ - - (type)* &amp; sizeof</td>
+<td>从右到左</td>
+</tr>
+<tr>
+<td>乘除</td>
+<td>* / %</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>加减</td>
+<td>+ -</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>移位</td>
+<td>&lt;&lt; &gt;&gt;</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>关系</td>
+<td>&lt; &lt;= &gt; &gt;=</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>相等</td>
+<td>== !=</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>位与 AND</td>
+<td>&amp;</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>位异或 XOR</td>
+<td>^</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>位或 OR</td>
+<td>|</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>逻辑与 AND</td>
+<td>&amp;&amp;</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td>逻辑或 OR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>条件</td>
+<td>?:</td>
+<td>从右到左</td>
+</tr>
+<tr>
+<td>赋值</td>
+<td>= += -= *= /= %=&gt;&gt;= &lt;&lt;= &amp;= ^= |=</td>
+<td>从右到左</td>
+</tr>
+<tr>
+<td>逗号</td>
+<td>,</td>
+<td>从左到右</td>
+</tr>
+</tbody></table>
+<h3 id="（5）关系表达式及运算，逻辑表达式及运算"><a href="#（5）关系表达式及运算，逻辑表达式及运算" class="headerlink" title="（5）关系表达式及运算，逻辑表达式及运算"></a>（5）关系表达式及运算，逻辑表达式及运算</h3><ul>
+<li>逻辑表达式是指运算符为或||、与&amp;&amp;、非！的表达式。返回值为0或1，0表示false，非0表示true. 例如!0返回1，0&amp;&amp;1返回0，0||1返回1。</li>
+<li>关系表达式是指运算符为&lt;,&lt;=,&gt;,&gt;=,==,!=的表达式。返回值同样为0或1，例如a!=b，a&gt;=0等。</li>
+</ul>
+<h2 id="2、顺序、选择与循环结构程序设计"><a href="#2、顺序、选择与循环结构程序设计" class="headerlink" title="2、顺序、选择与循环结构程序设计"></a>2、顺序、选择与循环结构程序设计</h2><h3 id="（1）赋值语句，格式输入与输出"><a href="#（1）赋值语句，格式输入与输出" class="headerlink" title="（1）赋值语句，格式输入与输出"></a>（1）赋值语句，格式输入与输出</h3><h4 id="标准文件-输入输出的前提"><a href="#标准文件-输入输出的前提" class="headerlink" title="标准文件(输入输出的前提)"></a>标准文件(输入输出的前提)</h4><ul>
+<li>C 语言把所有的设备都当作文件。所以设备（比如显示器）被处理的方式与文件相同。以下三个文件会在程序执行时自动打开，以便访问键盘和屏幕。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>标准文件</th>
+<th>文件指针</th>
+<th>设备</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标准输入</td>
+<td>stdin</td>
+<td>键盘</td>
+</tr>
+<tr>
+<td>标准输出</td>
+<td>stdout</td>
+<td>屏幕</td>
+</tr>
+<tr>
+<td>标准错误</td>
+<td>stderr</td>
+<td>您的屏幕</td>
+</tr>
+</tbody></table>
+<h4 id="三个输入与输出函数"><a href="#三个输入与输出函数" class="headerlink" title="三个输入与输出函数"></a>三个输入与输出函数</h4><h5 id="getchar-amp-putchar-函数"><a href="#getchar-amp-putchar-函数" class="headerlink" title="getchar() &amp; putchar() 函数"></a>getchar() &amp; putchar() 函数</h5><blockquote>
+<p>int getchar(void) 函数从屏幕读取下一个可用的字符，并把它返回为一个整数。这个函数在同一个时间内只会读取一个单一的字符。您可以在循环内使用这个方法，以便从屏幕上读取多个字符。<br>int putchar(int c) 函数把字符输出到屏幕上，并返回相同的字符。这个函数在同一个时间内只会输出一个单一的字符。您可以在循环内使用这个方法，以便在屏幕上输出多个字符。</p>
+</blockquote>
+<h5 id="gets-amp-puts-函数"><a href="#gets-amp-puts-函数" class="headerlink" title="gets() &amp; puts() 函数"></a>gets() &amp; puts() 函数</h5><blockquote>
+<p>char *gets(char *s) 函数从 stdin 读取一行到 s 所指向的缓冲区，直到一个终止符或 EOF。<br>int puts(const char *s) 函数把字符串 s 和一个尾随的换行符写入到 stdout。</p>
+</blockquote>
+<h5 id="scanf-和-printf-函数"><a href="#scanf-和-printf-函数" class="headerlink" title="scanf() 和 printf() 函数"></a>scanf() 和 printf() 函数</h5><blockquote>
+<p>int scanf(const char *format, …) 函数从标准输入流 stdin 读取输入，并根据提供的 format 来浏览输入。<br>int printf(const char *format, …) 函数把输出写入到标准输出流 stdout ，并根据提供的格式产生输出。<br>format 可以是一个简单的常量字符串，但是您可以分别指定 %s、%d、%c、%f 等来输出或读取字符串、整数、字符或浮点数。还有许多其他可用的格式选项，可以根据需要使用。</p>
+</blockquote>
+<h3 id="（2）if语句，switch语句"><a href="#（2）if语句，switch语句" class="headerlink" title="（2）if语句，switch语句"></a>（2）if语句，switch语句</h3><h4 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if(boolean_expression)</span><br><span class="line">&#123;</span><br><span class="line">   /* 如果布尔表达式为真将执行的语句 */</span><br><span class="line">&#125;</span><br><span class="line">else</span><br><span class="line">&#123;</span><br><span class="line">   /* 如果布尔表达式为假将执行的语句 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><img src="https://www.runoob.com/wp-content/uploads/2014/09/if_else_statement.jpg" alt="if语句"></li>
+<li>注意嵌套时if与else的标准是谁离得最近就是一对！！！</li>
+</ul>
+<h4 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">switch(expression)&#123;</span><br><span class="line">    case constant-expression  :</span><br><span class="line">       statement(s);</span><br><span class="line">       break; /* 可选的 */</span><br><span class="line">    case constant-expression  :</span><br><span class="line">       statement(s);</span><br><span class="line">       break; /* 可选的 */</span><br><span class="line">  </span><br><span class="line">    /* 您可以有任意数量的 case 语句 */</span><br><span class="line">    default : /* 可选的 */</span><br><span class="line">       statement(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><img src="https://www.runoob.com/wp-content/uploads/2014/09/switch_statement.jpg" alt="switch语句"><br>switch 语句必须遵循下面的规则：</li>
+<li>switch 语句中的 expression 是一个常量表达式，必须是一个整型或枚举类型。</li>
+<li>在一个 switch 中可以有任意数量的 case 语句。每个 case 后跟一个要比较的值和一个冒号。</li>
+<li>case 的 constant-expression 必须与 switch 中的变量具有相同的数据类型，且必须是一个常量或字面量。</li>
+<li>当被测试的变量等于 case 中的常量时，case 后跟的语句将被执行，直到遇到 break 语句为止。</li>
+<li>当遇到 break 语句时，switch 终止，控制流将跳转到 switch 语句后的下一行。</li>
+<li>不是每一个 case 都需要包含 break。如果 case 语句不包含 break，控制流将会 继续 后续的 case，直到遇到 break 为止。</li>
+<li>一个 switch 语句可以有一个可选的 default case，出现在 switch 的结尾。default case 可用于在上面所有 case 都不为真时执行一个任务。default case 中的 break 语句不是必需的。</li>
+</ul>
+<h4 id="运算符-三元运算符"><a href="#运算符-三元运算符" class="headerlink" title="? : 运算符(三元运算符)"></a>? : 运算符(三元运算符)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Exp1 ? Exp2 : Exp3;</span><br><span class="line">// 等于</span><br><span class="line">if(Exp1)&#123;</span><br><span class="line">    Exp2;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    Exp3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="（3）goto、while、do-while、for、break、continue语句"><a href="#（3）goto、while、do-while、for、break、continue语句" class="headerlink" title="（3）goto、while、do-while、for、break、continue语句"></a>（3）goto、while、do-while、for、break、continue语句</h3><h4 id="goto"><a href="#goto" class="headerlink" title="goto"></a>goto</h4><ul>
+<li><p>C 语言中的 goto 语句允许把控制无条件转移到同一函数内的被标记的语句。</p>
+</li>
+<li><p>注意：在任何编程语言中，都不建议使用 goto 语句。因为它使得程序的控制流难以跟踪，使程序难以理解和难以修改。任何使用 goto 语句的程序可以改写成不需要使用 goto 语句的写法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">goto label;</span><br><span class="line">..</span><br><span class="line">.</span><br><span class="line">label: statement;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><img src="https://www.runoob.com/wp-content/uploads/2015/01/goto.png" alt="goto.png"></p>
+</li>
+</ul>
+<h4 id="while"><a href="#while" class="headerlink" title="while"></a>while</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">while(condition)</span><br><span class="line">&#123;</span><br><span class="line">   statement(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><img src="https://www.runoob.com/wp-content/uploads/2014/09/BFE13459-897C-41A5-AE94-D71B0CA50FB6.jpg" alt="while"></li>
+</ul>
+<h4 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">do</span><br><span class="line">&#123;</span><br><span class="line">   statement(s);</span><br><span class="line"></span><br><span class="line">&#125;while( condition );</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><img src="https://www.runoob.com/wp-content/uploads/2014/09/B2FE1EC7-6477-439B-8F50-82D537673799.jpg" alt="do-while"></li>
+</ul>
+<h4 id="for"><a href="#for" class="headerlink" title="for"></a>for</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for ( init; condition; increment )</span><br><span class="line">&#123;</span><br><span class="line">   statement(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><img src="https://www.runoob.com/wp-content/uploads/2014/09/69978E61-0BA5-4D66-A115-D3AD15B16F47.jpg" alt="for"></li>
+</ul>
+<h4 id="break"><a href="#break" class="headerlink" title="break"></a>break</h4><ul>
+<li><img src="https://www.runoob.com/wp-content/uploads/2014/09/c-break-statement-works.jpg" alt="break"></li>
+</ul>
+<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><ul>
+<li><img src="https://www.runoob.com/wp-content/uploads/2014/09/c-continue-statement-works.jpg" alt="continue"></li>
+</ul>
+<h2 id="3、数组"><a href="#3、数组" class="headerlink" title="3、数组"></a>3、数组</h2><h3 id="（1）一维数组的定义和引用"><a href="#（1）一维数组的定义和引用" class="headerlink" title="（1）一维数组的定义和引用"></a>（1）一维数组的定义和引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">type arrayName [ arraySize ];</span><br><span class="line">//这叫做一维数组。arraySize 必须是一个大于零的整数常量，type 可以是任意有效的 C 数据类型。</span><br><span class="line"></span><br><span class="line">double balance[5] = &#123;1000.0, 2.0, 3.4, 7.0, 50.0&#125;;</span><br><span class="line">double balance[] = &#123;1000.0, 2.0, 3.4, 7.0, 50.0&#125;;</span><br><span class="line">//定义并赋值</span><br><span class="line"></span><br><span class="line">balance[4] = 50.0;//赋值</span><br><span class="line"></span><br><span class="line">double salary = balance[9];//数组使用</span><br><span class="line"></span><br><span class="line">int func(int a[num], int *p);//num可以省略</span><br><span class="line">//函数引用（当p = a时，p也是指向a的数组指针）</span><br></pre></td></tr></table></figure>
+
+<h3 id="（2）二维数组的定义和引用"><a href="#（2）二维数组的定义和引用" class="headerlink" title="（2）二维数组的定义和引用"></a>（2）二维数组的定义和引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">type arrayName [ x ][ y ];</span><br><span class="line">//type 可以是任意有效的 C 数据类型，arrayName 是一个有效的 C 标识符。</span><br><span class="line"></span><br><span class="line">int a[3][4] = &#123;  </span><br><span class="line"> &#123;0, 1, 2, 3&#125; ,   /*  初始化索引号为 0 的行 */</span><br><span class="line"> &#123;4, 5, 6, 7&#125; ,   /*  初始化索引号为 1 的行 */</span><br><span class="line"> &#123;8, 9, 10, 11&#125;   /*  初始化索引号为 2 的行 */</span><br><span class="line">&#125;;//初始化二维数组</span><br><span class="line"></span><br><span class="line">int a[3][4] = &#123;0,1,2,3,4,5,6,7,8,9,10,11&#125;;//同上</span><br><span class="line"></span><br><span class="line">//使用方式与一维数组一致</span><br><span class="line"></span><br><span class="line">int func(int a[][num], int **p);</span><br><span class="line">// 函数引用，注意num不能省！（个人经验）</span><br></pre></td></tr></table></figure>
+
+<h3 id="（3）字符数组的定义和引用"><a href="#（3）字符数组的定义和引用" class="headerlink" title="（3）字符数组的定义和引用"></a>（3）字符数组的定义和引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">//在 C 语言中，字符串实际上是使用 null 字符 &apos;\0&apos; 终止的一维字符数组。</span><br><span class="line"></span><br><span class="line">char greeting[6] = &#123;&apos;H&apos;, &apos;e&apos;, &apos;l&apos;, &apos;l&apos;, &apos;o&apos;, &apos;\0&apos;&#125;;</span><br><span class="line">char greeting[] = &quot;Hello&quot;;</span><br><span class="line">//定义</span><br><span class="line"></span><br><span class="line">// 赋值语句与一维数组一致</span><br><span class="line"></span><br><span class="line">strcpy(s1, s2);//复制字符串 s2 到字符串 s1。</span><br><span class="line"></span><br><span class="line">strcat(s1, s2);//连接字符串 s2 到字符串 s1 的末尾。</span><br><span class="line"></span><br><span class="line">strlen(s1);//返回字符串 s1 的长度。</span><br><span class="line"></span><br><span class="line">strcmp(s1, s2);//如果 s1 和 s2 是相同的，则返回 0；如果 s1&lt;s2 则返回小于 0；如果 s1&gt;s2 则返回大于 0。</span><br><span class="line"></span><br><span class="line">strchr(s1, ch);//返回一个指针，指向字符串 s1 中字符 ch 的第一次出现的位置。</span><br><span class="line"></span><br><span class="line">strstr(s1, s2);//返回一个指针，指向字符串 s1 中字符串 s2 的第一次出现的位置。</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="https://blog.csdn.net/u013812502/article/details/81198452" target="_blank" rel="noopener">sizeof函数一些要点</a></li>
+<li><a href="https://www.runoob.com/w3cnote/strlen-and-sizeof.html" target="_blank" rel="noopener">利用 strlen 和 sizeof 求取字符串长度注意事项</a></li>
+</ul>
+<h2 id="4、函数"><a href="#4、函数" class="headerlink" title="4、函数"></a>4、函数</h2><h3 id="（1）函数定义与调用"><a href="#（1）函数定义与调用" class="headerlink" title="（1）函数定义与调用"></a>（1）函数定义与调用</h3><h4 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h4><ul>
+<li>返回类型（return_type）：一个函数可以返回一个值。return_type 是函数返回的值的数据类型。有些函数执行所需的操作而不返回值，在这种情况下，return_type 是关键字 void。</li>
+<li>函数名称(function_name)：这是函数的实际名称。函数名和参数列表一起构成了函数签名。</li>
+<li>参数(parameter list)：参数就像是占位符。当函数被调用时，您向参数传递一个值，这个值被称为实际参数。参数列表包括函数参数的类型、顺序、数量。参数是可选的，也就是说，函数可能不包含参数。</li>
+<li>函数主体(body of the function)：函数主体包含一组定义函数执行任务的语句。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">return_type function_name( parameter list )</span><br><span class="line">&#123;</span><br><span class="line">   body of the function</span><br><span class="line">&#125;</span><br><span class="line">// 函数定义 </span><br><span class="line"></span><br><span class="line">return_type function_name( parameter list );</span><br><span class="line">//函数声明。函数声明会告诉编译器函数名称及如何调用函数。</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="函数调用"><a href="#函数调用" class="headerlink" title="函数调用"></a>函数调用</h4><ul>
+<li>当您在一个源文件中定义函数且在另一个文件中调用函数时，函数声明是必需的。在这种情况下，您应该在调用函数的文件顶部声明函数。</li>
+<li>当程序调用函数时，程序控制权会转移给被调用的函数。被调用的函数执行已定义的任务，当函数的返回语句被执行时，或到达函数的结束括号时，会把程序控制权交还给主程序。</li>
+<li>当调用函数时，有两种向函数传递参数的方式:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>调用类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>传值调用</td>
+<td>该方法把参数的实际值复制给函数的形式参数。在这种情况下，修改函数内的形式参数不会影响实际参数。</td>
+</tr>
+<tr>
+<td>引用调用</td>
+<td>通过指针传递方式，形参为指向实参地址的指针，当对形参的指向操作时，就相当于对实参本身进行的操作。</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>默认情况下，C 使用传值调用来传递参数。一般来说，这意味着函数内的代码不能改变用于调用函数的实际参数。<br>（个人经验）如果在被调用函数创建数组（非通过malloc堆方式），调用函数是无法访问的该数组的！如果想访问该数组：<br>1是直接通过malloc这类堆形式创建。<br>2是通过static变量（这类变量能保留到程序结束。）</p>
+</blockquote>
+<h3 id="（2）局部变量和全局变量"><a href="#（2）局部变量和全局变量" class="headerlink" title="（2）局部变量和全局变量"></a>（2）局部变量和全局变量</h3><p>任何一种编程中，作用域是程序中定义的变量所存在的区域，超过该区域变量就不能被访问。C 语言中有三个地方可以声明变量：</p>
+<ul>
+<li>在函数或块内部的局部变量</li>
+<li>在所有函数外部的全局变量</li>
+<li>在形式参数的函数参数定义中</li>
+</ul>
+<p>全局变量与局部变量在内存中的区别：</p>
+<ul>
+<li>全局变量保存在内存的全局存储区中，占用静态的存储单元；</li>
+<li>局部变量保存在栈中，只有在所在函数被调用时才动态地为变量分配存储单元。</li>
+</ul>
+<blockquote>
+<p>在程序中，局部变量和全局变量的名称可以相同，但是在函数内，如果两个名字相同，会使用局部变量值，全局变量不会被使用。<br>函数的参数，形式参数，被当作该函数内的局部变量，如果与全局变量同名它们会优先使用。<br>当局部变量被定义时，系统不会对其初始化，您必须自行对其初始化。定义全局变量时，系统会自动对其初始化。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>初始化默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td>0</td>
+</tr>
+<tr>
+<td>char</td>
+<td>‘\0’</td>
+</tr>
+<tr>
+<td>float</td>
+<td>0</td>
+</tr>
+<tr>
+<td>double</td>
+<td>0</td>
+</tr>
+<tr>
+<td>pointer</td>
+<td>NULL</td>
+</tr>
+</tbody></table>
+<h3 id="（3）变量的存储类型"><a href="#（3）变量的存储类型" class="headerlink" title="（3）变量的存储类型"></a>（3）变量的存储类型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">    auto int month;//auto使用方法</span><br><span class="line"></span><br><span class="line">    register int  miles;//register使用方法</span><br><span class="line">    </span><br><span class="line">    static int thingy = 5;//static使用方法</span><br><span class="line"></span><br><span class="line">// extern使用方法</span><br><span class="line">//第一个文件：main.c</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"> </span><br><span class="line">int count ;</span><br><span class="line">extern void write_extern();</span><br><span class="line"> </span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">   count = 5;</span><br><span class="line">   write_extern();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//第二个文件：support.c</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"> </span><br><span class="line">extern int count;</span><br><span class="line"> </span><br><span class="line">void write_extern(void)</span><br><span class="line">&#123;</span><br><span class="line">   printf(&quot;count is %d\n&quot;, count);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//结果：count is 5</span><br></pre></td></tr></table></figure>
+
+<h4 id="auto-存储类"><a href="#auto-存储类" class="headerlink" title="auto 存储类"></a>auto 存储类</h4><ul>
+<li>auto 存储类是所有局部变量默认的存储类。</li>
+</ul>
+<h4 id="register-存储类（建议存放在寄存器）"><a href="#register-存储类（建议存放在寄存器）" class="headerlink" title="register 存储类（建议存放在寄存器）"></a>register 存储类（建议存放在寄存器）</h4><ul>
+<li>register 存储类用于定义存储在寄存器中而不是 RAM 中的局部变量。这意味着变量的最大尺寸等于寄存器的大小（通常是一个词），且不能对它应用一元的 ‘&amp;’ 运算符（因为它没有内存位置）。</li>
+<li>寄存器只用于需要快速访问的变量，比如计数器。还应注意的是，定义 ‘register’ 并不意味着变量将被存储在寄存器中，它意味着变量可能存储在寄存器中，这取决于硬件和实现的限制。</li>
+</ul>
+<h4 id="static-存储类"><a href="#static-存储类" class="headerlink" title="static 存储类"></a>static 存储类</h4><p>两个作用：</p>
+<ul>
+<li>static 存储类指示编译器在程序的生命周期内保持局部变量的存在，而不需要在每次它进入和离开作用域时进行创建和销毁。因此，使用 static 修饰局部变量可以在函数调用之间保持局部变量的值。</li>
+<li>static 修饰符也可以应用于全局变量。当 static 修饰全局变量时，会使变量的作用域限制在声明它的文件内。</li>
+</ul>
+<h4 id="extern-存储类（函数-or-变量）"><a href="#extern-存储类（函数-or-变量）" class="headerlink" title="extern 存储类（函数 or 变量）"></a>extern 存储类（函数 or 变量）</h4><ul>
+<li>extern 存储类用于提供一个全局变量的引用，全局变量对所有的程序文件都是可见的。当您使用 extern 时，对于无法初始化的变量，会把变量名指向一个之前定义过的存储位置。</li>
+<li>当您有多个文件且定义了一个可以在其他文件中使用的全局变量或函数时，可以在其他文件中使用 extern 来得到已定义的变量或函数的引用。可以这么理解，extern 是用来在另一个文件中声明一个全局变量或函数。</li>
+</ul>
+<h3 id="（4）内部函数与外部函数"><a href="#（4）内部函数与外部函数" class="headerlink" title="（4）内部函数与外部函数"></a>（4）内部函数与外部函数</h3><ul>
+<li>内部函数：函数仅能被本文件中其他函数所调用称为内部函数；需要在函数前面加static；</li>
+<li>外部函数：函数可以被工程中的其他文件函数调用称为外部函数；当工程其他文件需要调用外部函数时，申明中要加extern，当然也可以省略，因为函数本质是外部的。</li>
+<li><a href="https://blog.csdn.net/nangeali/article/details/78834998" target="_blank" rel="noopener">详情请点这里</a></li>
+</ul>
+<h2 id="5、指针"><a href="#5、指针" class="headerlink" title="5、指针"></a>5、指针</h2><h3 id="（1）地址和指针的概念"><a href="#（1）地址和指针的概念" class="headerlink" title="（1）地址和指针的概念"></a>（1）地址和指针的概念</h3><blockquote>
+<p>每一个变量都有一个内存位置，每一个内存位置都定义了可使用连字号（&amp;）运算符访问的地址，它表示了在内存中的一个地址。<br>指针是一个变量，其值为另一个变量的地址，即，内存位置的直接地址。<br>不同数据类型的指针之间唯一的不同是，指针所指向的变量或常量的数据类型不同。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">type *var-name;</span><br><span class="line">//type 是指针的基类型，它必须是一个有效的 C 数据类型，</span><br><span class="line">//var-name 是指针变量的名称。</span><br><span class="line">//用来声明指针的星号 * 与乘法中使用的星号是相同的。</span><br></pre></td></tr></table></figure>
+
+<h3 id="（2）数组的指针和指向数组的指针变量"><a href="#（2）数组的指针和指向数组的指针变量" class="headerlink" title="（2）数组的指针和指向数组的指针变量"></a>（2）数组的指针和指向数组的指针变量</h3><ul>
+<li><p>数组名是一个指向数组中第一个元素的常量指针。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double *p;</span><br><span class="line">double balance[10];//定义</span><br><span class="line">p = balance;//赋值</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用数组名作为常量指针是合法的，反之亦然。因此，*(balance + 4) 是一种访问 balance[4] 数据的合法方式。</p>
+</li>
+<li><p>一旦您把第一个元素的地址存储在 p 中，您就可以使用 <em>p、</em>(p+1)、*(p+2) 等来访问数组元素。</p>
+</li>
+</ul>
+<h3 id="（3）字符串的指针和指向字符串的指针变量"><a href="#（3）字符串的指针和指向字符串的指针变量" class="headerlink" title="（3）字符串的指针和指向字符串的指针变量"></a>（3）字符串的指针和指向字符串的指针变量</h3><ul>
+<li>这个我真的不知道哪里找资料了。。。</li>
+<li>具体跟一维数组其实是一样的。也没啥</li>
+</ul>
+<h3 id="（4）函数的指针和指向函数的指针变量"><a href="#（4）函数的指针和指向函数的指针变量" class="headerlink" title="（4）函数的指针和指向函数的指针变量"></a>（4）函数的指针和指向函数的指针变量</h3><ul>
+<li>函数指针是指向函数的指针变量。</li>
+<li>通常我们说的指针变量是指向一个整型、字符型或数组等变量，而函数指针是指向函数。</li>
+<li>函数指针可以像一般函数一样，用于调用函数、传递参数。<br>函数指针变量的声明：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">typedef int (*fun_ptr)(int,int); // 声明一个指向同样参数、返回值的函数指针类型</span><br><span class="line"></span><br><span class="line">int (* p)(int, int) = &amp; max; // &amp;可以省略</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>函数指针变量可以作为某个函数的参数来使用的，回调函数就是一个通过函数指针调用的函数。<br>简单讲：回调函数是由别人的函数执行时调用你实现的函数。</p>
+<h3 id="（5）指针数组和指向指针的数组"><a href="#（5）指针数组和指向指针的数组" class="headerlink" title="（5）指针数组和指向指针的数组"></a>（5）指针数组和指向指针的数组</h3><p>指针数组和数组指针的区别<br>指针数组：指针数组可以说成是”指针的数组”，首先这个变量是一个数组。</p>
+<ul>
+<li>其次，”指针”修饰这个数组，意思是说这个数组的所有元素都是指针类型。</li>
+<li>在 32 位系统中，指针占四个字节。</li>
+</ul>
+<p>数组指针：数组指针可以说成是”数组的指针”，首先这个变量是一个指针。</p>
+<ul>
+<li>其次，”数组”修饰这个指针，意思是说这个指针存放着一个数组的首地址，或者说这个指针指向一个数组的首地址。</li>
+</ul>
+<h2 id="6、结构体和共同体"><a href="#6、结构体和共同体" class="headerlink" title="6、结构体和共同体"></a>6、结构体和共同体</h2><h3 id="（1）结构体变量的定义和使用方法（位段）"><a href="#（1）结构体变量的定义和使用方法（位段）" class="headerlink" title="（1）结构体变量的定义和使用方法（位段）"></a>（1）结构体变量的定义和使用方法（位段）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">struct tag &#123; </span><br><span class="line">    member-list</span><br><span class="line">    member-list </span><br><span class="line">    member-list  </span><br><span class="line">    ...</span><br><span class="line">&#125; variable-list ;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>tag 是结构体标签。</li>
+<li>member-list 是标准的变量定义，比如 int i; 或者 float f，或者其他有效的变量定义。</li>
+<li>variable-list 结构变量，定义在结构的末尾，最后一个分号之前，您可以指定一个或多个结构变量。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">//此声明声明了拥有3个成员的结构体，分别为整型的a，字符型的b和双精度的c</span><br><span class="line">//同时又声明了结构体变量s1</span><br><span class="line">//这个结构体并没有标明其标签</span><br><span class="line">struct </span><br><span class="line">&#123;</span><br><span class="line">    int a;</span><br><span class="line">    char b;</span><br><span class="line">    double c;</span><br><span class="line">&#125; s1;</span><br><span class="line"> </span><br><span class="line">//此声明声明了拥有3个成员的结构体，分别为整型的a，字符型的b和双精度的c</span><br><span class="line">//结构体的标签被命名为SIMPLE,没有声明变量</span><br><span class="line">struct SIMPLE</span><br><span class="line">&#123;</span><br><span class="line">    int a;</span><br><span class="line">    char b;</span><br><span class="line">    double c;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//用SIMPLE标签的结构体，另外声明了变量t1、t2、t3</span><br><span class="line">struct SIMPLE t1, t2[20], *t3;</span><br><span class="line"> </span><br><span class="line">//也可以用typedef创建新类型</span><br><span class="line">typedef struct</span><br><span class="line">&#123;</span><br><span class="line">    int a;</span><br><span class="line">    char b;</span><br><span class="line">    double c; </span><br><span class="line">&#125; Simple2;</span><br><span class="line">//现在可以用Simple2作为类型声明新的结构体变量</span><br><span class="line">Simple2 u1, u2[20], *u3;</span><br><span class="line"></span><br><span class="line">//此结构体的声明包含了其他的结构体</span><br><span class="line">struct COMPLEX</span><br><span class="line">&#123;</span><br><span class="line">    char string[100];</span><br><span class="line">    struct SIMPLE a;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line">//此结构体的声明包含了指向自己类型的指针</span><br><span class="line">struct NODE</span><br><span class="line">&#123;</span><br><span class="line">    char string[100];</span><br><span class="line">    struct NODE *next_node;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct B;    //对结构体B进行不完整声明</span><br><span class="line"> </span><br><span class="line">//结构体A中包含指向结构体B的指针</span><br><span class="line">struct A</span><br><span class="line">&#123;</span><br><span class="line">    struct B *partner;</span><br><span class="line">    //other members;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line">//结构体B中包含指向结构体A的指针，在A声明完后，B也随之进行声明</span><br><span class="line">struct B</span><br><span class="line">&#123;</span><br><span class="line">    struct A *partner;</span><br><span class="line">    //other members;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/* 函数声明 */</span><br><span class="line">void printBook( struct Books book );</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="（2）指向结构体类型变量的指针"><a href="#（2）指向结构体类型变量的指针" class="headerlink" title="（2）指向结构体类型变量的指针"></a>（2）指向结构体类型变量的指针</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">struct Books *struct_pointer;</span><br><span class="line"></span><br><span class="line">/* 函数声明 */</span><br><span class="line">void printBook( struct Books *book );</span><br></pre></td></tr></table></figure>
+
+<h3 id="（3）用指针处理链表"><a href="#（3）用指针处理链表" class="headerlink" title="（3）用指针处理链表"></a>（3）用指针处理链表</h3><ul>
+<li>参考《数据结构》</li>
+</ul>
+<h3 id="（4）共同体变量的定义和使用方法"><a href="#（4）共同体变量的定义和使用方法" class="headerlink" title="（4）共同体变量的定义和使用方法"></a>（4）共同体变量的定义和使用方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//定义</span><br><span class="line">union [union tag]//union tag 是可选的</span><br><span class="line">&#123;</span><br><span class="line">   member definition;</span><br><span class="line">   member definition;</span><br><span class="line">   ...</span><br><span class="line">   member definition;</span><br><span class="line">&#125; [one or more union variables];</span><br><span class="line"></span><br><span class="line">//例子</span><br><span class="line">union Data</span><br><span class="line">&#123;</span><br><span class="line">   int i;</span><br><span class="line">   float f;</span><br><span class="line">   char  str[20];</span><br><span class="line">&#125;;</span><br><span class="line">   union Data data;</span><br><span class="line">   data.i = 10;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>共用体占用的内存应足够存储共用体中最大的成员。</li>
+</ul>
+<h3 id="（5）枚举类型"><a href="#（5）枚举类型" class="headerlink" title="（5）枚举类型"></a>（5）枚举类型</h3><ul>
+<li>注意：第一个枚举成员的默认值为整型的 0，后续枚举成员的值在前一个成员上加 1。我们在这个实例中把第一个枚举成员的值定义为 1，第二个就为 2，以此类推。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">//定义</span><br><span class="line">enum　枚举名　&#123;枚举元素1,枚举元素2,……&#125;;</span><br><span class="line">enum DAY</span><br><span class="line">&#123;</span><br><span class="line">      MON=1, TUE, WED, THU, FRI, SAT, SUN</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//1、先定义枚举类型，再定义枚举变量</span><br><span class="line"></span><br><span class="line">enum DAY</span><br><span class="line">&#123;</span><br><span class="line">      MON=1, TUE, WED, THU, FRI, SAT, SUN</span><br><span class="line">&#125;;</span><br><span class="line">enum DAY day;</span><br><span class="line">//2、定义枚举类型的同时定义枚举变量</span><br><span class="line"></span><br><span class="line">enum DAY</span><br><span class="line">&#123;</span><br><span class="line">      MON=1, TUE, WED, THU, FRI, SAT, SUN</span><br><span class="line">&#125; day;</span><br><span class="line">//3、省略枚举名称，直接定义枚举变量</span><br><span class="line"></span><br><span class="line">enum</span><br><span class="line">&#123;</span><br><span class="line">      MON=1, TUE, WED, THU, FRI, SAT, SUN</span><br><span class="line">&#125; day;</span><br></pre></td></tr></table></figure>
+
+<h2 id="7、位运算"><a href="#7、位运算" class="headerlink" title="7、位运算"></a>7、位运算</h2><h3 id="（1）位运算符和位运算"><a href="#（1）位运算符和位运算" class="headerlink" title="（1）位运算符和位运算"></a>（1）位运算符和位运算</h3><ul>
+<li>上面有<h3 id="（2）位段"><a href="#（2）位段" class="headerlink" title="（2）位段"></a>（2）位段</h3></li>
+<li>这种结构需要 8 字节的内存空间，但在实际上，在每个变量中，我们只存储 0 或 1。在这种情况下，C 语言提供了一种更好的利用内存空间的方式。如果您在结构内使用这样的变量，您可以定义变量的宽度来告诉编译器，您将只使用这些字节。</li>
+<li>无名位域一般用来作填充或者调整成员位置。因为没有名称，无名位域不能使用。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">struct</span><br><span class="line">&#123;</span><br><span class="line">  type [member_name] : width ;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//具体例子</span><br><span class="line">struct</span><br><span class="line">&#123;</span><br><span class="line">  unsigned int age : 3;</span><br><span class="line">&#125; Age;</span><br><span class="line"></span><br><span class="line">Age.age = 7;//使用方案</span><br><span class="line"></span><br><span class="line">Age.age = 8;// 二进制表示为 1000 有四位，超出</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>元素</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type</td>
+<td>整数类型，决定了如何解释位域的值。类型可以是整型、有符号整型、无符号整型。</td>
+</tr>
+<tr>
+<td>member_name</td>
+<td>位域的名称。</td>
+</tr>
+<tr>
+<td>width</td>
+<td>位域中位的数量。宽度必须小于或等于指定类型的位宽度。</td>
+</tr>
+</tbody></table>
+<h2 id="8、文件"><a href="#8、文件" class="headerlink" title="8、文件"></a>8、文件</h2><h3 id="（1）文件类型指针"><a href="#（1）文件类型指针" class="headerlink" title="（1）文件类型指针"></a>（1）文件类型指针</h3><ul>
+<li>FILE *f;</li>
+</ul>
+<h3 id="（2）文件操作，包括打开、关闭、读写和定位等。"><a href="#（2）文件操作，包括打开、关闭、读写和定位等。" class="headerlink" title="（2）文件操作，包括打开、关闭、读写和定位等。"></a>（2）文件操作，包括打开、关闭、读写和定位等。</h3><h4 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h4><p>您可以使用 fopen( ) 函数来创建一个新的文件或者打开一个已有的文件，这个调用会初始化类型 FILE 的一个对象，类型 FILE 包含了所有用来控制流的必要的信息。下面是这个函数调用的原型：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FILE *fopen( const char * filename, const char * mode );</span><br></pre></td></tr></table></figure>
+
+<p>在这里，filename 是字符串，用来命名文件，访问模式 mode 的值可以是下列值中的一个：</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r</td>
+<td>打开一个已有的文本文件，允许读取文件。</td>
+</tr>
+<tr>
+<td>w</td>
+<td>打开一个文本文件，允许写入文件。如果文件不存在，则会创建一个新文件。在这里，您的程序会从文件的开头写入内容。如果文件存在，则该会被截断为零长度，重新写入。</td>
+</tr>
+<tr>
+<td>a</td>
+<td>打开一个文本文件，以追加模式写入文件。如果文件不存在，则会创建一个新文件。在这里，您的程序会在已有的文件内容中追加内容。</td>
+</tr>
+<tr>
+<td>r+</td>
+<td>打开一个文本文件，允许读写文件。</td>
+</tr>
+<tr>
+<td>w+</td>
+<td>打开一个文本文件，允许读写文件。如果文件已存在，则文件会被截断为零长度，如果文件不存在，则会创建一个新文件。</td>
+</tr>
+<tr>
+<td>a+</td>
+<td>打开一个文本文件，允许读写文件。如果文件不存在，则会创建一个新文件。读取会从文件的开头开始，写入则只能是追加模式。</td>
+</tr>
+</tbody></table>
+<p>如果处理的是二进制文件，则需使用下面的访问模式来取代上面的访问模式：</p>
+<ul>
+<li>“rb”, “wb”, “ab”, “rb+”, “r+b”, “wb+”, “w+b”, “ab+”, “a+b”</li>
+</ul>
+<h4 id="关闭文件"><a href="#关闭文件" class="headerlink" title="关闭文件"></a>关闭文件</h4><p>为了关闭文件，请使用 fclose( ) 函数。函数的原型如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int fclose( FILE *fp );</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果成功关闭文件，fclose( ) 函数返回零，如果关闭文件时发生错误，函数返回 EOF。这个函数实际上，会清空缓冲区中的数据，关闭文件，并释放用于该文件的所有内存。EOF 是一个定义在头文件 stdio.h 中的常量。</li>
+</ul>
+<h4 id="写入文件"><a href="#写入文件" class="headerlink" title="写入文件"></a>写入文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int fputc( int c, FILE *fp );//字符</span><br><span class="line"></span><br><span class="line">int fputs( const char *s, FILE *fp );//字符串</span><br><span class="line"></span><br><span class="line"> int fprintf(FILE *fp,const char *format, ...);//字符串</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>函数 fputc() 把参数 c 的字符值写入到 fp 所指向的输出流中。如果写入成功，它会返回写入的字符，如果发生错误，则会返回 EOF。</li>
+<li>函数 fputs() 把字符串 s 写入到 fp 所指向的输出流中。如果写入成功，它会返回一个非负值，如果发生错误，则会返回 EOF。您也可以使用fprintf函数来写把一个字符串写入到文件中。</li>
+</ul>
+<h4 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int fgetc( FILE * fp );//字符</span><br><span class="line">char *fgets( char *buf, int n, FILE *fp );//字符串 遇换行符与EOF结束</span><br><span class="line">int fscanf(FILE *fp, const char *format, ...);//字符串 遇空格结束</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>fgetc() 函数从 fp 所指向的输入文件中读取一个字符。返回值是读取的字符，如果发生错误则返回 EOF。</li>
+<li>函数 fgets() 从 fp 所指向的输入流中读取 n - 1 个字符。它会把读取的字符串复制到缓冲区 buf，并在最后追加一个 null 字符来终止字符串。<br>如果这个函数在读取最后一个字符之前就遇到一个换行符 ‘\n’ 或文件的末尾 EOF，则只会返回读取到的字符，包括换行符。您也可以使用fscanf函数来从文件中读取字符串，但是在遇到第一个空格字符时，它会停止读取。</li>
+</ul>
+<h4 id="定位文件"><a href="#定位文件" class="headerlink" title="定位文件"></a>定位文件</h4><h5 id="fseek函数："><a href="#fseek函数：" class="headerlink" title="fseek函数："></a>fseek函数：</h5><p>能把文件指针移动到文件任何位置，其原型是：int fseek(FILE *fp, long offset, int fromwhere);</p>
+<ul>
+<li>参数解释：第一个参数为要进行定位的文件的指针；第二个参数为定位的偏移量，一个有符号的long类型值，正数表示文件指针向后偏移，负数表示文件指针向前偏移，0 表示不进行偏移；第三个参数表示文件指针从哪个位置开始偏移，有三个值可选，SEEK_SET &amp; SEEK_CUR &amp; SEEK_END，分别表示文件第一个字节（即第零个位置），文件指针当前所指字节（即当前位置）和文件EOF位置。</li>
+<li>返回值：返回 0 表示操作成功，返回非 0 表示操作失败。</li>
+<li>其他注意：该函数不能定位到第一个字节之前的位置，如果尝试这样操作会导致fseek返回 -1，即操作失败，比如这样的代码“j = fseek(fp, -4L, SEEK_SET );”，其中 j 值就是 -1；但是，该函数能定位到EOF位置之后的位置，并且不报错，即使这样是没有意义的，比如这样的代码“j = fseek(fp, 4L, SEEK_END)”，返回值 j 是 0，并且此时 ftell(fp) 返回值是SEEK_END + 4。</li>
+</ul>
+<h5 id="ftell函数："><a href="#ftell函数：" class="headerlink" title="ftell函数："></a>ftell函数：</h5><p>能返回当前文件指针所在的位置（文件的第一个字节所在位置是零），其原型是：long ftell(FILE *fp);</p>
+<ul>
+<li>参数解释：有且仅有一个参数，为一个文件的指针。</li>
+<li>返回值：有符号long类型的正向值，即0~2147483647。</li>
+<li>其他注意：暂无。</li>
+</ul>
+<blockquote>
+<p>实际上，前两个函数对文件指针的定位虽然都很方便，但是它们都有一个局限性，那就是它们能定位的最大字节是依据 long 类型的取值范围决定。比如 fseek(fp, max_pos, SEEK_SET);，它能移动的最大偏移量是 max_pos = 2147483647字节，即1GB，对于大于1GB的文件来说就力不从心了。</p>
+</blockquote>
+<h1 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h1><ul>
+<li><a href="https://www.runoob.com/cprogramming/c-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a></li>
+<li><a href="https://www.cnblogs.com/ryzz/p/9357158.html" target="_blank" rel="noopener">C语言中文件定位函数总结</a></li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>

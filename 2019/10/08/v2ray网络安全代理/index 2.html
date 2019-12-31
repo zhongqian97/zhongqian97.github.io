@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Record what you do and what you think.">
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        v2ray网络安全代理 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#v2ray网络安全代理-book"><span class="toc-text">v2ray网络安全代理:book:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接："><span class="toc-text">参考链接：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意事项"><span class="toc-text">注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7、Caddyfile配置"><span class="toc-text">7、Caddyfile配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、启动Caddy和V2Ray"><span class="toc-text">8、启动Caddy和V2Ray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V2RayN客户端"><span class="toc-text">V2RayN客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#链接"><span class="toc-text">链接</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bbr一键安装脚本"><span class="toc-text">bbr一键安装脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IOS客户端"><span class="toc-text">IOS客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Shadowrocket（小火箭）"><span class="toc-text">Shadowrocket（小火箭）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#混淆为websocket"><span class="toc-text">混淆为websocket</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        v2ray网络安全代理
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2019-10-08 19:28:31</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Shadowrocket" title="Shadowrocket">Shadowrocket</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#bbr" title="bbr">bbr</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#v2ray" title="v2ray">v2ray</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#Caddy" title="Caddy">Caddy</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="v2ray网络安全代理-book"><a href="#v2ray网络安全代理-book" class="headerlink" title="v2ray网络安全代理:book:"></a>v2ray网络安全代理:book:</h1><h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><ul>
+<li><a href="https://www.conum.cn/share/191.html" target="_blank" rel="noopener">基于v2ray的websocket+tls+web实现安全网络代理（一下子可能打不开）</a><br>或者直接复制打开<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.conum.cn/share/191.html</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="7、Caddyfile配置"><a href="#7、Caddyfile配置" class="headerlink" title="7、Caddyfile配置"></a>7、Caddyfile配置</h3><ul>
+<li><p>这个文件位置在/etc/caddy/Caddyfile</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@:~# touch /var/log/caddy/caddy.log</span><br><span class="line">touch: cannot touch &apos;/var/log/caddy/caddy.log&apos;: No such file or directory</span><br><span class="line">root@:~# chown -R root:www-data /var/log/caddy/</span><br><span class="line">chown: cannot access &apos;/var/log/caddy/&apos;: No such file or directory</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解决方案</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /var/log/caddy/</span><br></pre></td></tr></table></figure>
+
+<h3 id="8、启动Caddy和V2Ray"><a href="#8、启动Caddy和V2Ray" class="headerlink" title="8、启动Caddy和V2Ray"></a>8、启动Caddy和V2Ray</h3><ul>
+<li><p>如果Caddy启动失败时，除了你的Caddyfile有问题之外，还有下面这个解决方案。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">caddy -conf /etc/caddy/Caddyfile &amp; </span><br><span class="line">disown %1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第一句代码就是直接使用caddy　+　配置文件　＆　这个后台运行</p>
+</li>
+<li><p>第二句是直接释放权限给系统。</p>
+</li>
+<li><p>关闭语句如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep caddy</span><br><span class="line">kill 进程ID号码</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="V2RayN客户端"><a href="#V2RayN客户端" class="headerlink" title="V2RayN客户端"></a>V2RayN客户端</h3><ul>
+<li>这个客户端是没有v2ray-core的，需要在使用时安装或者提前安装。<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4></li>
+<li><a href="https://github.com/v2ray/v2ray-core/releases" target="_blank" rel="noopener">v2ray-core传送门</a></li>
+<li><a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">v2rayN传送门</a></li>
+</ul>
+<h3 id="bbr一键安装脚本"><a href="#bbr一键安装脚本" class="headerlink" title="bbr一键安装脚本"></a>bbr一键安装脚本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh</span><br></pre></td></tr></table></figure>
+
+<h3 id="IOS客户端"><a href="#IOS客户端" class="headerlink" title="IOS客户端"></a>IOS客户端</h3><ul>
+<li>除了参考链接推荐那几个，还有一个可以使用。<h4 id="Shadowrocket（小火箭）"><a href="#Shadowrocket（小火箭）" class="headerlink" title="Shadowrocket（小火箭）"></a>Shadowrocket（小火箭）</h4></li>
+<li>Vmess KCP注意不支持。</li>
+<li>算法你随意（我的aes-128-cfb）。</li>
+<li>打开TLS。</li>
+<li>关闭允许不安全。<h5 id="混淆为websocket"><a href="#混淆为websocket" class="headerlink" title="混淆为websocket"></a>混淆为websocket</h5></li>
+<li>路径为 /v2ray</li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
