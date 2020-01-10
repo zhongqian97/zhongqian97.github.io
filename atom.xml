@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mastermind.ink/"/>
-  <updated>2019-12-31T19:25:44.572Z</updated>
+  <updated>2020-01-10T16:52:46.025Z</updated>
   <id>http://mastermind.ink/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>科学上网——PAC文件配置</title>
+    <link href="http://mastermind.ink/2020/01/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E2%80%94%E2%80%94PAC%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/"/>
+    <id>http://mastermind.ink/2020/01/11/科学上网——PAC文件配置/</id>
+    <published>2020-01-10T16:39:21.000Z</published>
+    <updated>2020-01-10T16:52:46.025Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>黑苹果的一些总结与配置</title>
@@ -526,31 +549,6 @@
       <category term="v2ray" scheme="http://mastermind.ink/tags/v2ray/"/>
     
       <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用docker compose部署miniflux</title>
-    <link href="http://mastermind.ink/2019/10/08/%E4%BD%BF%E7%94%A8docker-compose%E9%83%A8%E7%BD%B2miniflux/"/>
-    <id>http://mastermind.ink/2019/10/08/使用docker-compose部署miniflux/</id>
-    <published>2019-10-08T11:22:26.000Z</published>
-    <updated>2019-10-08T11:40:14.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="miniflux" scheme="http://mastermind.ink/tags/miniflux/"/>
     
   </entry>
   
