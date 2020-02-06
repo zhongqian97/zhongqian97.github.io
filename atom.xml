@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mastermind.ink/"/>
-  <updated>2020-01-10T18:15:09.279Z</updated>
+  <updated>2020-02-06T14:57:17.935Z</updated>
   <id>http://mastermind.ink/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Springboot前后端完全分离</title>
+    <link href="http://mastermind.ink/2020/02/06/Springboot%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%8C%E5%85%A8%E5%88%86%E7%A6%BB/"/>
+    <id>http://mastermind.ink/2020/02/06/Springboot前后端完全分离/</id>
+    <published>2020-02-06T13:50:04.000Z</published>
+    <updated>2020-02-06T14:57:17.935Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>科学上网——PAC文件配置</title>
@@ -518,37 +541,6 @@
       <category term="docker-compose" scheme="http://mastermind.ink/tags/docker-compose/"/>
     
       <category term="docker" scheme="http://mastermind.ink/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>v2ray网络安全代理</title>
-    <link href="http://mastermind.ink/2019/10/08/v2ray%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%BB%A3%E7%90%86/"/>
-    <id>http://mastermind.ink/2019/10/08/v2ray网络安全代理/</id>
-    <published>2019-10-08T11:28:31.000Z</published>
-    <updated>2019-10-13T15:21:35.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Shadowrocket" scheme="http://mastermind.ink/tags/Shadowrocket/"/>
-    
-      <category term="bbr" scheme="http://mastermind.ink/tags/bbr/"/>
-    
-      <category term="v2ray" scheme="http://mastermind.ink/tags/v2ray/"/>
-    
-      <category term="Caddy" scheme="http://mastermind.ink/tags/Caddy/"/>
     
   </entry>
   
