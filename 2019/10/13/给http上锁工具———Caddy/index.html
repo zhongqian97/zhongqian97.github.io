@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Record what you do and what you think.">
-    <meta name="keyword" content>
+    <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <title>
@@ -16,13 +16,17 @@
     </title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/aircloud.css">
-    <link rel="stylesheet" href="/css/gitment.css">
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
     <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
     <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
     <!-- ga & ba script hoook -->
     <script></script>
-</head>
+<meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
 
@@ -89,7 +93,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#简介"><span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#http是什么？"><span class="toc-text">http是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#https是什么？"><span class="toc-text">https是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为何使用https？"><span class="toc-text">为何使用https？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#回到最后，Caddy是什么？"><span class="toc-text">回到最后，Caddy是什么？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装教程"><span class="toc-text">安装教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装与配置"><span class="toc-text">安装与配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置Caddyfile（重要！！！）"><span class="toc-text">设置Caddyfile（重要！！！）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动-修改配置后重新第一次启动！"><span class="toc-text">启动(修改配置后重新第一次启动！)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结语"><span class="toc-text">结语</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#http%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">http是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#https%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">https是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BD%95%E4%BD%BF%E7%94%A8https%EF%BC%9F"><span class="toc-text">为何使用https？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9E%E5%88%B0%E6%9C%80%E5%90%8E%EF%BC%8CCaddy%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">回到最后，Caddy是什么？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B"><span class="toc-text">安装教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="toc-text">安装与配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AECaddyfile%EF%BC%88%E9%87%8D%E8%A6%81%EF%BC%81%EF%BC%81%EF%BC%81%EF%BC%89"><span class="toc-text">设置Caddyfile（重要！！！）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8-%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E5%90%8E%E9%87%8D%E6%96%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%AF%E5%8A%A8%EF%BC%81"><span class="toc-text">启动(修改配置后重新第一次启动！)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol>
 </div>
     
 </div>
@@ -139,12 +143,12 @@
     </div>
     <div class="post-content no-indent">
         <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h2 id="http是什么？"><a href="#http是什么？" class="headerlink" title="http是什么？"></a>http是什么？</h2><ul>
-<li><a href="https://www.runoob.com/http/http-tutorial.html" target="_blank" rel="noopener">菜鸟教程传送门</a><blockquote>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/http/http-tutorial.html">菜鸟教程传送门</a><blockquote>
 <p>HTTP是一个基于TCP/IP通信协议</p>
 </blockquote>
 </li>
 <li>因为http在网络上传输是明文形式的，任何抓到这个传输文件的人都能看到这个包的内容，因此有了加密版http-https<h2 id="https是什么？"><a href="#https是什么？" class="headerlink" title="https是什么？"></a>https是什么？</h2></li>
-<li><a href="https://baike.baidu.com/item/https/285356?fr=aladdin" target="_blank" rel="noopener">百度百科传送门</a><blockquote>
+<li><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/https/285356?fr=aladdin">百度百科传送门</a><blockquote>
 <p>HTTPS（全称：Hyper Text Transfer Protocol over Secure Socket Layer 或 Hypertext Transfer Protocol Secure，超文本传输安全协议），是以安全为目标的HTTP通道，简单讲是HTTP的安全版。即HTTP下加入SSL层，HTTPS的安全基础是SSL，因此加密的详细内容就需要SSL。 </p>
 </blockquote>
 <h2 id="为何使用https？"><a href="#为何使用https？" class="headerlink" title="为何使用https？"></a>为何使用https？</h2></li>
@@ -155,44 +159,22 @@
 </blockquote>
 </li>
 <li>我的定义：Caddy就是一个管理https的自动化工具。<h1 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h1></li>
-<li><a href="https://dengxiaolong.com/caddy/zh/" target="_blank" rel="noopener">Caddy中文文档</a></li>
-<li><a href="https://www.conum.cn/share/191.html" target="_blank" rel="noopener">智在于行’S BLOG</a></li>
+<li><a target="_blank" rel="noopener" href="https://dengxiaolong.com/caddy/zh/">Caddy中文文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.conum.cn/share/191.html">智在于行’S BLOG</a></li>
 </ul>
 <h2 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h2><ul>
-<li><p>安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://getcaddy.com | bash -s personal</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/caddy</span><br><span class="line">touch /etc/caddy/Caddyfile</span><br><span class="line">chown -R root:www-data /etc/caddy</span><br><span class="line">mkdir /etc/ssl/caddy</span><br><span class="line">chown -R www-data:root /etc/ssl/caddy</span><br><span class="line">chmod 0770 /etc/ssl/caddy</span><br><span class="line">mkdir /var/log/caddy/</span><br><span class="line">touch /var/log/caddy/caddy.log</span><br><span class="line">chown -R root:www-data /var/log/caddy/</span><br><span class="line">chmod 777 /var/log/caddy/caddy.log</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将Caddy配置成一个服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 从 github 下载 systemd 配置文件 sudo systemctl daemon-reload # 重新加载 systemd 配置</span><br><span class="line">curl -s https://raw.githubusercontent.com/mholt/caddy/master/dist/init/linux-systemd/caddy.service -o /etc/systemd/system/caddy.service</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>打开caddy.service配置文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 打开caddy.service</span><br><span class="line">nano /etc/systemd/system/caddy.service</span><br><span class="line"># vim /etc/systemd/system/caddy.service</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>以下三项配置选项的注释符#删除，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CapabilityBoundingSet=CAP_NET_BIND_SERVICE</span><br><span class="line">AmbientCapabilities=CAP_NET_BIND_SERVICE</span><br><span class="line">NoNewPrivileges=true</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置启动</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable caddy.service # 设置 caddy 服务自启动</span><br><span class="line">systemctl status caddy.service # 查看 caddy 状态</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="设置Caddyfile（重要！！！）"><a href="#设置Caddyfile（重要！！！）" class="headerlink" title="设置Caddyfile（重要！！！）"></a>设置Caddyfile（重要！！！）</h2><ul>
-<li><p><a href="https://dengxiaolong.com/caddy/zh/caddyfile.html" target="_blank" rel="noopener">先看入门</a></p>
-</li>
-<li><p><a href="https://dengxiaolong.com/caddy/zh/" target="_blank" rel="noopener">再看文档</a></p>
-<h2 id="启动-修改配置后重新第一次启动！"><a href="#启动-修改配置后重新第一次启动！" class="headerlink" title="启动(修改配置后重新第一次启动！)"></a>启动(修改配置后重新第一次启动！)</h2></li>
-<li><p>第一次启动</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caddy -conf /etc/caddy/Caddyfile</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>之后启动直接用以下方式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start caddy # 打开</span><br><span class="line">systemctl status caddy # 查看状态</span><br><span class="line">systemctl stop caddy # 停止</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><ul>
+<li>安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;getcaddy.com | bash -s personal</span><br></pre></td></tr></table></figure></li>
+<li>配置<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mkdir &#x2F;etc&#x2F;caddy</span><br><span class="line">touch &#x2F;etc&#x2F;caddy&#x2F;Caddyfile</span><br><span class="line">chown -R root:www-data &#x2F;etc&#x2F;caddy</span><br><span class="line">mkdir &#x2F;etc&#x2F;ssl&#x2F;caddy</span><br><span class="line">chown -R www-data:root &#x2F;etc&#x2F;ssl&#x2F;caddy</span><br><span class="line">chmod 0770 &#x2F;etc&#x2F;ssl&#x2F;caddy</span><br><span class="line">mkdir &#x2F;var&#x2F;log&#x2F;caddy&#x2F;</span><br><span class="line">touch &#x2F;var&#x2F;log&#x2F;caddy&#x2F;caddy.log</span><br><span class="line">chown -R root:www-data &#x2F;var&#x2F;log&#x2F;caddy&#x2F;</span><br><span class="line">chmod 777 &#x2F;var&#x2F;log&#x2F;caddy&#x2F;caddy.log </span><br></pre></td></tr></table></figure></li>
+<li>将Caddy配置成一个服务<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 从 github 下载 systemd 配置文件 sudo systemctl daemon-reload # 重新加载 systemd 配置</span><br><span class="line">curl -s https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;mholt&#x2F;caddy&#x2F;master&#x2F;dist&#x2F;init&#x2F;linux-systemd&#x2F;caddy.service -o &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;caddy.service</span><br></pre></td></tr></table></figure></li>
+<li>打开caddy.service配置文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 打开caddy.service</span><br><span class="line">nano &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;caddy.service</span><br><span class="line"># vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;caddy.service</span><br></pre></td></tr></table></figure></li>
+<li>以下三项配置选项的注释符#删除，如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CapabilityBoundingSet&#x3D;CAP_NET_BIND_SERVICE</span><br><span class="line">AmbientCapabilities&#x3D;CAP_NET_BIND_SERVICE</span><br><span class="line">NoNewPrivileges&#x3D;true</span><br></pre></td></tr></table></figure></li>
+<li>设置启动<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable caddy.service # 设置 caddy 服务自启动</span><br><span class="line">systemctl status caddy.service # 查看 caddy 状态</span><br></pre></td></tr></table></figure>
+<h2 id="设置Caddyfile（重要！！！）"><a href="#设置Caddyfile（重要！！！）" class="headerlink" title="设置Caddyfile（重要！！！）"></a>设置Caddyfile（重要！！！）</h2></li>
+<li><a target="_blank" rel="noopener" href="https://dengxiaolong.com/caddy/zh/caddyfile.html">先看入门</a></li>
+<li><a target="_blank" rel="noopener" href="https://dengxiaolong.com/caddy/zh/">再看文档</a><h2 id="启动-修改配置后重新第一次启动！"><a href="#启动-修改配置后重新第一次启动！" class="headerlink" title="启动(修改配置后重新第一次启动！)"></a>启动(修改配置后重新第一次启动！)</h2></li>
+<li>第一次启动<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caddy -conf &#x2F;etc&#x2F;caddy&#x2F;Caddyfile</span><br></pre></td></tr></table></figure></li>
+<li>之后启动直接用以下方式：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start caddy # 打开</span><br><span class="line">systemctl status caddy # 查看状态</span><br><span class="line">systemctl stop caddy # 停止</span><br></pre></td></tr></table></figure>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1></li>
 <li>学习完这个，加上后面的frp反向代理结合有着更多的玩法哦！</li>
 <li>Linux不懂的建议先学习如何使用Linux（最少nano要会吧）</li>
 </ul>
@@ -259,7 +241,7 @@
         <span id="busuanzi_container_site_uv">
             <span id="busuanzi_value_site_uv"></span>UV
         </span>
-        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
 </footer>
 
 
@@ -274,7 +256,9 @@
     window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
 <script src="/js/index.js"></script>
+
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
