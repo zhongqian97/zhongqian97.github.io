@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mastermind.ink/"/>
-  <updated>2021-01-13T02:51:13.999Z</updated>
+  <updated>2021-02-16T14:34:53.010Z</updated>
   <id>https://mastermind.ink/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的AllInOne服务器之外部代理服务器篇</title>
+    <link href="https://mastermind.ink/2021/02/16/%E6%88%91%E7%9A%84AllInOne%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%8B%E5%A4%96%E9%83%A8%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
+    <id>https://mastermind.ink/2021/02/16/我的AllInOne服务器之外部代理服务器篇/</id>
+    <published>2021-02-16T14:09:43.000Z</published>
+    <updated>2021-02-16T14:34:53.010Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="AllInOne服务器" scheme="https://mastermind.ink/tags/AllInOne%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>服务器日常跑实验命令</title>
@@ -506,31 +531,6 @@
       <category term="feeder" scheme="https://mastermind.ink/tags/feeder/"/>
     
       <category term="unread" scheme="https://mastermind.ink/tags/unread/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>考研英语二真题2010-2019</title>
-    <link href="https://mastermind.ink/2019/10/10/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%BA%8C%E7%9C%9F%E9%A2%982010-2019/"/>
-    <id>https://mastermind.ink/2019/10/10/考研英语二真题2010-2019/</id>
-    <published>2019-10-10T12:43:03.000Z</published>
-    <updated>2019-10-10T12:44:55.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="考研英语二" scheme="https://mastermind.ink/tags/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%BA%8C/"/>
     
   </entry>
   

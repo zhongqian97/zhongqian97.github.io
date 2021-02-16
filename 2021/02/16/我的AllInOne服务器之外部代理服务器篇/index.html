@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Record what you do and what you think.">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        我的AllInOne服务器之外部代理服务器篇 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E7%AF%87%E5%94%A0%E5%94%A0%E5%97%91"><span class="toc-text">开篇唠唠嗑</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#bbr"><span class="toc-text">bbr</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#install-v2ray"><span class="toc-text">install v2ray</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#install-caddy"><span class="toc-text">install caddy</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#nano-etc-caddy-Caddyfile"><span class="toc-text">nano &#x2F;etc&#x2F;caddy&#x2F;Caddyfile</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#acme-sh-aliyun"><span class="toc-text">acme.sh(aliyun)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#frp"><span class="toc-text">frp</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#frps-ini"><span class="toc-text">frps.ini</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#frpc-ini"><span class="toc-text">frpc.ini</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#bark"><span class="toc-text">bark</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#crontab"><span class="toc-text">crontab</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ServerIsRunning-py"><span class="toc-text">ServerIsRunning.py</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        我的AllInOne服务器之外部代理服务器篇
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2021-02-16 22:09:43</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#AllInOne服务器" title="AllInOne服务器">AllInOne服务器</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="开篇唠唠嗑"><a href="#开篇唠唠嗑" class="headerlink" title="开篇唠唠嗑"></a>开篇唠唠嗑</h1><p>最近有空就在谋划着AllInOne这个事情，讲道理这个概念我也是知道不久，但刚好符合我的需求，私密使用docker搭建wiz，nextcloud，gitlab，bark，aria2等等，这应该算是我的兴趣爱好吧。。。下面的这些工具都是非常简单的说明了我怎么用，并没有教程啥的，所以如果想学的话我可以说下这些工具的作用，但你自己要找下教程去学。</p>
+<ul>
+<li>第一个是bbr，这个是一个让境外服务器的连接体验变好的工具，如果你的服务器在国外可以去使用这个。我呢是拿它优化一下网络，但别指望它能怎样，比不优化要好一些，我用的是bbr plus，不同服务器最好都测试一下其他的方法，万一有更好用的呢？</li>
+<li>第二个是v2ray，百度一下吧。</li>
+<li>第三个是caddy，让http加个s。这个挺好用的，配置也简单。证书到期可以自动“续费”。我是拿来外部http连接上个s。比如说bark程序加个s。</li>
+<li>第四个是acme.sh，跟第三个差不多，不过我是拿来内部frp连接时候加一个s。</li>
+<li>第五个是frp，内网穿透专用，不熟悉这个概念百度一下。AllInOne灵魂，没有这个的AllInOne就是一个Nas + 软路由。</li>
+<li>第六个bark，就是一个iPhone上的信息提醒软件，通过http的get方法可以实时发送信息到iphone上，配合RSS可以实时检测你想要的信息流。自定义RSS还可以拿来抢某些优惠券等等。安卓的用户可以使用Server酱，我也在用。我目前拿这个来每小时检测我的内网AllInOne服务器是否正常使用。一旦断网或者死机了能提醒一下。</li>
+<li>第七个就是Linux上的crontab，定时运行程序，配合bark做监控服务器是否正常使用。</li>
+</ul>
+<h1 id="bbr"><a href="#bbr" class="headerlink" title="bbr"></a>bbr</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate &quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;chiakge&#x2F;Linux-NetSpeed&#x2F;master&#x2F;tcp.sh&quot;</span><br><span class="line">chmod +x tcp.sh</span><br><span class="line">.&#x2F;tcp.sh</span><br></pre></td></tr></table></figure>
+<h1 id="install-v2ray"><a href="#install-v2ray" class="headerlink" title="install v2ray"></a>install v2ray</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -s -L https:&#x2F;&#x2F;git.io&#x2F;v2ray.sh)</span><br></pre></td></tr></table></figure>
+<h1 id="install-caddy"><a href="#install-caddy" class="headerlink" title="install caddy"></a>install caddy</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https</span><br><span class="line">curl -1sLf &#39;https:&#x2F;&#x2F;dl.cloudsmith.io&#x2F;public&#x2F;caddy&#x2F;stable&#x2F;cfg&#x2F;gpg&#x2F;gpg.155B6D79CA56EA34.key&#39; | sudo apt-key add -</span><br><span class="line">curl -1sLf &#39;https:&#x2F;&#x2F;dl.cloudsmith.io&#x2F;public&#x2F;caddy&#x2F;stable&#x2F;cfg&#x2F;setup&#x2F;config.deb.txt?distro&#x3D;debian&amp;version&#x3D;any-version&#39; | tee -a &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;caddy-stable.list</span><br><span class="line">apt update &amp;&amp; apt install -y caddy</span><br></pre></td></tr></table></figure>
+<h2 id="nano-etc-caddy-Caddyfile"><a href="#nano-etc-caddy-Caddyfile" class="headerlink" title="nano /etc/caddy/Caddyfile"></a>nano /etc/caddy/Caddyfile</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    email root@example.com</span><br><span class="line">&#125;</span><br><span class="line">example.com &#123;</span><br><span class="line">  reverse_proxy 127.0.0.1:80</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="acme-sh-aliyun"><a href="#acme-sh-aliyun" class="headerlink" title="acme.sh(aliyun)"></a>acme.sh(aliyun)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">curl  https:&#x2F;&#x2F;get.acme.sh | sh</span><br><span class="line">export Ali_Key&#x3D;&quot;&quot;</span><br><span class="line">export Ali_Secret&#x3D;&quot;&quot;</span><br><span class="line">.acme.sh&#x2F;acme.sh --issue --dns dns_ali -d example.com</span><br></pre></td></tr></table></figure>
+<h1 id="frp"><a href="#frp" class="headerlink" title="frp"></a>frp</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># https:&#x2F;&#x2F;github.com&#x2F;fatedier&#x2F;frp&#x2F;releases </span><br><span class="line"># bash shell</span><br><span class="line"># Server</span><br><span class="line">.&#x2F;frps -c .&#x2F;frps.ini &amp;</span><br><span class="line">disown %1</span><br><span class="line"># Client</span><br><span class="line">.&#x2F;frpc -c .&#x2F;frpc.ini &amp;</span><br><span class="line">disown %1</span><br></pre></td></tr></table></figure>
+<h2 id="frps-ini"><a href="#frps-ini" class="headerlink" title="frps.ini"></a>frps.ini</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">bind_port &#x3D;7000</span><br><span class="line">bind_udp_port &#x3D;7000</span><br><span class="line">tls_only &#x3D; true</span><br><span class="line">tls_enable &#x3D; true</span><br><span class="line">tls_cert_file &#x3D; &#x2F;root&#x2F;.acme.sh&#x2F;example.com&#x2F;example.com.cer</span><br><span class="line">tls_key_file &#x3D; &#x2F;root&#x2F;.acme.sh&#x2F;example.com&#x2F;example.com.key</span><br><span class="line">tls_trusted_ca_file &#x3D; &#x2F;root&#x2F;.acme.sh&#x2F;example.com&#x2F;ca.cer</span><br></pre></td></tr></table></figure>
+<h2 id="frpc-ini"><a href="#frpc-ini" class="headerlink" title="frpc.ini"></a>frpc.ini</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr &#x3D; example.com</span><br><span class="line">server_port &#x3D; 7000</span><br><span class="line">tls_enable &#x3D; true</span><br><span class="line">tls_cert_file &#x3D; .&#x2F;example.com&#x2F;example.com.cer</span><br><span class="line">tls_key_file &#x3D; .&#x2F;example.com&#x2F;example.com.key</span><br><span class="line">tls_trusted_ca_file &#x3D; .&#x2F;example.com&#x2F;ca.cer</span><br><span class="line"></span><br><span class="line">[http]</span><br><span class="line">type &#x3D; tcp</span><br><span class="line">local_ip &#x3D; 127.0.0.1</span><br><span class="line">local_port &#x3D; 80</span><br><span class="line">remote_port &#x3D; 8080</span><br></pre></td></tr></table></figure>
+<h1 id="bark"><a href="#bark" class="headerlink" title="bark"></a>bark</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># install docker</span><br><span class="line">curl -fsSL get.docker.com | sh</span><br><span class="line">docker run -dt --name bark -p 8080:8080 finab&#x2F;bark-server</span><br></pre></td></tr></table></figure>
+<h1 id="crontab"><a href="#crontab" class="headerlink" title="crontab"></a>crontab</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10 * * * * &#x2F;usr&#x2F;bin&#x2F;python3  &#x2F;root&#x2F;ServerIsRunning.py</span><br></pre></td></tr></table></figure>
+<h2 id="ServerIsRunning-py"><a href="#ServerIsRunning-py" class="headerlink" title="ServerIsRunning.py"></a>ServerIsRunning.py</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests, time</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">send</span>():</span></span><br><span class="line">    my_keys = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    title = <span class="string">&#x27;Hongkong Server is destroyed!&#x27;</span></span><br><span class="line">    body = <span class="string">&#x27;Hongkong Server is destroyed!&#x27;</span></span><br><span class="line">    msg_url = <span class="string">&quot;https://bark.example.com/&#123;&#125;/&#123;&#125;/&#123;&#125;?sound=anticipate&quot;</span>.<span class="built_in">format</span>(my_keys, title, body)</span><br><span class="line">    requests.get(msg_url)</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    r = requests.get(<span class="string">&#x27;https://example.com/&#x27;</span>)</span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    <span class="keyword">if</span> (r.status_code != <span class="number">200</span>):</span><br><span class="line">        send()</span><br><span class="line"><span class="keyword">except</span> Exception:</span><br><span class="line">    send()</span><br></pre></td></tr></table></figure>
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
