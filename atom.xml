@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mastermind.ink/"/>
-  <updated>2021-02-16T14:34:53.010Z</updated>
+  <updated>2021-04-26T08:29:30.826Z</updated>
   <id>https://mastermind.ink/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谷歌随机引擎</title>
+    <link href="https://mastermind.ink/2021/04/26/%E8%B0%B7%E6%AD%8C%E9%9A%8F%E6%9C%BA%E5%BC%95%E6%93%8E/"/>
+    <id>https://mastermind.ink/2021/04/26/谷歌随机引擎/</id>
+    <published>2021-04-26T08:13:21.000Z</published>
+    <updated>2021-04-26T08:29:30.826Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>我的AllInOne服务器之外部代理服务器篇</title>
@@ -492,45 +515,6 @@
       <category term="INTJ" scheme="https://mastermind.ink/tags/INTJ/"/>
     
       <category term="心理学" scheme="https://mastermind.ink/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>RSS是什么？能干嘛？</title>
-    <link href="https://mastermind.ink/2019/10/11/RSS%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E5%B9%B2%E5%98%9B%EF%BC%9F/"/>
-    <id>https://mastermind.ink/2019/10/11/RSS是什么？能干嘛？/</id>
-    <published>2019-10-11T04:14:05.000Z</published>
-    <updated>2019-10-11T08:23:40.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="RSS" scheme="https://mastermind.ink/tags/RSS/"/>
-    
-      <category term="ttrss" scheme="https://mastermind.ink/tags/ttrss/"/>
-    
-      <category term="feed43" scheme="https://mastermind.ink/tags/feed43/"/>
-    
-      <category term="rsshub" scheme="https://mastermind.ink/tags/rsshub/"/>
-    
-      <category term="miniflux" scheme="https://mastermind.ink/tags/miniflux/"/>
-    
-      <category term="inoreader" scheme="https://mastermind.ink/tags/inoreader/"/>
-    
-      <category term="feeder" scheme="https://mastermind.ink/tags/feeder/"/>
-    
-      <category term="unread" scheme="https://mastermind.ink/tags/unread/"/>
     
   </entry>
   
