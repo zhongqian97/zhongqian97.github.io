@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mastermind.ink/"/>
-  <updated>2021-04-26T08:29:30.826Z</updated>
+  <updated>2021-10-29T10:01:43.323Z</updated>
   <id>https://mastermind.ink/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客使用教程</title>
+    <link href="https://mastermind.ink/2021/10/29/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>https://mastermind.ink/2021/10/29/博客使用教程/</id>
+    <published>2021-10-29T09:15:10.000Z</published>
+    <updated>2021-10-29T10:01:43.323Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="blog" scheme="https://mastermind.ink/tags/blog/"/>
+    
+  </entry>
   
   <entry>
     <title>谷歌随机引擎</title>
@@ -486,35 +511,6 @@
     
     
       <category term="Caddy" scheme="https://mastermind.ink/tags/Caddy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MBTI职业性格测试</title>
-    <link href="https://mastermind.ink/2019/10/12/MBTI%E8%81%8C%E4%B8%9A%E6%80%A7%E6%A0%BC%E6%B5%8B%E8%AF%95/"/>
-    <id>https://mastermind.ink/2019/10/12/MBTI职业性格测试/</id>
-    <published>2019-10-12T13:50:03.000Z</published>
-    <updated>2019-10-12T14:13:55.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="MBTI" scheme="https://mastermind.ink/tags/MBTI/"/>
-    
-      <category term="INTJ" scheme="https://mastermind.ink/tags/INTJ/"/>
-    
-      <category term="心理学" scheme="https://mastermind.ink/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
