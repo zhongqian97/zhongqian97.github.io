@@ -42,6 +42,31 @@
   </entry>
   
   <entry>
+    <title>触发器的使用</title>
+    <link href="https://mastermind.ink/2021/10/29/%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://mastermind.ink/2021/10/29/触发器的使用/</id>
+    <published>2021-10-29T07:59:16.000Z</published>
+    <updated>2021-10-30T12:55:38.558Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="UE4蓝图" scheme="https://mastermind.ink/tags/UE4%E8%93%9D%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>谷歌随机引擎</title>
     <link href="https://mastermind.ink/2021/04/26/%E8%B0%B7%E6%AD%8C%E9%9A%8F%E6%9C%BA%E5%BC%95%E6%93%8E/"/>
     <id>https://mastermind.ink/2021/04/26/谷歌随机引擎/</id>
@@ -486,31 +511,6 @@
       <category term="markdown" scheme="https://mastermind.ink/tags/markdown/"/>
     
       <category term="boostnote" scheme="https://mastermind.ink/tags/boostnote/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>给http上锁工具———Caddy</title>
-    <link href="https://mastermind.ink/2019/10/13/%E7%BB%99http%E4%B8%8A%E9%94%81%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94%E2%80%94Caddy/"/>
-    <id>https://mastermind.ink/2019/10/13/给http上锁工具———Caddy/</id>
-    <published>2019-10-13T15:18:56.000Z</published>
-    <updated>2019-10-13T16:02:30.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Caddy" scheme="https://mastermind.ink/tags/Caddy/"/>
     
   </entry>
   

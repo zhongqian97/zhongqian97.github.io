@@ -11,7 +11,7 @@
 
     <title>
         
-        shadowsocks - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        触发器的使用 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
         
     </title>
 
@@ -93,7 +93,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E8%A1%8C%E5%AE%89%E8%A3%85Shadowsocks"><span class="toc-text">三行安装Shadowsocks</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%9A"><span class="toc-text">注意事项：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="toc-text">代码如下：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IOS%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-text">IOS客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BE%8E%E5%8C%BAAPPID%E6%B3%A8%E5%86%8C%E6%95%99%E7%A8%8B"><span class="toc-text">美区APPID注册教程</span></a></li></ol></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">参考资料</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%93%9D%E5%9B%BE%E7%B1%BB"><span class="toc-text">蓝图类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E5%85%B3%E5%8D%A1%E8%93%9D%E5%9B%BE%E6%9D%A5%E5%BC%80%E5%85%B3%E9%97%A8"><span class="toc-text">通过关卡蓝图来开关门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text">思路</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E8%87%AA%E5%AE%9A%E4%B9%89%E8%93%9D%E5%9B%BE%E7%B1%BB%E6%9D%A5%E5%AE%9E%E7%8E%B0%E6%8C%89%E9%94%AEE%E5%BC%80%E5%85%B3%E9%97%A8"><span class="toc-text">通过自定义蓝图类来实现按键E开关门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="toc-text">思路</span></a></li></ol></li></ol></li></ol>
 </div>
     
 </div>
@@ -124,21 +124,15 @@
 
 <div class="post-container">
     <div class="post-title">
-        shadowsocks
+        触发器的使用
     </div>
 
     <div class="post-meta">
-        <span class="attr">Post：<span>2019-10-08 19:14:00</span></span>
+        <span class="attr">Post：<span>2021-10-29 15:59:16</span></span>
         
         <span class="attr">Tags：/
         
-        <a class="tag" href="/tags/#Shadowrocket" title="Shadowrocket">Shadowrocket</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#Shadowsocks" title="Shadowsocks">Shadowsocks</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#美区APPID" title="美区APPID">美区APPID</a>
+        <a class="tag" href="/tags/#UE4蓝图" title="UE4蓝图">UE4蓝图</a>
         <span>/</span>
         
         
@@ -148,15 +142,23 @@
 </span>
     </div>
     <div class="post-content no-indent">
-        <h1 id="三行安装Shadowsocks"><a href="#三行安装Shadowsocks" class="headerlink" title="三行安装Shadowsocks"></a>三行安装Shadowsocks</h1><h2 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h2><ul>
-<li>截止2019.10.8号，非常容易被封。请谨慎使用。<h2 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks.sh https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;teddysun&#x2F;shadowsocks_install&#x2F;master&#x2F;shadowsocks.sh</span><br><span class="line"></span><br><span class="line">chmod +x shadowsocks.sh</span><br><span class="line"></span><br><span class="line">.&#x2F;shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log</span><br></pre></td></tr></table></figure>
-<h3 id="IOS客户端"><a href="#IOS客户端" class="headerlink" title="IOS客户端"></a>IOS客户端</h3></li>
-<li>最好使用小火箭Shadowrocket 有些软件经测试只能使用小火箭安全代理，其他都用不了。</li>
-<li>小火箭安装在美版APP Store。</li>
+        <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV164411Y732">【虚幻4】UE4初学者系列教程合集-全中文新手入门教程</a></li>
 </ul>
-<h4 id="美区APPID注册教程"><a href="#美区APPID注册教程" class="headerlink" title="美区APPID注册教程"></a>美区APPID注册教程</h4><ul>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/36574047">传送门</a></li>
-<li>某宝买美区gift card充值。（我就是这样购买的。）</li>
+<h1 id="蓝图类"><a href="#蓝图类" class="headerlink" title="蓝图类"></a>蓝图类</h1><h2 id="通过关卡蓝图来开关门"><a href="#通过关卡蓝图来开关门" class="headerlink" title="通过关卡蓝图来开关门"></a>通过关卡蓝图来开关门</h2><p><img src=".%5C%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%5Cimage-20211030203418992.png" alt="image-20211030203418992"></p>
+<p><img src=".%5Cimage-20211030203418992.png" alt="image-20211030203418992"></p>
+<p><img src=".%5C%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%5Cimage-20211030202846671.png" alt="image-20211030202846671"></p>
+<p><img src=".%5Cimage-20211030202846671.png" alt="image-20211030202846671"></p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><ul>
+<li>进入触发器时控制Door这个静态网格体相对旋转，通过时间轴制造一个开门动画。</li>
+<li>时间轴从（0，0）到（0，85），第一个值为秒数，第二个值为图中新建轨道0的输出值。</li>
+</ul>
+<h2 id="通过自定义蓝图类来实现按键E开关门"><a href="#通过自定义蓝图类来实现按键E开关门" class="headerlink" title="通过自定义蓝图类来实现按键E开关门"></a>通过自定义蓝图类来实现按键E开关门</h2><p><img src=".%5C%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%5Cimage-20211030204046375.png" alt="image-20211030204046375"></p>
+<p><img src=".%5Cimage-20211030204046375.png" alt="image-20211030204046375"></p>
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><ul>
+<li>当玩家进入控制器时，触发启动输入；离开控制器，禁用输入</li>
+<li>当启动输入后，通过按下E键，控制Gate</li>
+<li>Flip Flop组件为每一次走流程都走与上一次相反的路径，通过每次按E键都有与上一次不同的效果（按一次E开门，再按一次关门）</li>
 </ul>
 
         
