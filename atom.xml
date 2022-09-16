@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mastermind.ink/"/>
-  <updated>2021-10-29T10:01:43.323Z</updated>
+  <updated>2022-09-16T15:59:34.342Z</updated>
   <id>https://mastermind.ink/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>博客使用教程</title>
-    <link href="https://mastermind.ink/2021/10/29/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
-    <id>https://mastermind.ink/2021/10/29/博客使用教程/</id>
-    <published>2021-10-29T09:15:10.000Z</published>
-    <updated>2021-10-29T10:01:43.323Z</updated>
+    <link href="https://mastermind.ink/2022/09/16/2c8c69a937de415b800d862815a70f0f/"/>
+    <id>https://mastermind.ink/2022/09/16/2c8c69a937de415b800d862815a70f0f/</id>
+    <published>2022-09-16T09:37:39.818Z</published>
+    <updated>2022-09-16T15:59:34.342Z</updated>
     
     <summary type="html">
     
@@ -36,17 +36,15 @@
     </summary>
     
     
-    
-      <category term="blog" scheme="https://mastermind.ink/tags/blog/"/>
     
   </entry>
   
   <entry>
     <title>触发器的使用</title>
-    <link href="https://mastermind.ink/2021/10/29/%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>https://mastermind.ink/2021/10/29/触发器的使用/</id>
-    <published>2021-10-29T07:59:16.000Z</published>
-    <updated>2021-10-30T13:00:57.383Z</updated>
+    <link href="https://mastermind.ink/2022/09/16/9655b77cf21245879bfd47f24c443a5e/"/>
+    <id>https://mastermind.ink/2022/09/16/9655b77cf21245879bfd47f24c443a5e/</id>
+    <published>2022-09-16T09:37:39.815Z</published>
+    <updated>2022-09-16T15:59:34.799Z</updated>
     
     <summary type="html">
     
@@ -62,16 +60,14 @@
     
     
     
-      <category term="UE4蓝图" scheme="https://mastermind.ink/tags/UE4%E8%93%9D%E5%9B%BE/"/>
-    
   </entry>
   
   <entry>
     <title>谷歌随机引擎</title>
-    <link href="https://mastermind.ink/2021/04/26/%E8%B0%B7%E6%AD%8C%E9%9A%8F%E6%9C%BA%E5%BC%95%E6%93%8E/"/>
-    <id>https://mastermind.ink/2021/04/26/谷歌随机引擎/</id>
-    <published>2021-04-26T08:13:21.000Z</published>
-    <updated>2021-04-26T08:29:30.826Z</updated>
+    <link href="https://mastermind.ink/2022/09/16/d46afca1aa2542f5bf0d5694b59d19bf/"/>
+    <id>https://mastermind.ink/2022/09/16/d46afca1aa2542f5bf0d5694b59d19bf/</id>
+    <published>2022-09-16T09:37:39.811Z</published>
+    <updated>2022-09-16T15:59:34.833Z</updated>
     
     <summary type="html">
     
@@ -91,10 +87,10 @@
   
   <entry>
     <title>我的AllInOne服务器之外部代理服务器篇</title>
-    <link href="https://mastermind.ink/2021/02/16/%E6%88%91%E7%9A%84AllInOne%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%8B%E5%A4%96%E9%83%A8%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
-    <id>https://mastermind.ink/2021/02/16/我的AllInOne服务器之外部代理服务器篇/</id>
-    <published>2021-02-16T14:09:43.000Z</published>
-    <updated>2021-02-16T14:34:53.010Z</updated>
+    <link href="https://mastermind.ink/2022/09/16/febc687764f248a5ad30c76ad7b2b6c4/"/>
+    <id>https://mastermind.ink/2022/09/16/febc687764f248a5ad30c76ad7b2b6c4/</id>
+    <published>2022-09-16T09:37:39.808Z</published>
+    <updated>2022-09-16T15:59:34.375Z</updated>
     
     <summary type="html">
     
@@ -109,17 +105,15 @@
     </summary>
     
     
-    
-      <category term="AllInOne服务器" scheme="https://mastermind.ink/tags/AllInOne%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>服务器日常跑实验命令</title>
-    <link href="https://mastermind.ink/2021/01/13/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A5%E5%B8%B8%E8%B7%91%E5%AE%9E%E9%AA%8C%E5%91%BD%E4%BB%A4/"/>
-    <id>https://mastermind.ink/2021/01/13/服务器日常跑实验命令/</id>
-    <published>2021-01-13T02:50:21.000Z</published>
-    <updated>2021-01-13T02:51:13.999Z</updated>
+    <link href="https://mastermind.ink/2022/09/16/6c4a4c54eec147f8b796678e20b9b1e7/"/>
+    <id>https://mastermind.ink/2022/09/16/6c4a4c54eec147f8b796678e20b9b1e7/</id>
+    <published>2022-09-16T09:37:39.804Z</published>
+    <updated>2022-09-16T15:59:34.464Z</updated>
     
     <summary type="html">
     
@@ -138,36 +132,11 @@
   </entry>
   
   <entry>
-    <title>我的MacOS系统软件</title>
-    <link href="https://mastermind.ink/2021/01/12/%E6%88%91%E7%9A%84MacOS%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6/"/>
-    <id>https://mastermind.ink/2021/01/12/我的MacOS系统软件/</id>
-    <published>2021-01-12T02:21:48.000Z</published>
-    <updated>2021-01-13T02:53:40.797Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="MacOS" scheme="https://mastermind.ink/tags/MacOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三年春耕-研究生读书之旅</title>
-    <link href="https://mastermind.ink/2020/08/08/%E4%B8%89%E5%B9%B4%E6%98%A5%E8%80%95-%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BB%E4%B9%A6%E4%B9%8B%E6%97%85/"/>
-    <id>https://mastermind.ink/2020/08/08/三年春耕-研究生读书之旅/</id>
-    <published>2020-08-07T16:24:35.000Z</published>
-    <updated>2020-08-07T16:50:23.000Z</updated>
+    <title>v2ray网络安全代理</title>
+    <link href="https://mastermind.ink/2022/09/16/0977f0c65ea544eab1c23c61fea910a2/"/>
+    <id>https://mastermind.ink/2022/09/16/0977f0c65ea544eab1c23c61fea910a2/</id>
+    <published>2022-09-16T09:37:39.798Z</published>
+    <updated>2022-09-16T15:59:34.139Z</updated>
     
     <summary type="html">
     
@@ -186,36 +155,11 @@
   </entry>
   
   <entry>
-    <title>《剑指offer》笔记及其手撕代码Java</title>
-    <link href="https://mastermind.ink/2020/02/28/%E3%80%8A%E5%89%91%E6%8C%87offer%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%85%B6%E6%89%8B%E6%92%95%E4%BB%A3%E7%A0%81Java/"/>
-    <id>https://mastermind.ink/2020/02/28/《剑指offer》笔记及其手撕代码Java/</id>
-    <published>2020-02-28T07:59:16.000Z</published>
-    <updated>2020-03-05T14:17:01.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="offer" scheme="https://mastermind.ink/tags/offer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Springboot前后端完全分离</title>
-    <link href="https://mastermind.ink/2020/02/06/Springboot%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%8C%E5%85%A8%E5%88%86%E7%A6%BB/"/>
-    <id>https://mastermind.ink/2020/02/06/Springboot前后端完全分离/</id>
-    <published>2020-02-06T13:50:04.000Z</published>
-    <updated>2020-02-06T14:57:17.000Z</updated>
+    <title>给http上锁工具———Caddy</title>
+    <link href="https://mastermind.ink/2022/09/16/258b1f87e0404333988d118172e3ce0c/"/>
+    <id>https://mastermind.ink/2022/09/16/258b1f87e0404333988d118172e3ce0c/</id>
+    <published>2022-09-16T09:37:39.794Z</published>
+    <updated>2022-09-16T15:59:34.515Z</updated>
     
     <summary type="html">
     
@@ -234,11 +178,80 @@
   </entry>
   
   <entry>
-    <title>科学上网——PAC文件配置</title>
-    <link href="https://mastermind.ink/2020/01/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E2%80%94%E2%80%94PAC%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/"/>
-    <id>https://mastermind.ink/2020/01/11/科学上网——PAC文件配置/</id>
-    <published>2020-01-10T16:39:21.000Z</published>
-    <updated>2020-01-10T18:15:09.000Z</updated>
+    <title>MBTI职业性格测试</title>
+    <link href="https://mastermind.ink/2022/09/16/22168dd899484b48b91598a3c2ab0b51/"/>
+    <id>https://mastermind.ink/2022/09/16/22168dd899484b48b91598a3c2ab0b51/</id>
+    <published>2022-09-16T09:37:39.791Z</published>
+    <updated>2022-09-16T15:59:33.968Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>以前的页面</title>
+    <link href="https://mastermind.ink/2022/09/16/1fb96fc6b9d949a09a1df2f28a518489/"/>
+    <id>https://mastermind.ink/2022/09/16/1fb96fc6b9d949a09a1df2f28a518489/</id>
+    <published>2022-09-16T09:37:39.785Z</published>
+    <updated>2022-09-16T15:59:34.276Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>按键精灵-几乎零门槛的办公室自动化工具</title>
+    <link href="https://mastermind.ink/2022/09/16/b9cd429f9a824a9090fde49a643fcca7/"/>
+    <id>https://mastermind.ink/2022/09/16/b9cd429f9a824a9090fde49a643fcca7/</id>
+    <published>2022-09-16T09:37:39.781Z</published>
+    <updated>2022-09-16T15:59:34.433Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>RSS是什么？能干嘛？</title>
+    <link href="https://mastermind.ink/2022/09/16/b82d096d75cf4a7cb1ea690e3d4a130c/"/>
+    <id>https://mastermind.ink/2022/09/16/b82d096d75cf4a7cb1ea690e3d4a130c/</id>
+    <published>2022-09-16T09:37:39.775Z</published>
+    <updated>2022-09-16T15:59:33.989Z</updated>
     
     <summary type="html">
     
@@ -258,10 +271,148 @@
   
   <entry>
     <title>黑苹果的一些总结与配置</title>
-    <link href="https://mastermind.ink/2020/01/01/%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    <id>https://mastermind.ink/2020/01/01/黑苹果的一些总结与配置/</id>
-    <published>2019-12-31T17:41:25.000Z</published>
-    <updated>2019-12-31T19:25:44.000Z</updated>
+    <link href="https://mastermind.ink/2022/09/16/83668dd7dd5b4dc19a347027a429dfd6/"/>
+    <id>https://mastermind.ink/2022/09/16/83668dd7dd5b4dc19a347027a429dfd6/</id>
+    <published>2022-09-16T09:37:39.772Z</published>
+    <updated>2022-09-16T15:59:34.883Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用docker-compose部署miniflux</title>
+    <link href="https://mastermind.ink/2022/09/16/85e5339ae333471b8aeb6dd6e5aa67fe/"/>
+    <id>https://mastermind.ink/2022/09/16/85e5339ae333471b8aeb6dd6e5aa67fe/</id>
+    <published>2022-09-16T09:37:39.768Z</published>
+    <updated>2022-09-16T15:59:34.293Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>shadowsocks</title>
+    <link href="https://mastermind.ink/2022/09/16/637baf7367df44108f34ad11ec841026/"/>
+    <id>https://mastermind.ink/2022/09/16/637baf7367df44108f34ad11ec841026/</id>
+    <published>2022-09-16T09:37:39.762Z</published>
+    <updated>2022-09-16T15:59:34.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Springboot前后端完全分离</title>
+    <link href="https://mastermind.ink/2022/09/16/00dc4c936947437e82a07f4718ba20fd/"/>
+    <id>https://mastermind.ink/2022/09/16/00dc4c936947437e82a07f4718ba20fd/</id>
+    <published>2022-09-16T09:37:39.758Z</published>
+    <updated>2022-09-16T15:59:34.029Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>xkeymacs-sharpkeys完美将Emacs融入Windows的配置方案</title>
+    <link href="https://mastermind.ink/2022/09/16/7eb61a4a7afa46c9a4f014af43c2f8d4/"/>
+    <id>https://mastermind.ink/2022/09/16/7eb61a4a7afa46c9a4f014af43c2f8d4/</id>
+    <published>2022-09-16T09:37:39.755Z</published>
+    <updated>2022-09-16T15:59:34.178Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>anki-记忆卡神器简介篇</title>
+    <link href="https://mastermind.ink/2022/09/16/c073a3b904674313bb54dae457861beb/"/>
+    <id>https://mastermind.ink/2022/09/16/c073a3b904674313bb54dae457861beb/</id>
+    <published>2022-09-16T09:37:39.742Z</published>
+    <updated>2022-09-16T15:59:34.051Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云应用服务器搭建安全代理</title>
+    <link href="https://mastermind.ink/2022/09/16/e00702beac014dbc9f40b73c3952cbb4/"/>
+    <id>https://mastermind.ink/2022/09/16/e00702beac014dbc9f40b73c3952cbb4/</id>
+    <published>2022-09-16T09:37:39.739Z</published>
+    <updated>2022-09-16T15:59:34.867Z</updated>
     
     <summary type="html">
     
@@ -281,10 +432,10 @@
   
   <entry>
     <title>贪吃蛇在输入框里玩？！？？？</title>
-    <link href="https://mastermind.ink/2019/11/08/%E8%B4%AA%E5%90%83%E8%9B%87%E5%9C%A8%E8%BE%93%E5%85%A5%E6%A1%86%E9%87%8C%E7%8E%A9%EF%BC%9F%EF%BC%81%EF%BC%9F%EF%BC%9F%EF%BC%9F/"/>
-    <id>https://mastermind.ink/2019/11/08/贪吃蛇在输入框里玩？！？？？/</id>
-    <published>2019-11-08T04:31:11.000Z</published>
-    <updated>2019-11-08T04:57:50.000Z</updated>
+    <link href="https://mastermind.ink/2022/09/16/5f9df7fcaadf40eabf04ccda57e885a8/"/>
+    <id>https://mastermind.ink/2022/09/16/5f9df7fcaadf40eabf04ccda57e885a8/</id>
+    <published>2022-09-16T09:37:39.736Z</published>
+    <updated>2022-09-16T15:59:34.850Z</updated>
     
     <summary type="html">
     
@@ -303,11 +454,11 @@
   </entry>
   
   <entry>
-    <title>xkeymacs + sharpkeys完美将Emacs融入Windows的配置方案</title>
-    <link href="https://mastermind.ink/2019/11/03/xkeymacs-sharpkeys%E5%AE%8C%E7%BE%8E%E5%B0%86Emacs%E8%9E%8D%E5%85%A5Windows%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/"/>
-    <id>https://mastermind.ink/2019/11/03/xkeymacs-sharpkeys完美将Emacs融入Windows的配置方案/</id>
-    <published>2019-11-03T13:21:21.000Z</published>
-    <updated>2019-11-03T13:39:19.000Z</updated>
+    <title>科学上网——PAC文件配置</title>
+    <link href="https://mastermind.ink/2022/09/16/0bc3236f878f43529093c6416a6214db/"/>
+    <id>https://mastermind.ink/2022/09/16/0bc3236f878f43529093c6416a6214db/</id>
+    <published>2022-09-16T09:37:39.733Z</published>
+    <updated>2022-09-16T15:59:34.497Z</updated>
     
     <summary type="html">
     
@@ -322,195 +473,6 @@
     </summary>
     
     
-    
-      <category term="emacs" scheme="https://mastermind.ink/tags/emacs/"/>
-    
-      <category term="sharpkeys" scheme="https://mastermind.ink/tags/sharpkeys/"/>
-    
-      <category term="xkeymacs" scheme="https://mastermind.ink/tags/xkeymacs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>982程序设计-C语言部分</title>
-    <link href="https://mastermind.ink/2019/10/31/982%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-C%E8%AF%AD%E8%A8%80%E9%83%A8%E5%88%86/"/>
-    <id>https://mastermind.ink/2019/10/31/982程序设计-C语言部分/</id>
-    <published>2019-10-31T01:32:38.000Z</published>
-    <updated>2019-11-02T00:45:28.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="C语言" scheme="https://mastermind.ink/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="982程序设计" scheme="https://mastermind.ink/tags/982%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>观今夜天象</title>
-    <link href="https://mastermind.ink/2019/10/30/%E8%A7%82%E4%BB%8A%E5%A4%9C%E5%A4%A9%E8%B1%A1/"/>
-    <id>https://mastermind.ink/2019/10/30/观今夜天象/</id>
-    <published>2019-10-30T12:49:39.000Z</published>
-    <updated>2019-10-30T13:07:44.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="一些感想" scheme="https://mastermind.ink/tags/%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>树莓派-智能实验室入门配置教程</title>
-    <link href="https://mastermind.ink/2019/10/23/%E6%A0%91%E8%8E%93%E6%B4%BE-%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
-    <id>https://mastermind.ink/2019/10/23/树莓派-智能实验室入门配置教程/</id>
-    <published>2019-10-23T06:38:46.000Z</published>
-    <updated>2019-10-30T13:15:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="树莓派" scheme="https://mastermind.ink/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
-    
-      <category term="智能实验室" scheme="https://mastermind.ink/tags/%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>考研政治选择题anki实践教程</title>
-    <link href="https://mastermind.ink/2019/10/19/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E9%80%89%E6%8B%A9%E9%A2%98anki%E5%AE%9E%E8%B7%B5%E6%95%99%E7%A8%8B/"/>
-    <id>https://mastermind.ink/2019/10/19/考研政治选择题anki实践教程/</id>
-    <published>2019-10-19T01:27:21.000Z</published>
-    <updated>2019-10-19T02:01:41.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="anki" scheme="https://mastermind.ink/tags/anki/"/>
-    
-      <category term="考研政治" scheme="https://mastermind.ink/tags/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>按键精灵-几乎零门槛的办公室自动化工具</title>
-    <link href="https://mastermind.ink/2019/10/16/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B5-%E5%87%A0%E4%B9%8E%E9%9B%B6%E9%97%A8%E6%A7%9B%E7%9A%84%E5%8A%9E%E5%85%AC%E5%AE%A4%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
-    <id>https://mastermind.ink/2019/10/16/按键精灵-几乎零门槛的办公室自动化工具/</id>
-    <published>2019-10-16T05:51:08.000Z</published>
-    <updated>2019-10-16T06:07:39.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="按键精灵" scheme="https://mastermind.ink/tags/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>anki-记忆卡神器简介篇</title>
-    <link href="https://mastermind.ink/2019/10/15/anki-%E8%AE%B0%E5%BF%86%E5%8D%A1%E7%A5%9E%E5%99%A8%E7%AE%80%E4%BB%8B%E7%AF%87/"/>
-    <id>https://mastermind.ink/2019/10/15/anki-记忆卡神器简介篇/</id>
-    <published>2019-10-15T10:20:52.000Z</published>
-    <updated>2019-10-15T10:59:43.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="anki" scheme="https://mastermind.ink/tags/anki/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown windows工具-boostnote</title>
-    <link href="https://mastermind.ink/2019/10/14/markdown-windows%E5%B7%A5%E5%85%B7-boostnote/"/>
-    <id>https://mastermind.ink/2019/10/14/markdown-windows工具-boostnote/</id>
-    <published>2019-10-14T03:41:02.000Z</published>
-    <updated>2019-10-14T03:49:46.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="markdown" scheme="https://mastermind.ink/tags/markdown/"/>
-    
-      <category term="boostnote" scheme="https://mastermind.ink/tags/boostnote/"/>
     
   </entry>
   
