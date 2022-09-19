@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Record what you do and what you think.">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        在Clash中使用多机场规则 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%81%9A"><span class="toc-text">为什么要做</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B4%E4%B8%AA%E6%B5%81%E7%A8%8B"><span class="toc-text">整个流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%87%86%E5%A4%87%E5%A4%9A%E4%B8%AA%E6%9C%BA%E5%9C%BA"><span class="toc-text">1、准备多个机场</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Catnet"><span class="toc-text">Catnet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E8%8E%89"><span class="toc-text">可莉</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%AC%E7%93%A6%E5%B7%A5%E8%87%AA%E5%BB%BA%E6%9C%BA%E5%9C%BA"><span class="toc-text">搬瓦工自建机场</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E4%BD%BF%E7%94%A8%E5%9C%A8%E7%BA%BF%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2"><span class="toc-text">2、使用在线订阅转换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-text">使用流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%84%B6%E5%90%8E%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5-%E3%80%8B%E4%B8%80%E9%94%AE%E5%AF%BC%E5%85%A5-%E5%A4%8D%E5%88%B6"><span class="toc-text">然后点击生成订阅链接 -》一键导入 &#x2F; 复制</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-text">最后</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        在Clash中使用多机场规则
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2022-09-18 00:00:00</span></span>
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <p>[TOC]</p>
+<h1 id="为什么要做"><a href="#为什么要做" class="headerlink" title="为什么要做"></a>为什么要做</h1><ul>
+<li>我之前使用单个机场的时候，发现机场有时候不管用（说的就是你<strong>Catnet</strong>）。为了防止有些机场临时掉线而影响上网（Da Gong）心情，搞个多个机场自动切换还是有必要的。</li>
+</ul>
+<h1 id="整个流程"><a href="#整个流程" class="headerlink" title="整个流程"></a>整个流程</h1><h2 id="1、准备多个机场"><a href="#1、准备多个机场" class="headerlink" title="1、准备多个机场"></a>1、准备多个机场</h2><ul>
+<li><strong>机场这种东西，甲之蜜糖乙之砒霜，我觉得好用不一定你就好用，多选多试总没错。</strong></li>
+<li>我现在使用的是三个机场：Catnet，可莉还有自建机场。</li>
+</ul>
+<h3 id="Catnet"><a href="#Catnet" class="headerlink" title="Catnet"></a>Catnet</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://console.catnet.uk/#/register?code=uSSOFzyi">机场链接</a></li>
+<li>猫网是原先大机场旗下的新机场，现在换了老板；这个机场总体挺稳定的，也好用，能秒上8K油管，但是时不时会掉一下，有时候就几小时，有时候就一两天，真的怕跑路，都是按月续费。。。（PS：按月续费是一个好习惯！！！）</li>
+</ul>
+<h3 id="可莉"><a href="#可莉" class="headerlink" title="可莉"></a>可莉</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://1.xn--jprs12i.com/auth/register?code=IkhC">机场链接</a></li>
+<li>这个机场是我临时找的大机场，节点多，但是用的人也多，高峰期还是有点卡的，秒上不了8K油管，有时候Catnet崩了就自动跳到这个去使用了。</li>
+</ul>
+<h3 id="搬瓦工自建机场"><a href="#搬瓦工自建机场" class="headerlink" title="搬瓦工自建机场"></a>搬瓦工自建机场</h3><ul>
+<li>这个可没有链接</li>
+<li>搬瓦工也有官方的机场，我呢一是因为自己要做内网穿透，二是要折腾折腾，所以呢就搞了个去使用。如果你想上网带有一定私密性（可防止谷歌天天让你打标注，艹），可以尝试一下。</li>
+<li>因为VPS本来体质不行，链路不行，一般情况下不会使用它的，除非其他机场都挂了（如果两个机场都不管用那也是认了好吧）。</li>
+</ul>
+<h2 id="2、使用在线订阅转换"><a href="#2、使用在线订阅转换" class="headerlink" title="2、使用在线订阅转换"></a>2、使用在线订阅转换</h2><ul>
+<li>买了/ 自己建了机场后都拿到URL链接了，接下来就是找个订阅转换。</li>
+<li><a target="_blank" rel="noopener" href="https://acl4ssr-sub.github.io/">在线订阅转换网站</a></li>
+</ul>
+<h3 id="使用流程"><a href="#使用流程" class="headerlink" title="使用流程"></a>使用流程</h3><ul>
+<li>模式设置：设置为基础模式（如果你会用进阶模式也不用看这个了。。。）</li>
+<li>订阅链接：把所有机场链接放入里面</li>
+<li>客户端：你用啥客户端就选什么，如果跟我一样用的是Clash for Windows就是默认即可。</li>
+<li>远程配置：我一般选择<strong>全分组 重度用户使用（与Github同步）</strong>，如果你觉得哪个更好也可以选其他的~</li>
+<li>后端地址：一个一个往下试，哪个速度快用哪个，没什么技巧~<h3 id="然后点击生成订阅链接-》一键导入-复制"><a href="#然后点击生成订阅链接-》一键导入-复制" class="headerlink" title="然后点击生成订阅链接 -》一键导入 / 复制"></a>然后点击生成订阅链接 -》一键导入 / 复制</h3></li>
+<li>PS：这个一键导入后会长时间没反应，那就换个<strong>后端地址</strong></li>
+<li>PS2：短链接个人觉得没必要~</li>
+</ul>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><ul>
+<li>网络并非法外之地，上网需谨慎。</li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
