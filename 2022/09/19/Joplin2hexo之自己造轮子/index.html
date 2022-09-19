@@ -11,7 +11,7 @@
 
     <title>
         
-        Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        Joplin2hexo之自己造轮子 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
         
     </title>
 
@@ -57,7 +57,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>HOME</span>
@@ -92,6 +92,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E7%9A%84API%E7%BD%91%E7%AB%99-%E5%85%B6%E4%BB%96%E4%BA%BA%E5%86%99%E7%9A%84joplin2hexo%E6%8F%92%E4%BB%B6"><span class="toc-text">官方的API网站 + 其他人写的joplin2hexo插件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E5%B7%A5%E5%85%B7Github%E5%9C%B0%E5%9D%80"><span class="toc-text">我的工具Github地址</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -116,89 +120,56 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 576px">
-    
-    <div class="post-preview">
-        <div class="post-time">2019-10-08</div>
-        <div class="post-info">
-            <a href="/2019/10/08/使用docker-compose部署miniflux/">
-                <h3>
-                    使用docker compose部署miniflux
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#miniflux" title="miniflux">miniflux</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+
+<div class="post-container">
+    <div class="post-title">
+        Joplin2hexo之自己造轮子
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-10-08</div>
-        <div class="post-info">
-            <a href="/2019/10/08/shadowsocks/">
-                <h3>
-                    shadowsocks
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Shadowsocks" title="Shadowsocks">Shadowsocks</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#美区APPID" title="美区APPID">美区APPID</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Shadowrocket" title="Shadowrocket">Shadowrocket</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2022-09-19 16:00:00</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#joplin" title="joplin">joplin</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#hexo" title="hexo">hexo</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-10-07</div>
-        <div class="post-info">
-            <a href="/2019/10/07/以前的页面/">
-                <h3>
-                    以前的页面
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#工具" title="工具">工具</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#书籍推荐" title="书籍推荐">书籍推荐</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#几分钟学新语言" title="几分钟学新语言">几分钟学新语言</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    <li class="previous">
-        <a href="/page/3/">&larr; Newer Posts</a>
-    </li>
-    
-    
+    <div class="post-content no-indent">
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul>
+<li>首先，我这两年兜兜转转从wiz到wiz自建，最后换到了Joplin，虽然Joplin电脑体验还行，手机直接残疾，但是开源软件如果用的不舒服可以自己改就完事了。</li>
+<li>然后就是有了笔记软件了对吧，但是博客一直不知道怎么更新，用着十分原始的内容，也是很难受，如果你说用笔记写完在放进去吧，之前Wiz我还真没想过批量化，毕竟插图挺难受的。现在用Joplin了，有还算丰富的API，还是挺不错的。但是呢，如果有人做过，那肯定先用别人做的嘛，毕竟人的天性就是懒。。。</li>
+<li>体验了市面上的Joplin2hexo之后我发现不是导出失败，就是导着导着数据不见了。。。既然有API，那就自己动手写一个（一天时间够了）。</li>
 </ul>
+<h1 id="官方的API网站-其他人写的joplin2hexo插件"><a href="#官方的API网站-其他人写的joplin2hexo插件" class="headerlink" title="官方的API网站 + 其他人写的joplin2hexo插件"></a>官方的API网站 + 其他人写的joplin2hexo插件</h1><ul>
+<li>首先是这个老哥写的<a target="_blank" rel="noopener" href="https://joplin-utils.rxliuli.com/">joplin blog</a>（写的真好，但是不符合我的需求（直接原文输出，不改其他东西）而且我改不明白（真的不会用TS）。。。）</li>
+<li>其次是这个老哥写的<a target="_blank" rel="noopener" href="https://github.com/k3nryu/joplin2hexo">joplin2hexo</a>，我很大一部分思路都借鉴了这个。</li>
+<li>最后是<a target="_blank" rel="noopener" href="https://joplinapp.org/api/references/rest_api/">官方API文档</a>，API直接浏览一遍然后一个一个试就完事了。</li>
+</ul>
+<h1 id="我的工具Github地址"><a href="#我的工具Github地址" class="headerlink" title="我的工具Github地址"></a>我的工具Github地址</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/zhongqian97/Joplin2HexoPython">地址：</a><a target="_blank" rel="noopener" href="https://github.com/zhongqian97/Joplin2HexoPython">https://github.com/zhongqian97/Joplin2HexoPython</a></li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
 
     </div>
 </div>
@@ -262,7 +233,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
