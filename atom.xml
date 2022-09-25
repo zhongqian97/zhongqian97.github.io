@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mastermind.ink/"/>
-  <updated>2022-09-19T08:35:30.238Z</updated>
+  <updated>2022-09-25T08:44:57.009Z</updated>
   <id>https://mastermind.ink/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Joplin2hexo之自己造轮子</title>
     <link href="https://mastermind.ink/2022/09/19/Joplin2hexo%E4%B9%8B%E8%87%AA%E5%B7%B1%E9%80%A0%E8%BD%AE%E5%AD%90/"/>
     <id>https://mastermind.ink/2022/09/19/Joplin2hexo之自己造轮子/</id>
-    <published>2022-09-19T08:00:00.000Z</published>
-    <updated>2022-09-19T08:35:30.238Z</updated>
+    <published>2022-09-19T08:10:42.000Z</published>
+    <updated>2022-09-25T08:44:57.009Z</updated>
     
     <summary type="html">
     
@@ -47,8 +47,8 @@
     <title>在Clash中使用多机场规则</title>
     <link href="https://mastermind.ink/2022/09/18/%E5%9C%A8Clash%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%9A%E6%9C%BA%E5%9C%BA%E8%A7%84%E5%88%99/"/>
     <id>https://mastermind.ink/2022/09/18/在Clash中使用多机场规则/</id>
-    <published>2022-09-18T13:00:00.000Z</published>
-    <updated>2022-09-19T08:35:26.161Z</updated>
+    <published>2022-09-18T13:10:42.000Z</published>
+    <updated>2022-09-25T08:44:52.917Z</updated>
     
     <summary type="html">
     
@@ -69,11 +69,211 @@
   </entry>
   
   <entry>
+    <title>服务器倒带算法的思路总结</title>
+    <link href="https://mastermind.ink/2022/06/18/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%80%92%E5%B8%A6%E7%AE%97%E6%B3%95%E7%9A%84%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/"/>
+    <id>https://mastermind.ink/2022/06/18/服务器倒带算法的思路总结/</id>
+    <published>2022-06-18T02:41:20.000Z</published>
+    <updated>2022-09-25T08:45:13.346Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="UE" scheme="https://mastermind.ink/tags/UE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UE游戏模式思路总结</title>
+    <link href="https://mastermind.ink/2022/06/15/UE%E6%B8%B8%E6%88%8F%E6%A8%A1%E5%BC%8F%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/"/>
+    <id>https://mastermind.ink/2022/06/15/UE游戏模式思路总结/</id>
+    <published>2022-06-15T06:35:32.000Z</published>
+    <updated>2022-09-25T08:45:01.084Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="UE" scheme="https://mastermind.ink/tags/UE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>客户端预测算法思路总结</title>
+    <link href="https://mastermind.ink/2022/06/13/%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%A2%84%E6%B5%8B%E7%AE%97%E6%B3%95%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/"/>
+    <id>https://mastermind.ink/2022/06/13/客户端预测算法思路总结/</id>
+    <published>2022-06-13T08:41:24.000Z</published>
+    <updated>2022-09-25T08:45:05.186Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="UE" scheme="https://mastermind.ink/tags/UE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UE时间同步RTT</title>
+    <link href="https://mastermind.ink/2022/06/01/UE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5RTT/"/>
+    <id>https://mastermind.ink/2022/06/01/UE时间同步RTT/</id>
+    <published>2022-06-01T12:46:52.000Z</published>
+    <updated>2022-09-25T08:45:17.438Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="UE" scheme="https://mastermind.ink/tags/UE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>榴弹发射器UECPP实现思路</title>
+    <link href="https://mastermind.ink/2022/05/20/%E6%A6%B4%E5%BC%B9%E5%8F%91%E5%B0%84%E5%99%A8UECPP%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/"/>
+    <id>https://mastermind.ink/2022/05/20/榴弹发射器UECPP实现思路/</id>
+    <published>2022-05-20T02:20:46.000Z</published>
+    <updated>2022-09-25T08:45:09.267Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="UE" scheme="https://mastermind.ink/tags/UE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>散弹枪思路——服务器客户端随机数同步</title>
+    <link href="https://mastermind.ink/2022/05/15/%E6%95%A3%E5%BC%B9%E6%9E%AA%E6%80%9D%E8%B7%AF%E2%80%94%E2%80%94%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%9A%8F%E6%9C%BA%E6%95%B0%E5%90%8C%E6%AD%A5/"/>
+    <id>https://mastermind.ink/2022/05/15/散弹枪思路——服务器客户端随机数同步/</id>
+    <published>2022-05-15T12:55:01.000Z</published>
+    <updated>2022-09-25T08:45:21.528Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="UE" scheme="https://mastermind.ink/tags/UE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>将PA2C框架改进为多个智能体同时训练的并行框架</title>
+    <link href="https://mastermind.ink/2022/05/01/%E5%B0%86PA2C%E6%A1%86%E6%9E%B6%E6%94%B9%E8%BF%9B%E4%B8%BA%E5%A4%9A%E4%B8%AA%E6%99%BA%E8%83%BD%E4%BD%93%E5%90%8C%E6%97%B6%E8%AE%AD%E7%BB%83%E7%9A%84%E5%B9%B6%E8%A1%8C%E6%A1%86%E6%9E%B6/"/>
+    <id>https://mastermind.ink/2022/05/01/将PA2C框架改进为多个智能体同时训练的并行框架/</id>
+    <published>2022-05-01T04:43:23.000Z</published>
+    <updated>2022-09-25T08:45:29.694Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="DRL" scheme="https://mastermind.ink/tags/DRL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自己新实现的PA2C框架</title>
+    <link href="https://mastermind.ink/2022/04/15/%E8%87%AA%E5%B7%B1%E6%96%B0%E5%AE%9E%E7%8E%B0%E7%9A%84PA2C%E6%A1%86%E6%9E%B6/"/>
+    <id>https://mastermind.ink/2022/04/15/自己新实现的PA2C框架/</id>
+    <published>2022-04-15T08:52:01.000Z</published>
+    <updated>2022-09-25T08:45:25.620Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="DRL" scheme="https://mastermind.ink/tags/DRL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>博客使用教程</title>
     <link href="https://mastermind.ink/2021/10/29/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     <id>https://mastermind.ink/2021/10/29/博客使用教程/</id>
     <published>2021-10-29T09:15:10.000Z</published>
-    <updated>2022-09-19T08:34:31.012Z</updated>
+    <updated>2022-09-25T08:43:56.528Z</updated>
     
     <summary type="html">
     
@@ -98,7 +298,7 @@
     <link href="https://mastermind.ink/2021/10/29/%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>https://mastermind.ink/2021/10/29/触发器的使用/</id>
     <published>2021-10-29T07:59:16.000Z</published>
-    <updated>2022-09-19T08:33:52.302Z</updated>
+    <updated>2022-09-25T08:43:17.641Z</updated>
     
     <summary type="html">
     
@@ -114,7 +314,9 @@
     
     
     
-      <category term="UE4蓝图" scheme="https://mastermind.ink/tags/UE4%E8%93%9D%E5%9B%BE/"/>
+      <category term="UE" scheme="https://mastermind.ink/tags/UE/"/>
+    
+      <category term="蓝图" scheme="https://mastermind.ink/tags/%E8%93%9D%E5%9B%BE/"/>
     
   </entry>
   
@@ -123,7 +325,7 @@
     <link href="https://mastermind.ink/2021/04/26/%E8%B0%B7%E6%AD%8C%E9%9A%8F%E6%9C%BA%E5%BC%95%E6%93%8E/"/>
     <id>https://mastermind.ink/2021/04/26/谷歌随机引擎/</id>
     <published>2021-04-26T08:13:21.000Z</published>
-    <updated>2022-09-19T08:33:48.218Z</updated>
+    <updated>2022-09-25T08:43:13.551Z</updated>
     
     <summary type="html">
     
@@ -146,7 +348,7 @@
     <link href="https://mastermind.ink/2021/02/16/%E6%88%91%E7%9A%84AllInOne%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%8B%E5%A4%96%E9%83%A8%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
     <id>https://mastermind.ink/2021/02/16/我的AllInOne服务器之外部代理服务器篇/</id>
     <published>2021-02-16T14:09:43.000Z</published>
-    <updated>2022-09-19T08:34:26.953Z</updated>
+    <updated>2022-09-25T08:43:52.446Z</updated>
     
     <summary type="html">
     
@@ -171,7 +373,7 @@
     <link href="https://mastermind.ink/2021/01/13/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A5%E5%B8%B8%E8%B7%91%E5%AE%9E%E9%AA%8C%E5%91%BD%E4%BB%A4/"/>
     <id>https://mastermind.ink/2021/01/13/服务器日常跑实验命令/</id>
     <published>2021-01-13T02:50:21.000Z</published>
-    <updated>2022-09-19T08:34:14.742Z</updated>
+    <updated>2022-09-25T08:43:40.178Z</updated>
     
     <summary type="html">
     
@@ -194,7 +396,7 @@
     <link href="https://mastermind.ink/2021/01/12/%E6%88%91%E7%9A%84MacOS%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6/"/>
     <id>https://mastermind.ink/2021/01/12/我的MacOS系统软件/</id>
     <published>2021-01-12T02:21:48.000Z</published>
-    <updated>2022-09-19T08:34:22.869Z</updated>
+    <updated>2022-09-25T08:43:48.370Z</updated>
     
     <summary type="html">
     
@@ -219,7 +421,7 @@
     <link href="https://mastermind.ink/2020/02/06/Springboot%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%8C%E5%85%A8%E5%88%86%E7%A6%BB/"/>
     <id>https://mastermind.ink/2020/02/06/Springboot前后端完全分离/</id>
     <published>2020-02-06T13:50:04.000Z</published>
-    <updated>2022-09-19T08:35:13.879Z</updated>
+    <updated>2022-09-25T08:44:40.633Z</updated>
     
     <summary type="html">
     
@@ -242,7 +444,7 @@
     <link href="https://mastermind.ink/2020/01/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E2%80%94%E2%80%94PAC%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/"/>
     <id>https://mastermind.ink/2020/01/11/科学上网——PAC文件配置/</id>
     <published>2020-01-10T16:39:21.000Z</published>
-    <updated>2022-09-19T08:34:06.581Z</updated>
+    <updated>2022-09-25T08:43:32.010Z</updated>
     
     <summary type="html">
     
@@ -265,7 +467,7 @@
     <link href="https://mastermind.ink/2020/01/01/%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
     <id>https://mastermind.ink/2020/01/01/黑苹果的一些总结与配置/</id>
     <published>2019-12-31T17:41:25.000Z</published>
-    <updated>2022-09-19T08:33:35.974Z</updated>
+    <updated>2022-09-25T08:43:01.249Z</updated>
     
     <summary type="html">
     
@@ -288,7 +490,7 @@
     <link href="https://mastermind.ink/2019/11/08/%E8%B4%AA%E5%90%83%E8%9B%87%E5%9C%A8%E8%BE%93%E5%85%A5%E6%A1%86%E9%87%8C%E7%8E%A9%EF%BC%9F%EF%BC%81%EF%BC%9F%EF%BC%9F%EF%BC%9F/"/>
     <id>https://mastermind.ink/2019/11/08/贪吃蛇在输入框里玩？！？？？/</id>
     <published>2019-11-08T04:31:11.000Z</published>
-    <updated>2022-09-19T08:33:44.138Z</updated>
+    <updated>2022-09-25T08:43:09.461Z</updated>
     
     <summary type="html">
     
@@ -303,232 +505,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>xkeymacs + sharpkeys完美将Emacs融入Windows的配置方案</title>
-    <link href="https://mastermind.ink/2019/11/03/xkeymacs-sharpkeys%E5%AE%8C%E7%BE%8E%E5%B0%86Emacs%E8%9E%8D%E5%85%A5Windows%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/"/>
-    <id>https://mastermind.ink/2019/11/03/xkeymacs-sharpkeys完美将Emacs融入Windows的配置方案/</id>
-    <published>2019-11-03T13:21:21.000Z</published>
-    <updated>2022-09-19T08:34:45.296Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="emacs" scheme="https://mastermind.ink/tags/emacs/"/>
-    
-      <category term="sharpkeys" scheme="https://mastermind.ink/tags/sharpkeys/"/>
-    
-      <category term="xkeymacs" scheme="https://mastermind.ink/tags/xkeymacs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>树莓派-智能实验室入门配置教程</title>
-    <link href="https://mastermind.ink/2019/10/23/%E6%A0%91%E8%8E%93%E6%B4%BE-%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
-    <id>https://mastermind.ink/2019/10/23/树莓派-智能实验室入门配置教程/</id>
-    <published>2019-10-23T06:38:46.000Z</published>
-    <updated>2022-09-19T08:34:10.665Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="树莓派" scheme="https://mastermind.ink/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
-    
-      <category term="智能实验室" scheme="https://mastermind.ink/tags/%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>按键精灵-几乎零门槛的办公室自动化工具</title>
-    <link href="https://mastermind.ink/2019/10/16/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B5-%E5%87%A0%E4%B9%8E%E9%9B%B6%E9%97%A8%E6%A7%9B%E7%9A%84%E5%8A%9E%E5%85%AC%E5%AE%A4%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
-    <id>https://mastermind.ink/2019/10/16/按键精灵-几乎零门槛的办公室自动化工具/</id>
-    <published>2019-10-16T05:51:08.000Z</published>
-    <updated>2022-09-19T08:34:18.813Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="按键精灵" scheme="https://mastermind.ink/tags/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>anki-记忆卡神器简介篇</title>
-    <link href="https://mastermind.ink/2019/10/15/anki-%E8%AE%B0%E5%BF%86%E5%8D%A1%E7%A5%9E%E5%99%A8%E7%AE%80%E4%BB%8B%E7%AF%87/"/>
-    <id>https://mastermind.ink/2019/10/15/anki-记忆卡神器简介篇/</id>
-    <published>2019-10-15T10:20:52.000Z</published>
-    <updated>2022-09-19T08:35:09.756Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="anki" scheme="https://mastermind.ink/tags/anki/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown windows工具-boostnote</title>
-    <link href="https://mastermind.ink/2019/10/14/markdown-windows%E5%B7%A5%E5%85%B7-boostnote/"/>
-    <id>https://mastermind.ink/2019/10/14/markdown-windows工具-boostnote/</id>
-    <published>2019-10-14T03:41:02.000Z</published>
-    <updated>2022-09-19T08:35:01.597Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="markdown" scheme="https://mastermind.ink/tags/markdown/"/>
-    
-      <category term="boostnote" scheme="https://mastermind.ink/tags/boostnote/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>给http上锁工具———Caddy</title>
-    <link href="https://mastermind.ink/2019/10/13/%E7%BB%99http%E4%B8%8A%E9%94%81%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94%E2%80%94Caddy/"/>
-    <id>https://mastermind.ink/2019/10/13/给http上锁工具———Caddy/</id>
-    <published>2019-10-13T15:18:56.000Z</published>
-    <updated>2022-09-19T08:34:02.501Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Caddy" scheme="https://mastermind.ink/tags/Caddy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MBTI职业性格测试</title>
-    <link href="https://mastermind.ink/2019/10/12/MBTI%E8%81%8C%E4%B8%9A%E6%80%A7%E6%A0%BC%E6%B5%8B%E8%AF%95/"/>
-    <id>https://mastermind.ink/2019/10/12/MBTI职业性格测试/</id>
-    <published>2019-10-12T13:50:03.000Z</published>
-    <updated>2022-09-19T08:35:22.074Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="MBTI" scheme="https://mastermind.ink/tags/MBTI/"/>
-    
-      <category term="INTJ" scheme="https://mastermind.ink/tags/INTJ/"/>
-    
-      <category term="心理学" scheme="https://mastermind.ink/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>RSS是什么？能干嘛？</title>
-    <link href="https://mastermind.ink/2019/10/11/RSS%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E5%B9%B2%E5%98%9B%EF%BC%9F/"/>
-    <id>https://mastermind.ink/2019/10/11/RSS是什么？能干嘛？/</id>
-    <published>2019-10-11T04:14:05.000Z</published>
-    <updated>2022-09-19T08:35:17.980Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="RSS" scheme="https://mastermind.ink/tags/RSS/"/>
-    
-      <category term="ttrss" scheme="https://mastermind.ink/tags/ttrss/"/>
-    
-      <category term="feed43" scheme="https://mastermind.ink/tags/feed43/"/>
-    
-      <category term="rsshub" scheme="https://mastermind.ink/tags/rsshub/"/>
-    
-      <category term="miniflux" scheme="https://mastermind.ink/tags/miniflux/"/>
-    
-      <category term="inoreader" scheme="https://mastermind.ink/tags/inoreader/"/>
-    
-      <category term="feeder" scheme="https://mastermind.ink/tags/feeder/"/>
-    
-      <category term="unread" scheme="https://mastermind.ink/tags/unread/"/>
     
   </entry>
   

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Record what you do and what you think.">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        客户端预测算法思路总结 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#UE-%E9%AB%98Ping%E7%8A%B6%E6%80%81%E6%A8%A1%E6%8B%9F"><span class="toc-text">UE 高Ping状态模拟</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%A2%84%E6%B5%8B%E7%AE%97%E6%B3%95%E4%BA%A7%E7%94%9F%E7%9A%84%E6%A0%B8%E5%BF%83%E9%97%AE%E9%A2%98"><span class="toc-text">客户端预测算法产生的核心问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A6%E5%99%A8%E7%89%B9%E6%95%88%E4%B8%8D%E8%B7%9F%E6%89%8B%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">武器特效不跟手的问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E7%A7%BB%E5%8A%A8%E9%83%A8%E5%88%86%E7%9A%84%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93"><span class="toc-text">角色移动部分的算法总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%B9%E8%8D%AF%E8%AE%A1%E7%AE%97%E9%83%A8%E5%88%86%E7%9A%84%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93"><span class="toc-text">弹药计算部分的算法总结</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        客户端预测算法思路总结
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2022-06-13 16:41:24</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#UE" title="UE">UE</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="UE-高Ping状态模拟"><a href="#UE-高Ping状态模拟" class="headerlink" title="UE 高Ping状态模拟"></a>UE 高Ping状态模拟</h1><ul>
+<li><strong>Config/DefaultEngine.ini</strong>中添加设置如下内容<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[PacketSimulationSettings]</span><br><span class="line">PktLag &#x3D; 100 </span><br></pre></td></tr></table></figure>
+<h1 id="客户端预测算法产生的核心问题"><a href="#客户端预测算法产生的核心问题" class="headerlink" title="客户端预测算法产生的核心问题"></a>客户端预测算法产生的核心问题</h1></li>
+<li>客户端先去执行，服务器用于验证客户端执行的代码是否正确，由于通信的延迟问题，服务器不能强行将客户端强行拉回当前位置，会出现瞬移卡顿的问题。</li>
+<li>玩家射击过程中，武器特效”不跟手“（即需要进行两次服务器RTT之后才能获取到特效以及子弹发射等，如果网不好会很卡的问题）。</li>
+</ul>
+<h2 id="武器特效不跟手的问题"><a href="#武器特效不跟手的问题" class="headerlink" title="武器特效不跟手的问题"></a>武器特效不跟手的问题</h2><p>在文章《散弹枪思路——服务器客户端随机数同步》中有写到，</p>
+<h1 id="角色移动部分的算法总结"><a href="#角色移动部分的算法总结" class="headerlink" title="角色移动部分的算法总结"></a>角色移动部分的算法总结</h1><ul>
+<li>思路：就是客户端根据RTT时间预测提前发送给服务器收到时预测客户端落点数据。流程：<ol>
+<li>客户端移动。</li>
+<li>客户端将数据通过RPC发送给服务器，并保存下来。</li>
+<li>收到从服务器的回复。</li>
+<li>验证服务器当前的数据是否对应客户端。</li>
+<li>丢弃 旧的 从服务器接收的回复。</li>
+<li>重新在客户端应用服务器还未处理的移动。</li>
+</ol>
+</li>
+</ul>
+<h1 id="弹药计算部分的算法总结"><a href="#弹药计算部分的算法总结" class="headerlink" title="弹药计算部分的算法总结"></a>弹药计算部分的算法总结</h1><ul>
+<li>核心：<strong>客户端提前执行，服务器端验证逻辑</strong><ul>
+<li>验证成功，客户端不变；</li>
+<li>验证失败，客户端更改；（PS：一般不会验证失败，除非被外挂之类的修改了）。</li>
+</ul>
+</li>
+<li>开火时失去弹药的流程：<ul>
+<li>1、服务器执行多播将Fire函数在所有客户端以及服务器中执行。<ul>
+<li>其中，所属Client与Server都调用SpendRound函数进行弹药计算。</li>
+</ul>
+</li>
+<li>2_Client、执行SpendRound函数在客户端本地调用设置Ammo以及对应的HUD，并通过 Sequence 变量存储用于验证。</li>
+<li>2_Server、SpendRound()在服务器调用时执行ClientUpdateAmmo客户端RPC函数对客户端提前的内容进行验证，验证函数流程ClientUpdateAmmo_Implementation：<ul>
+<li>（1）、获取到当前的服务器发送并客户端收到的弹药数量，赋值到客户端Ammo中（因为以服务器作为权威）</li>
+<li>（2）、由于已经收到一个回传的包，一次开火已经验证完毕，因此 Sequence 减一</li>
+<li>（3）、Ammo 在减去正在验证的服务器 Sequence 数量。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>加入算法后的重新换弹的流程，还是核心不变：<ul>
+<li>1、服务器以及客户端调用UCombatComponent::HandleReload()，播放Montage<ul>
+<li>播放后，Montage调用UCombatComponent::FinishReloading()</li>
+<li>FinishReloading函数调用UCombatComponent::UpdateAmmoValues()处理主要换弹的逻辑</li>
+<li>UpdateAmmoValues函数调用AWeapon::AddAmmo进行子弹的更换</li>
+</ul>
+</li>
+<li>2、AWeapon::AddAmmo服务器调用AWeapon::ClientAddAmmo_Implementation进行换弹逻辑。</li>
+</ul>
+</li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>

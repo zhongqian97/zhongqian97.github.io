@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Record what you do and what you think.">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        散弹枪思路——服务器客户端随机数同步 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E6%89%AB%E6%8F%8F%E6%9E%AA%E7%9A%84%E6%9C%80%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E7%9A%84%E6%80%9D%E8%B7%AF"><span class="toc-text">线性扫描枪的最简单实现的思路</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%94%B9%E8%BF%9B%E7%89%88%E6%9C%AC%E7%9A%84%E7%BA%BF%E6%80%A7%E6%89%AB%E6%8F%8F%E6%9E%AA"><span class="toc-text">改进版本的线性扫描枪</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%A3%E5%BC%B9%E6%9E%AA%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC"><span class="toc-text">散弹枪实现版本</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E6%89%AB%E6%8F%8F%E6%9E%AA%E6%94%AF%E4%BD%BF%E7%94%A8%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%A2%84%E6%B5%8B%E7%AE%97%E6%B3%95"><span class="toc-text">线性扫描枪支使用客户端预测算法</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        散弹枪思路——服务器客户端随机数同步
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2022-05-15 20:55:01</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#UE" title="UE">UE</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="线性扫描枪的最简单实现的思路"><a href="#线性扫描枪的最简单实现的思路" class="headerlink" title="线性扫描枪的最简单实现的思路"></a>线性扫描枪的最简单实现的思路</h1><ul>
+<li>一、从准星位置发出射线检测阻挡物，目的是获取当前阻挡物。<ol>
+<li>获取准星在3D世界的位置（Position，Direction）</li>
+<li>将Position作为起点，方向为Direction，方向如果是单位向量记得乘以一个比较大的数。<ol>
+<li>PS：我是觉得这个数可以根据枪支类型来改变，冲锋枪 / 手枪可以小一点，狙击枪远一些。</li>
+</ol>
+</li>
+<li>GetWorld()-&gt;LineTraceSingleByChannel()（UE发出射线检测的函数）</li>
+<li>如果碰到阻挡物，则拿阻挡物的位置返回；碰不到就直接拿最长距离。</li>
+</ol>
+</li>
+<li>二、将获取到的阻挡物的位置作为End向量。<ol>
+<li>获取枪口位置Location，使用他作为Start的向量。</li>
+<li>当前获取的阻挡物 HitTarget - Start 为方向向量，可能有时候够不着，可以乘以一个1.X的系数。</li>
+<li>GetWorld()-&gt;LineTraceSingleByChannel()（UE发出射线检测的函数）</li>
+<li>如果是本地游戏，检测到就应用伤害ApplyDamage即可；网络游戏要在服务器ApplyDamage（UE检测当前是否为服务器函数HasAuthority()）。</li>
+<li>应用特效（射击轨迹，终点特效，枪口特效）。</li>
+</ol>
+</li>
+</ul>
+<h1 id="改进版本的线性扫描枪"><a href="#改进版本的线性扫描枪" class="headerlink" title="改进版本的线性扫描枪"></a>改进版本的线性扫描枪</h1><ul>
+<li>TODO: zhongqian 这里应该有一张图片解释一下原因。</li>
+<li>原因：你从准星作为起点获取的阻挡物可能<strong>提前</strong>被挡住了。</li>
+<li>修复BUG：<ul>
+<li>在<strong>一</strong>执行后，需要在以枪口为起点，阻挡物为终点，使用射线判断一下<strong>是否有其他阻挡物提前</strong>阻挡在枪口到原来的HitTarget中间了。</li>
+</ul>
+</li>
+</ul>
+<h1 id="散弹枪实现版本"><a href="#散弹枪实现版本" class="headerlink" title="散弹枪实现版本"></a>散弹枪实现版本</h1><ul>
+<li>首先，需要知道的是散弹枪与之前实现的手枪之间的差别是什么？<ul>
+<li>单个子弹与多个子弹（散弹枪一般都是多颗子弹一起发射）</li>
+<li><strong>散</strong>弹：是范围伤害而不是单体伤害。</li>
+</ul>
+</li>
+<li>实现思路：<ol>
+<li>每颗子弹单独计算，说实话有点浪费了。</li>
+<li>在一定范围内用一个圆包围着所有子弹，所有子弹均落点在圆内。<ul>
+<li>PS1：因此这个圆的远近与大小决定了这个散弹枪的性能，如果远距离 + 小圆可以表现出独头弹的效果。 </li>
+<li>PS2：圆的半径与距离应该存在一个正相关的关系。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>具体流程，PS：这个流程插入在 <strong>最简单实现的思路</strong> 与 <strong>改进版本的线性扫描枪</strong> 之间：<ol>
+<li>获取当前Start到HitTarget的归一化向量</li>
+<li>计算到随机圆中心的向量</li>
+<li>在随机圆内随机生成的向量</li>
+<li>计算 射击终点 &amp; 发散圆内某一点的最终位置</li>
+<li>计算 到起始点到随机点的向量</li>
+<li>返回 从起点到终点的随机圆的向量 * 一个非常大的值 作为 HitTarget</li>
+</ol>
+</li>
+<li>如果服务器与客户端同时计算会导致随机数不一致的问题，交给客户端计算随机数；当然，如果预防作弊，则记录一下弹道，如果很长一段时间弹道计算在客户端计算有问题，则需要进行以下我的头脑风暴结果：<ul>
+<li>如果遇到完全集中在一个点并发生了很多次，则有作弊嫌疑；</li>
+<li>如果散弹枪的每颗子弹都远距离（设置一个阈值）命中并发生了很多次，则有作弊嫌疑；</li>
+</ul>
+</li>
+</ul>
+<h1 id="线性扫描枪支使用客户端预测算法"><a href="#线性扫描枪支使用客户端预测算法" class="headerlink" title="线性扫描枪支使用客户端预测算法"></a>线性扫描枪支使用客户端预测算法</h1><ul>
+<li>思路：<ul>
+<li>在客户端中如果击中角色先把特效全部使用，但是逻辑伤害交给服务器去计算，计算完毕后返回并应用被击中角色上。</li>
+</ul>
+</li>
+<li>效果 / 优点：先应用特效能够让高Ping的客户端玩家减轻卡顿的体验，但是关键的逻辑计算依然是交给服务器处理。</li>
+<li>缺点：如果客户端因为高Ping而当前判断不够准确，只会有击中特效而服务器逻辑计算失败，会影响玩家体验。</li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>

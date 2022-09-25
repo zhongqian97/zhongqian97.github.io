@@ -11,7 +11,7 @@
 
     <title>
         
-        Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        UE游戏模式思路总结 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
         
     </title>
 
@@ -57,7 +57,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>HOME</span>
@@ -92,6 +92,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83"><span class="toc-text">我的一些思考</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -116,89 +120,63 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 576px">
-    
-    <div class="post-preview">
-        <div class="post-time">2019-10-08</div>
-        <div class="post-info">
-            <a href="/2019/10/08/使用docker-compose部署miniflux/">
-                <h3>
-                    使用docker compose部署miniflux
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#miniflux" title="miniflux">miniflux</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+
+<div class="post-container">
+    <div class="post-title">
+        UE游戏模式思路总结
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-10-08</div>
-        <div class="post-info">
-            <a href="/2019/10/08/shadowsocks/">
-                <h3>
-                    shadowsocks
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Shadowsocks" title="Shadowsocks">Shadowsocks</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#美区APPID" title="美区APPID">美区APPID</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Shadowrocket" title="Shadowrocket">Shadowrocket</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2022-06-15 14:35:32</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#UE" title="UE">UE</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-10-07</div>
-        <div class="post-info">
-            <a href="/2019/10/07/以前的页面/">
-                <h3>
-                    以前的页面
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#工具" title="工具">工具</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#书籍推荐" title="书籍推荐">书籍推荐</a>
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#几分钟学新语言" title="几分钟学新语言">几分钟学新语言</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    <li class="previous">
-        <a href="/page/3/">&larr; Newer Posts</a>
-    </li>
-    
-    
+    <div class="post-content no-indent">
+        <h1 id="我的一些思考"><a href="#我的一些思考" class="headerlink" title="我的一些思考"></a>我的一些思考</h1><ul>
+<li>比如说我借鉴 CSGO里面的死亡竞赛，团队死亡竞赛，竞技模式三种。<ul>
+<li>那么他们的不同点其实是在：<ol>
+<li>局数：死亡竞赛，团队死亡竞赛这两者只有一局；而竞技模式有 N 局。</li>
+<li>死亡后是否能够复活：死亡竞赛，团队死亡竞赛可以；而竞技模式不可；</li>
+<li>胜利条件：死亡竞赛，团队死亡竞赛为杀敌数；而竞技模式则分情况：<ul>
+<li>1、恐怖分子安装C4后，恐怖分子为C4爆炸，警察为拆除C4；</li>
+<li>2、恐怖分子不安装C4，则双方杀死对方全部人可以获胜，警察一方比较特殊，如果恐怖分子不安装C4，苟着等时间到就能赢；</li>
 </ul>
+</li>
+<li>是否有团队伤害：这个看设计了；</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>根据以上列举其实模式无非分为几种情况：局数、死亡后是否能够复活、胜利条件、是否有团队伤害；<ul>
+<li>局数这个可以模仿着GameMode的游戏流程来自己定制我们游戏的流程；</li>
+<li>GameMode类可以实现 敌人击杀以及死亡后是否能够复活；</li>
+<li>胜利条件也可以在GameMode中写，GameState保存当前局数以及剩余时间；</li>
+<li>团队伤害可以写入到伤害计算当中，每一个角色上可挂个Flag之类即可；</li>
+</ul>
+</li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
 
     </div>
 </div>
@@ -262,7 +240,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 

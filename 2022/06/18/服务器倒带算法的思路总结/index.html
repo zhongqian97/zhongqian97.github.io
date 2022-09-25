@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Record what you do and what you think.">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        服务器倒带算法的思路总结 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9F"><span class="toc-text">问题？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF%E6%A0%B8%E5%BF%83%E6%80%BB%E7%BB%93"><span class="toc-text">思路核心总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B4%E4%B8%AA%E4%BD%BF%E7%94%A8%E7%AE%97%E6%B3%95%E6%89%BE%E5%88%B0%E5%BD%93%E5%89%8D%E4%BD%8D%E7%BD%AE%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="toc-text">整个使用算法找到当前位置的流程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A1%AE%E8%AE%A4%E6%98%AF%E5%90%A6%E5%87%BB%E4%B8%AD%E6%B5%81%E7%A8%8B"><span class="toc-text">确认是否击中流程</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        服务器倒带算法的思路总结
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2022-06-18 10:41:20</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#UE" title="UE">UE</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="问题？"><a href="#问题？" class="headerlink" title="问题？"></a>问题？</h1><ul>
+<li>在一定延迟的情况下，敌方角色在 ta 所属的客户端的位置A，服务器当前敌方角色的位置B，以及我方客户端下敌方角色的位置C是不一致的；这个不一致与两者连接服务器的Ping值有关；假设双方RTT为50ms；则<ul>
+<li>A位置在当前服务器50ms后的位置；B位置在0ms后的位置，而C位置在服务器-50ms的位置；这会导致双方命中率都不高（需要命中后50ms的位置）；</li>
+</ul>
+</li>
+</ul>
+<h1 id="思路核心总结"><a href="#思路核心总结" class="headerlink" title="思路核心总结"></a>思路核心总结</h1><ul>
+<li>服务器倒带算法的核心总结：服务器端<strong>记录</strong>一段时间内<strong>所有角色的位置信息</strong>，客户端记录<strong>击中时间</strong>并RPC调用服务器倒带算法 还原击中时间下的 <strong>被击中角色位置信息</strong>，用于验证客户端是否击中角色。</li>
+<li>缺点：如果玩家躲到掩体后死亡，则对于该玩家不公平。<ul>
+<li>解决方案：1、限制在一定Ping值下使用该算法；</li>
+</ul>
+</li>
+</ul>
+<h1 id="整个使用算法找到当前位置的流程"><a href="#整个使用算法找到当前位置的流程" class="headerlink" title="整个使用算法找到当前位置的流程"></a>整个使用算法找到当前位置的流程</h1><ol start="0">
+<li>定义服务器倒带算法在开枪判断命中时<strong>倒带</strong>的是什么物件；<ul>
+<li>如果记录角色的 location or capsule 会太简陋了。</li>
+<li>如果记录骨骼的location和rotation 太多，消耗内存。</li>
+<li>答案：创建一群HitBoxes的Box 绑定在角色的每一个位置上；</li>
+</ul>
+</li>
+<li>创建一个FBoxInformation 保存HitBox的location，rotation，BoxExtent；</li>
+<li>创建一个<strong>FramePackage</strong>，用于每帧保存角色当前的状态，FramePackage包含 FBoxInformation。</li>
+<li>编写 SaveFramePackage函数，保存当前一帧时间下服务器的角色当前的FramePackage。</li>
+<li><strong>更新 FrameHistory 链表的内容</strong>，这个包含了从前N帧到当前结束保存的角色Frame。<ul>
+<li>流程：如果列表有内容，则判断链表中的值是否为当前所允许的范围（PS：如果延迟过大，则不计入），如果不是就移除；并把最新帧插入。</li>
+</ul>
+</li>
+<li>服务器找到 (如果找不到就插帧) <strong>距离最近的当前客户端的一帧</strong>的角色信息。<ol>
+<li>初始化链表History，头指针NewestHistoryTime，尾指针OldestHistoryTime。</li>
+<li>如果当前客户端时间比OldestHistoryTime还小，那不能使用服务器倒带算法。（PS：延迟过大了）<ul>
+<li>如果当前客户端时间比OldestHistoryTime相等，则已经找到当前的最近的时间。（这里直接返回）</li>
+<li>如果当前客户端时间比NewestHistoryTime还大，把头指针给他就完事了。（这里直接返回）</li>
+</ul>
+</li>
+<li>如果没找到值，并且在头指针与尾指针之间的时间，遍历找到OlderTime &lt; HitTime &lt; YoungerTime这个关系后，对OlderTime的帧以及YoungerTime的帧<strong>进行插值后返回</strong>。</li>
+</ol>
+</li>
+<li><strong>(如果找不到就插帧)</strong> 对于两帧之间进行插值计算当前客户端的角色位置<ol>
+<li>计算两帧时间的距离 Distance ，计算 HitTime 到 OlderFrameTime 以及距离的比值 InterpFraction。</li>
+<li>通过这个比值InterpFraction从 OlderBox 到 YoungerBox 对 InterpBoxInfo 进行插值计算。</li>
+</ol>
+</li>
+</ol>
+<h1 id="确认是否击中流程"><a href="#确认是否击中流程" class="headerlink" title="确认是否击中流程"></a>确认是否击中流程</h1><ol>
+<li><p>CacheBoxPositions 函数把被击中角色的当前状态保存到 CurrentFrame 中。</p>
+</li>
+<li><p>MoveBoxes 函数使用变量 Package 把角色移动到服务器倒带的位置上（就是上面找到的位置）。</p>
+</li>
+<li><p>EnableCharacterMeshCollision函数将 HitCharacter 关闭碰撞。</p>
+</li>
+<li><p>开启 HitCharacter 头部的碰撞，检测是否击中头部。</p>
+<ul>
+<li>如果击中头部，ResetHitBoxes 重新初始化角色位置；EnableCharacterMeshCollision 重新设置；返回 return 击中头部 = true 以及击中确认 = true；</li>
+<li>如果没击中头部；开启 HitCharacter 所有碰撞；检测是否击中角色；击中返回 return 击中头部 = false 以及击中确认 = true；没击中返回 return 击中头部 = false 以及击中确认 = false；</li>
+</ul>
+</li>
+<li><p>ResetHitBoxes 重新初始化角色位置；EnableCharacterMeshCollision 重新设置。</p>
+</li>
+</ol>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
