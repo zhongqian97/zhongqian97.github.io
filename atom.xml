@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mastermind.ink/"/>
-  <updated>2022-09-25T08:44:57.009Z</updated>
+  <updated>2023-04-01T09:32:25.861Z</updated>
   <id>https://mastermind.ink/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用ChatGPT帮我翻译</title>
+    <link href="https://mastermind.ink/2023/04/01/%E4%BD%BF%E7%94%A8ChatGPT%E5%B8%AE%E6%88%91%E7%BF%BB%E8%AF%91/"/>
+    <id>https://mastermind.ink/2023/04/01/使用ChatGPT帮我翻译/</id>
+    <published>2023-03-31T18:21:01.000Z</published>
+    <updated>2023-04-01T09:32:25.861Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="GPT" scheme="https://mastermind.ink/tags/GPT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Joplin2hexo之自己造轮子</title>
     <link href="https://mastermind.ink/2022/09/19/Joplin2hexo%E4%B9%8B%E8%87%AA%E5%B7%B1%E9%80%A0%E8%BD%AE%E5%AD%90/"/>
     <id>https://mastermind.ink/2022/09/19/Joplin2hexo之自己造轮子/</id>
     <published>2022-09-19T08:10:42.000Z</published>
-    <updated>2022-09-25T08:44:57.009Z</updated>
+    <updated>2023-04-01T09:32:25.776Z</updated>
     
     <summary type="html">
     
@@ -48,7 +73,7 @@
     <link href="https://mastermind.ink/2022/09/18/%E5%9C%A8Clash%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%9A%E6%9C%BA%E5%9C%BA%E8%A7%84%E5%88%99/"/>
     <id>https://mastermind.ink/2022/09/18/在Clash中使用多机场规则/</id>
     <published>2022-09-18T13:10:42.000Z</published>
-    <updated>2022-09-25T08:44:52.917Z</updated>
+    <updated>2023-04-01T09:32:25.765Z</updated>
     
     <summary type="html">
     
@@ -73,7 +98,7 @@
     <link href="https://mastermind.ink/2022/06/18/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%80%92%E5%B8%A6%E7%AE%97%E6%B3%95%E7%9A%84%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/"/>
     <id>https://mastermind.ink/2022/06/18/服务器倒带算法的思路总结/</id>
     <published>2022-06-18T02:41:20.000Z</published>
-    <updated>2022-09-25T08:45:13.346Z</updated>
+    <updated>2023-04-01T09:32:25.812Z</updated>
     
     <summary type="html">
     
@@ -98,7 +123,7 @@
     <link href="https://mastermind.ink/2022/06/15/UE%E6%B8%B8%E6%88%8F%E6%A8%A1%E5%BC%8F%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/"/>
     <id>https://mastermind.ink/2022/06/15/UE游戏模式思路总结/</id>
     <published>2022-06-15T06:35:32.000Z</published>
-    <updated>2022-09-25T08:45:01.084Z</updated>
+    <updated>2023-04-01T09:32:25.784Z</updated>
     
     <summary type="html">
     
@@ -123,7 +148,7 @@
     <link href="https://mastermind.ink/2022/06/13/%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%A2%84%E6%B5%8B%E7%AE%97%E6%B3%95%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/"/>
     <id>https://mastermind.ink/2022/06/13/客户端预测算法思路总结/</id>
     <published>2022-06-13T08:41:24.000Z</published>
-    <updated>2022-09-25T08:45:05.186Z</updated>
+    <updated>2023-04-01T09:32:25.791Z</updated>
     
     <summary type="html">
     
@@ -148,7 +173,7 @@
     <link href="https://mastermind.ink/2022/06/01/UE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5RTT/"/>
     <id>https://mastermind.ink/2022/06/01/UE时间同步RTT/</id>
     <published>2022-06-01T12:46:52.000Z</published>
-    <updated>2022-09-25T08:45:17.438Z</updated>
+    <updated>2023-04-01T09:32:25.820Z</updated>
     
     <summary type="html">
     
@@ -173,7 +198,7 @@
     <link href="https://mastermind.ink/2022/05/20/%E6%A6%B4%E5%BC%B9%E5%8F%91%E5%B0%84%E5%99%A8UECPP%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF/"/>
     <id>https://mastermind.ink/2022/05/20/榴弹发射器UECPP实现思路/</id>
     <published>2022-05-20T02:20:46.000Z</published>
-    <updated>2022-09-25T08:45:09.267Z</updated>
+    <updated>2023-04-01T09:32:25.801Z</updated>
     
     <summary type="html">
     
@@ -198,7 +223,7 @@
     <link href="https://mastermind.ink/2022/05/15/%E6%95%A3%E5%BC%B9%E6%9E%AA%E6%80%9D%E8%B7%AF%E2%80%94%E2%80%94%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%9A%8F%E6%9C%BA%E6%95%B0%E5%90%8C%E6%AD%A5/"/>
     <id>https://mastermind.ink/2022/05/15/散弹枪思路——服务器客户端随机数同步/</id>
     <published>2022-05-15T12:55:01.000Z</published>
-    <updated>2022-09-25T08:45:21.528Z</updated>
+    <updated>2023-04-01T09:32:25.826Z</updated>
     
     <summary type="html">
     
@@ -223,7 +248,7 @@
     <link href="https://mastermind.ink/2022/05/01/%E5%B0%86PA2C%E6%A1%86%E6%9E%B6%E6%94%B9%E8%BF%9B%E4%B8%BA%E5%A4%9A%E4%B8%AA%E6%99%BA%E8%83%BD%E4%BD%93%E5%90%8C%E6%97%B6%E8%AE%AD%E7%BB%83%E7%9A%84%E5%B9%B6%E8%A1%8C%E6%A1%86%E6%9E%B6/"/>
     <id>https://mastermind.ink/2022/05/01/将PA2C框架改进为多个智能体同时训练的并行框架/</id>
     <published>2022-05-01T04:43:23.000Z</published>
-    <updated>2022-09-25T08:45:29.694Z</updated>
+    <updated>2023-04-01T09:32:25.839Z</updated>
     
     <summary type="html">
     
@@ -248,7 +273,7 @@
     <link href="https://mastermind.ink/2022/04/15/%E8%87%AA%E5%B7%B1%E6%96%B0%E5%AE%9E%E7%8E%B0%E7%9A%84PA2C%E6%A1%86%E6%9E%B6/"/>
     <id>https://mastermind.ink/2022/04/15/自己新实现的PA2C框架/</id>
     <published>2022-04-15T08:52:01.000Z</published>
-    <updated>2022-09-25T08:45:25.620Z</updated>
+    <updated>2023-04-01T09:32:25.831Z</updated>
     
     <summary type="html">
     
@@ -273,7 +298,7 @@
     <link href="https://mastermind.ink/2021/10/29/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     <id>https://mastermind.ink/2021/10/29/博客使用教程/</id>
     <published>2021-10-29T09:15:10.000Z</published>
-    <updated>2022-09-25T08:43:56.528Z</updated>
+    <updated>2023-04-01T09:32:25.656Z</updated>
     
     <summary type="html">
     
@@ -298,7 +323,7 @@
     <link href="https://mastermind.ink/2021/10/29/%E8%A7%A6%E5%8F%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>https://mastermind.ink/2021/10/29/触发器的使用/</id>
     <published>2021-10-29T07:59:16.000Z</published>
-    <updated>2022-09-25T08:43:17.641Z</updated>
+    <updated>2023-04-01T09:32:25.579Z</updated>
     
     <summary type="html">
     
@@ -325,7 +350,7 @@
     <link href="https://mastermind.ink/2021/04/26/%E8%B0%B7%E6%AD%8C%E9%9A%8F%E6%9C%BA%E5%BC%95%E6%93%8E/"/>
     <id>https://mastermind.ink/2021/04/26/谷歌随机引擎/</id>
     <published>2021-04-26T08:13:21.000Z</published>
-    <updated>2022-09-25T08:43:13.551Z</updated>
+    <updated>2023-04-01T09:32:25.569Z</updated>
     
     <summary type="html">
     
@@ -348,7 +373,7 @@
     <link href="https://mastermind.ink/2021/02/16/%E6%88%91%E7%9A%84AllInOne%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%8B%E5%A4%96%E9%83%A8%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
     <id>https://mastermind.ink/2021/02/16/我的AllInOne服务器之外部代理服务器篇/</id>
     <published>2021-02-16T14:09:43.000Z</published>
-    <updated>2022-09-25T08:43:52.446Z</updated>
+    <updated>2023-04-01T09:32:25.651Z</updated>
     
     <summary type="html">
     
@@ -373,7 +398,7 @@
     <link href="https://mastermind.ink/2021/01/13/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A5%E5%B8%B8%E8%B7%91%E5%AE%9E%E9%AA%8C%E5%91%BD%E4%BB%A4/"/>
     <id>https://mastermind.ink/2021/01/13/服务器日常跑实验命令/</id>
     <published>2021-01-13T02:50:21.000Z</published>
-    <updated>2022-09-25T08:43:40.178Z</updated>
+    <updated>2023-04-01T09:32:25.630Z</updated>
     
     <summary type="html">
     
@@ -396,7 +421,7 @@
     <link href="https://mastermind.ink/2021/01/12/%E6%88%91%E7%9A%84MacOS%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6/"/>
     <id>https://mastermind.ink/2021/01/12/我的MacOS系统软件/</id>
     <published>2021-01-12T02:21:48.000Z</published>
-    <updated>2022-09-25T08:43:48.370Z</updated>
+    <updated>2023-04-01T09:32:25.644Z</updated>
     
     <summary type="html">
     
@@ -421,7 +446,7 @@
     <link href="https://mastermind.ink/2020/02/06/Springboot%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%8C%E5%85%A8%E5%88%86%E7%A6%BB/"/>
     <id>https://mastermind.ink/2020/02/06/Springboot前后端完全分离/</id>
     <published>2020-02-06T13:50:04.000Z</published>
-    <updated>2022-09-25T08:44:40.633Z</updated>
+    <updated>2023-04-01T09:32:25.742Z</updated>
     
     <summary type="html">
     
@@ -444,7 +469,7 @@
     <link href="https://mastermind.ink/2020/01/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E2%80%94%E2%80%94PAC%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/"/>
     <id>https://mastermind.ink/2020/01/11/科学上网——PAC文件配置/</id>
     <published>2020-01-10T16:39:21.000Z</published>
-    <updated>2022-09-25T08:43:32.010Z</updated>
+    <updated>2023-04-01T09:32:25.616Z</updated>
     
     <summary type="html">
     
@@ -467,30 +492,7 @@
     <link href="https://mastermind.ink/2020/01/01/%E9%BB%91%E8%8B%B9%E6%9E%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
     <id>https://mastermind.ink/2020/01/01/黑苹果的一些总结与配置/</id>
     <published>2019-12-31T17:41:25.000Z</published>
-    <updated>2022-09-25T08:43:01.249Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>贪吃蛇在输入框里玩？！？？？</title>
-    <link href="https://mastermind.ink/2019/11/08/%E8%B4%AA%E5%90%83%E8%9B%87%E5%9C%A8%E8%BE%93%E5%85%A5%E6%A1%86%E9%87%8C%E7%8E%A9%EF%BC%9F%EF%BC%81%EF%BC%9F%EF%BC%9F%EF%BC%9F/"/>
-    <id>https://mastermind.ink/2019/11/08/贪吃蛇在输入框里玩？！？？？/</id>
-    <published>2019-11-08T04:31:11.000Z</published>
-    <updated>2022-09-25T08:43:09.461Z</updated>
+    <updated>2023-04-01T09:32:25.546Z</updated>
     
     <summary type="html">
     
