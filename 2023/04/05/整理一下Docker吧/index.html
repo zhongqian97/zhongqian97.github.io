@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Record what you do and what you think.">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        整理一下Docker吧 - Joshua Tim-仲谦的博客 | Joshua Tim&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Joshua Tim-仲谦</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%83%BD%E5%B9%B2%E5%98%9B%EF%BC%9F"><span class="toc-text">能干嘛？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5"><span class="toc-text">重要概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88GPT%E7%94%9F%E6%88%90%E5%BD%93%E4%B8%AD%E6%88%91%E9%80%89%E6%8B%A9%E7%9A%84%EF%BC%89"><span class="toc-text">（GPT生成当中我选择的）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%95%9C%E5%83%8F%EF%BC%88Image%EF%BC%89"><span class="toc-text">镜像（Image）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%EF%BC%88Container%EF%BC%89"><span class="toc-text">容器（Container）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8D%B7%EF%BC%88Volume%EF%BC%89"><span class="toc-text">数据卷（Volume）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B7%E4%B8%8EBindMounts%E4%B9%8B%E9%97%B4%E5%86%B2%E7%AA%81%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F"><span class="toc-text">卷与BindMounts之间冲突了怎么办？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#build-images%E6%97%B6-Copy%E8%BF%9B%E5%8E%BB%E4%B8%8EVolume%E4%B9%8B%E9%97%B4%E7%9A%84%E5%B7%AE%E5%88%AB%EF%BC%9F"><span class="toc-text">build images时 Copy进去与Volume之间的差别？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%EF%BC%88Networking%EF%BC%89"><span class="toc-text">网络（Networking）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#windows%E4%B8%8Emac%E7%9A%84%E5%AE%BF%E4%B8%BB%E6%9C%BA%E9%80%9A%E4%BF%A1%E5%9C%B0%E5%9D%80"><span class="toc-text">windows与mac的宿主机通信地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%88%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%A1%88%EF%BC%89"><span class="toc-text">Docker间通信（两种方案）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Dockerfile%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90"><span class="toc-text">Dockerfile文件解析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CMD-%E5%92%8CENTRYPOINT%E4%B8%A4%E4%B8%AA%E6%8C%87%E4%BB%A4%E5%8C%BA%E5%88%AB"><span class="toc-text">CMD 和ENTRYPOINT两个指令区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89"><span class="toc-text">环境变量定义</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker-compose"><span class="toc-text">Docker-compose</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-text">核心概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90"><span class="toc-text">文件解析</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-text">使用流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-text">常规使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-compose%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-text">docker-compose的使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%9C%A8%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-text">docker在生产环境使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%9C%A8%E9%83%A8%E7%BD%B2%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-text">docker在部署环境使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E9%9D%9E%E5%B8%B8%E8%A7%84%E6%B5%81%E7%A8%8B"><span class="toc-text">docker非常规流程</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C%EF%BC%8CGPT%E7%94%9F%E6%88%90%E5%B9%B6%E6%8C%91%E9%80%89%E8%BF%87"><span class="toc-text">Docker使用经验，GPT生成并挑选过</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> An INTJ blog; subscribe to me, you can know what you never knew </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        整理一下Docker吧
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2023-04-05 10:00:21</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#docker" title="docker">docker</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <p>[TOC]</p>
+<h1 id="能干嘛？"><a href="#能干嘛？" class="headerlink" title="能干嘛？"></a>能干嘛？</h1><ul>
+<li>1、当做一个不用配置的沙盒，快速使用还是很香的。</li>
+<li>2、当做一个专一服务器，部署在自己电脑上，随取随用。</li>
+<li>3、自己构建的工程通过Docker封装后能够在其他地方使用。</li>
+</ul>
+<h1 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h1><h2 id="（GPT生成当中我选择的）"><a href="#（GPT生成当中我选择的）" class="headerlink" title="（GPT生成当中我选择的）"></a>（GPT生成当中我选择的）</h2><ol>
+<li><p>镜像（Image）：镜像是一个<strong>只读的</strong>、包含文件系统和应用程序的轻量级模板。它是Docker容器的基础，也可以被看作是容器的“快照”。</p>
+</li>
+<li><p>容器（Container）：容器是镜像的可运行实例。容器在隔离的环境中运行，它包含了应用程序及其所需的所有依赖项、库、配置文件等。容器可以被创建、启动、停止、删除等。</p>
+</li>
+<li><p>Dockerfile：Dockerfile是一个包含创建Docker镜像的指令的文本文件。这些指令包括基本镜像、添加文件、设置环境变量、暴露端口等。</p>
+</li>
+<li><p>数据卷（Volume）：数据卷是Docker容器的<strong>持久化存储机制</strong>，可以在容器之间共享和重新使用。使用数据卷可以将数据独立于容器的生命周期进行管理。</p>
+</li>
+<li><p>网络（Networking）：Docker支持多种网络模式，例如<strong>桥接、主机和覆盖网络</strong>等，以满足不同场景下的容器通信需求。</p>
+</li>
+<li><p>多阶段构建（Multi-stage builds）：多阶段构建是一种优化Docker镜像大小的方法，它允许在单个Dockerfile中使用多个基础镜像。这可以<strong>减少最终镜像的大小</strong>，从而提高部署和运行速度。</p>
+</li>
+</ol>
+<h2 id="镜像（Image）"><a href="#镜像（Image）" class="headerlink" title="镜像（Image）"></a>镜像（Image）</h2><p>Docker镜像由<strong>多个层（Layers）组成</strong>，这些层是文件系统的叠加。每个层<strong>都是只读</strong>的，并表示Dockerfile中的一个指令。在构建过程中，Docker会为Dockerfile中的每个指令创建一个新的层，并将结果保存为一个中间镜像。这些层叠加在一起，形成最终的Docker镜像。</p>
+<p>以下是Docker镜像组成的一些关键概念：</p>
+<ul>
+<li><p>层（Layer）：每个层都是镜像构建过程中产生的一个中间结果。层是只读的，并可以被其他镜像复用。将镜像分解为多个层<strong>有助于节省存储空间</strong>和<strong>加快镜像分发速度</strong>。</p>
+</li>
+<li><p>基础镜像（Base Image）：基础镜像是构建新镜像的起点。它通常包括一个最小化的操作系统和一些基本工具。在Dockerfile中，<strong>基础镜像由FROM指令指定</strong>。例如，FROM ubuntu:20.04表示以Ubuntu 20.04版本为基础镜像。</p>
+</li>
+<li><p>中间镜像（Intermediate Image）：在构建过程中，Docker会为Dockerfile中的每个指令创建一个中间镜像。中间镜像可以用于调试、缓存和层复用。</p>
+</li>
+<li><p>最终镜像（Final Image）：最终镜像是构建过程的结果。它是一个包含所有层的完整镜像，可以用来创建和运行容器。</p>
+</li>
+<li><p>Dockerfile：Dockerfile是一个包含构建Docker镜像所需指令的文本文件。这些指令包括设置基础镜像、运行命令、添加文件、设置环境变量、暴露端口等。</p>
+</li>
+<li><p>缓存（Cache）：Docker在构建镜像时会缓存每个层。当重新构建镜像时，Docker会检查Dockerfile的指令是否已经在缓存中存在，如果存在，则直接使用缓存的层，而不是重新执行指令。这有助于加快构建速度。为了充分利用缓存，建议将不经常更改的指令放在Dockerfile的前面。</p>
+</li>
+</ul>
+<p>Docker镜像的分层结构使得构建、分发和存储镜像更加高效。理解Docker镜像的组成有助于更好地使用Docker进行应用程序的容器化和部署。</p>
+<h2 id="容器（Container）"><a href="#容器（Container）" class="headerlink" title="容器（Container）"></a>容器（Container）</h2><p>Docker容器是从Docker镜像创建的运行时实例。一个容器包括镜像的全部内容以及一些运行时配置和元数据。以下是Docker容器的主要组成部分：</p>
+<ul>
+<li><p>镜像（Image）：<strong>容器是基于镜像创建的</strong>。镜像包含了容器运行所需的文件系统、应用程序和依赖项。在运行容器时，Docker会将<strong>镜像的只读层加载到容器的文件系统中</strong>。</p>
+</li>
+<li><p>可写层（Writable Layer）：当容器启动时，Docker会在镜像的只读层之上<strong>添加一个可写层</strong>。容器在运行过程中对<strong>文件系统的所有修改</strong>（如创建、修改和删除文件）都会<strong>发生在这个可写层</strong>。当容器停止时，可写层的更改会被丢弃，<strong>除非使用docker commit命令将其保存为新的镜像</strong>。</p>
+</li>
+<li><p>运行时配置：运行时配置包括用于创建和运行容器的一些参数和设置，如环境变量、端口映射、CPU和内存限制等。这些配置可以在<strong>运行docker run命令</strong>时通过命令行参数或<strong>Docker Compose</strong>文件指定。</p>
+</li>
+<li><p>网络：每个容器都有一个或多个网络接口，用于与其他容器和主机进行通信。Docker提供了多种网络驱动和配置选项，以满足不同场景的需求。</p>
+</li>
+<li><p>存储：容器可以使用<strong>数据卷</strong>（Volumes）或<strong>绑定挂载</strong>（Bind Mounts）将数据持久化。数据卷是Docker管理的特殊目录，而绑定挂载则是将主机上的目录或文件映射到容器中。这些存储选项可以在运行容器时进行配置。</p>
+</li>
+<li><p>进程：容器中运行的进程是其主要功能的载体。通常，每个容器都会有一个主进程，负责执行容器的主要任务。<strong>当主进程退出时，容器会停止运行。</strong></p>
+</li>
+<li><p>日志：容器的输出（如stdout和stderr）会被Docker捕获并存储为日志。可以通过<strong>docker logs命令</strong>或其他日志管理工具查看和分析这些日志。</p>
+</li>
+</ul>
+<p>Docker容器将镜像、运行时配置、网络、存储、进程和日志等组件整合在一起，形成一个独立、隔离的运行环境。理解Docker容器的组成有助于更好地使用和管理容器，以及优化应用程序的容器化和部署。</p>
+<h2 id="数据卷（Volume）"><a href="#数据卷（Volume）" class="headerlink" title="数据卷（Volume）"></a>数据卷（Volume）</h2><p>Docker提供了多种数据存储选项，包括未命名卷（Unnamed Volumes）、命名卷（Named Volumes）和绑定挂载（Bind Mounts）。这些选项有不同的特点和用途，以下是它们的区别：</p>
+<ul>
+<li><p>未命名卷（Unnamed Volumes）<strong>生命周期跟着容器</strong>：</p>
+<p>  未命名卷是在创建容器时自动创建的数据卷，没有指定名称。当容器被删除时，未命名卷会被标记为“孤立”，但不会自动删除。你可以通过docker volume prune命令删除未使用的未命名卷。未命名卷的使用场景相对有限，因为它们难以识别和管理。<br>  例如，在运行docker run命令时，通过-v参数指定一个容器内的挂载点（不指定宿主机的路径和名称）：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -v &#x2F;data my-image</span><br></pre></td></tr></table></figure></li>
+<li><p>命名卷（Named Volumes）<strong>生命周期与容器无关</strong>：<br>  命名卷是具有指定名称的数据卷，可以在多个容器之间共享和重用。命名卷由Docker守护程序管理，可以使用docker volume命令或Docker Compose文件创建、列出和删除。与未命名卷相比，命名卷更易于识别和管理。<br>  例如，在运行docker run命令时，通过-v参数指定一个数据卷名称和容器内的挂载点：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -v my-volume:&#x2F;data my-image</span><br></pre></td></tr></table></figure></li>
+<li><p>绑定挂载（Bind Mounts）：<br>  绑定挂载是将宿主机上的目录或文件映射到容器的文件系统中。与数据卷不同，绑定挂载不受Docker守护程序的管理，而是直接由宿主机的文件系统管理。<strong>绑定挂载允许容器直接访问宿主机的文件和目录</strong>，适用于需要与宿主机共享数据或配置文件的场景。<br>  例如，在运行docker run命令时，通过-v参数指定宿主机的路径和容器内的挂载点：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -v &#x2F;host&#x2F;path:&#x2F;data my-image</span><br></pre></td></tr></table></figure>
+<p>总结一下：</p>
+</li>
+<li><p>未命名卷：自动创建，无指定名称，难以识别和管理，适用于<strong>临时存储</strong>或不关心卷名称的场景。</p>
+</li>
+<li><p>命名卷：具有指定名称，由Docker守护程序管理，易于识别和管理，适用于<strong>持久化存储</strong>和在<strong>多个容器之间共享数据</strong>的场景。</p>
+</li>
+<li><p>绑定挂载：将宿主机的目录或文件映射到容器，不受Docker管理，适用于与<strong>宿主机共享数据或配置文件</strong>的场景。</p>
+</li>
+<li><p><strong>zhongqian：未命名卷可以在绑定挂载目录下<em>子目录</em>存在，用于保存一些不重要的临时文件。</strong></p>
+</li>
+</ul>
+<h3 id="卷与BindMounts之间冲突了怎么办？"><a href="#卷与BindMounts之间冲突了怎么办？" class="headerlink" title="卷与BindMounts之间冲突了怎么办？"></a>卷与BindMounts之间冲突了怎么办？</h3><ul>
+<li>Docker有一个简单的规则：就是谁长先听谁的。<ul>
+<li>比如匿名卷/app/xyz，BindMounts绑定/app，由于BindMounts没有xyz文件夹，所以这两个能够正常运行</li>
+</ul>
+</li>
+</ul>
+<h3 id="build-images时-Copy进去与Volume之间的差别？"><a href="#build-images时-Copy进去与Volume之间的差别？" class="headerlink" title="build images时 Copy进去与Volume之间的差别？"></a>build images时 Copy进去与Volume之间的差别？</h3><p>Docker构建镜像时的COPY指令和运行容器时的Volume（数据卷）具有不同的用途和特点。以下是它们之间的差别：</p>
+<ul>
+<li><p>COPY指令：<br>  COPY指令用于在Docker镜像构建过程中，将宿主机的文件或目录复制到镜像的文件系统中。这些文件或目录会成为镜像的一部分，当启动基于该镜像的容器时，这些文件或目录将存在于容器的文件系统中。<br>  优点：</p>
+<ul>
+<li><p><strong>文件或目录成为镜像的一部分</strong>，容器启动时自动包含这些文件或目录。</p>
+</li>
+<li><p>便于将应用程序代码、配置文件等打包到镜像中，实现应用程序的<strong>一致性和可移植性</strong>。</p>
+<p>缺点：</p>
+</li>
+<li><p>当文件或目录发生更改时，需要<strong>重新构建镜像以更新内容</strong>。</p>
+</li>
+<li><p>不适合在容器运行时<strong>共享或持久化数据</strong>，因为容器间的数据是隔离的，容器删除后数据会丢失。</p>
+</li>
+</ul>
+</li>
+<li><p>Volume（数据卷）：<br>  数据卷是一种用于持久化和共享容器数据的机制。数据卷是独立于容器的存储区域，可以在容器之间共享数据和保持数据持久性。当启动一个容器时，可以将一个或多个数据卷挂载到容器的文件系统上。<br>  优点：</p>
+<ul>
+<li><p>数据卷可以实现容器数据的<strong>持久化和共享</strong>，适用于数据库、日志文件等需要保留的数据。</p>
+</li>
+<li><p>容器可以在运行时读写数据卷，<strong>无需重新构建镜像</strong>。</p>
+<p>缺点：</p>
+</li>
+<li><p>数据卷<strong>不是镜像的一部分</strong>，需要单独管理和配置。</p>
+</li>
+<li><p>数据卷可能会引入<strong>额外的复杂性</strong>，如数据卷的生命周期、备份和恢复等。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>总结一下，COPY指令用于将文件或目录复制到镜像中，<strong>适用于打包应用程序代码和配置文件</strong>；而Volume（数据卷）<strong>用于在容器之间共享和持久化数据</strong>，适用于数据库、日志文件等需要保留的数据。根据应用程序的需求和场景，可以选择合适的方法来管理容器的文件和数据。</p>
+<h2 id="网络（Networking）"><a href="#网络（Networking）" class="headerlink" title="网络（Networking）"></a>网络（Networking）</h2><p>Docker提供了多种网络模式，以支持不同的网络需求和场景。以下是Docker常见的网络模式及其区别：</p>
+<p>Bridge（桥接）模式：</p>
+<ul>
+<li>桥接模式是Docker的<strong>默认网络模式</strong>。在这种模式下，Docker为每个容器分配一个<strong>私有、隔离的网络命名空间</strong>，并将容器连接到一个虚拟桥接器上。桥接器可以将容器的网络连接到宿主机的网络，容器之间也可以通过<strong>桥接器进行通信</strong>。每个容器在桥接网络上<strong>拥有一个内部IP地址</strong>，与宿主机和其他容器通信时可以使用<strong>端口映射</strong>。</li>
+</ul>
+<p>Host（主机）模式：</p>
+<ul>
+<li>在主机模式下，容器将直接<strong>共享宿主机的网络命名空间</strong>，而不是创建一个独立的网络命名空间。这意味着容器可以直接使用宿主机的IP地址和端口，而无需端口映射。与桥接模式相比，主机模式可以提供更好的网络性能，但牺牲了网络隔离性。</li>
+</ul>
+<p>None（无网络）模式：</p>
+<ul>
+<li>在无网络模式下，容器将拥有一个独立的网络命名空间，但不会被连接到任何网络接口。这意味着容器<strong>无法访问外部网络</strong>，也无法与其他容器通信。这种模式适用于需要完全隔离网络环境的场景，例如安全性要求较高的应用程序。</li>
+</ul>
+<p>Overlay（覆盖）模式：</p>
+<ul>
+<li>覆盖模式适用于跨多个主机的Docker容器网络，通常用于Docker Swarm集群。在这种模式下，Docker使用VXLAN技术在主机之间创建一个虚拟覆盖网络，允许容器跨主机进行通信。覆盖网络提供了跨主机的网络隔离和可扩展性，适用于<strong>分布式应用程序和微服务架构</strong>。</li>
+</ul>
+<p>Macvlan（MAC VLAN）模式：</p>
+<ul>
+<li>在MAC VLAN模式下，Docker为容器分配一个独立的MAC地址，并将容器连接到宿主机的物理网络。<strong>容器在网络上表现为一个独立的物理设备</strong>，可以直接使用宿主机所在子网的IP地址。这种模式适用于需要将容器与物理网络集成的场景，例如遗留应用程序或特殊网络需求。</li>
+</ul>
+<h2 id="windows与mac的宿主机通信地址"><a href="#windows与mac的宿主机通信地址" class="headerlink" title="windows与mac的宿主机通信地址"></a>windows与mac的宿主机通信地址</h2><ul>
+<li>host.docker.internal</li>
+</ul>
+<h2 id="Docker间通信（两种方案）"><a href="#Docker间通信（两种方案）" class="headerlink" title="Docker间通信（两种方案）"></a>Docker间通信（两种方案）</h2><ul>
+<li>同一个network下可以通过<strong>容器名称</strong></li>
+<li>不同网络下宿主机<strong>映射端口通信</strong></li>
+</ul>
+<h1 id="Dockerfile文件解析"><a href="#Dockerfile文件解析" class="headerlink" title="Dockerfile文件解析"></a>Dockerfile文件解析</h1><ul>
+<li><p><strong><code>.dockerignore</code>文件可以控制不被Copy到镜像的内容</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"># 使用哪个image作为底层；基础镜像</span><br><span class="line">FROM node</span><br><span class="line"></span><br><span class="line"># RUN的工作目录</span><br><span class="line">WORKDIR &#x2F;app</span><br><span class="line"></span><br><span class="line"># 把外面当前目录（.）复制到容器里&#x2F;app当中</span><br><span class="line">COPY . &#x2F;app</span><br><span class="line"></span><br><span class="line"># 运行这个命令，“RUN”这个命令一般用于构建image的时候使用，运行image则不是这个命令</span><br><span class="line">RUN npm install</span><br><span class="line"></span><br><span class="line"># 将端口暴露到当前主机当中</span><br><span class="line"># 注意：当前这个阶段是构建过程中的，并非运行过程中，如需要运行，则需要 run -p 3000:80ß</span><br><span class="line"># EXPOSE 80</span><br><span class="line"></span><br><span class="line"># Argument硬编码在Dockerfile中</span><br><span class="line">ARG DEFAULT_PORT&#x3D;80</span><br><span class="line"># 定义端口</span><br><span class="line">ENV PORT $DEFAULT_PORT</span><br><span class="line"># 使用这个上述定义</span><br><span class="line">EXPOSE $PORT</span><br><span class="line"></span><br><span class="line"># 运行image时使用，但是CMD传递的是一个数组</span><br><span class="line">CMD [&quot;node&quot;, &quot;server.js&quot;]</span><br></pre></td></tr></table></figure>
+<h2 id="CMD-和ENTRYPOINT两个指令区别"><a href="#CMD-和ENTRYPOINT两个指令区别" class="headerlink" title="CMD 和ENTRYPOINT两个指令区别"></a>CMD 和ENTRYPOINT两个指令区别</h2><p>在Dockerfile中，CMD和ENTRYPOINT都是用于指定容器启动时要执行的命令。然而，它们之间存在一些区别：</p>
+</li>
+<li><p>CMD（命令）：<br>  <code>CMD</code>指令用于指定容器启动时<strong>要执行的默认命令及其参数</strong>。如果在运行<code>docker run</code>命令时没有指定任何命令，Docker将执行<code>CMD</code>指令中定义的命令。<br>  Dockerfile中可以包含多个<code>CMD</code>指令，但仅最后一个<code>CMD</code>指令生效。<br>  例如，Dockerfile中指定一个<code>CMD</code>指令：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CMD [&quot;python&quot;, &quot;app.py&quot;]</span><br></pre></td></tr></table></figure>
+<p>  在运行<code>docker run</code>命令时，如果没有指定任何命令，容器将执行<code>python app.py</code>。</p>
+</li>
+<li><p>ENTRYPOINT（入口点）：<br>  <code>ENTRYPOINT</code>指令用于指定容器启动时<strong>要执行的固定命令</strong>。与<code>CMD</code>指令不同，<code>ENTRYPOINT</code>指令定义的命令<strong>不能被docker run命令覆盖</strong>（<strong>除非使用–entrypoint参数</strong>）。<br>  <strong>ENTRYPOINT指令通常与CMD指令结合使用</strong>。当这两个指令同时存在时，<code>ENTRYPOINT</code>指令定义的命令将作为<strong>主命令执行</strong>，<code>CMD</code>指令定义的参数将作为<code>ENTRYPOINT</code>命令的<strong>参数</strong>。<br>  例如，Dockerfile中指定一个<code>ENTRYPOINT</code>指令和一个<code>CMD</code>指令：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ENTRYPOINT [&quot;python&quot;]</span><br><span class="line">CMD [&quot;app.py&quot;]</span><br></pre></td></tr></table></figure>
+<p>  在运行<code>docker run</code>命令时，容器将执行<code>python app.py</code>。如果在<code>docker run</code>命令中指定了其他参数，例如<code>docker run my-image test.py</code>，容器将执行<code>python test.py</code>。</p>
+</li>
+</ul>
+<p>总结一下，<code>CMD</code>指令用于指定容器启动时要执行的默认命令，可以被<code>docker run</code>命令覆盖；而<code>ENTRYPOINT</code>指令用于指定容器启动时要执行的固定命令，<strong>不能轻易被覆盖</strong>。<code>ENTRYPOINT</code>指令通常与<code>CMD</code>指令结合使用，以<strong>实现灵活的命令执行和参数传递</strong>。</p>
+<h2 id="环境变量定义"><a href="#环境变量定义" class="headerlink" title="环境变量定义"></a>环境变量定义</h2><ul>
+<li><p>dockerfile定义</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Dockerfile硬编码定义端口</span><br><span class="line">ENV PORT 80</span><br><span class="line"># 使用这个上述定义</span><br><span class="line">EXPOSE $PORT</span><br></pre></td></tr></table></figure></li>
+<li><p>可以使用命令的方式</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 通过终端命令直接调用(这个是命令)</span></span><br><span class="line">--env PORT=8000</span><br><span class="line">-e PORT=8000</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 通过终端命令调用文件(这个是命令)</span></span><br><span class="line">--env-file 文件名</span><br></pre></td></tr></table></figure>
+<h1 id="Docker-compose"><a href="#Docker-compose" class="headerlink" title="Docker-compose"></a>Docker-compose</h1><h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2></li>
+<li><p>Docker Compose does <strong>NOT</strong> replace Dockerfiles for custom <strong>Images</strong></p>
+</li>
+<li><p>Docker Compose does <strong>NOT</strong> replace Images or <strong>Containers</strong></p>
+</li>
+<li><p>Docker Compose is <strong>NOT</strong> suited for managing <strong>multiple containers on different hosts</strong> (machines)</p>
+</li>
+<li><p>zhongqian note: 需要明确一点，这个Docker Compose类似<strong>shell命令的打包软件</strong></p>
+<ul>
+<li>将一个或多个Docker运行命令<strong>打包成一个yaml文件</strong>，进行执行。</li>
+</ul>
+</li>
+<li><p>zhongqian note: 还有就是默认container都是在<strong>同一个网络下</strong>的。</p>
+</li>
+</ul>
+<h2 id="文件解析"><a href="#文件解析" class="headerlink" title="文件解析"></a>文件解析</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">version: &quot;3.8&quot; # 版本号</span><br><span class="line">services: # 服务</span><br><span class="line">  mongodb: # 容器一名称</span><br><span class="line">    image: &#39;mongo&#39;</span><br><span class="line">    volumes: # 绑定挂载 or 卷加载</span><br><span class="line">      - data:&#x2F;data&#x2F;db</span><br><span class="line">      </span><br><span class="line">    #environment: # 单个环境变量加载</span><br><span class="line">    #  MONGO_INITDB_ROOT_USERNAME: max</span><br><span class="line">    env_file: # 环境变量文件加载</span><br><span class="line">      - .&#x2F;env&#x2F;mongo.env</span><br><span class="line"></span><br><span class="line">  backend: # 容器二名称</span><br><span class="line">    build: .&#x2F;backend # 这个是用来做Docker build backend 文件夹里Dockerfile</span><br><span class="line">    # build:</span><br><span class="line">    #  context:</span><br><span class="line"></span><br><span class="line">    ports: # 端口映射</span><br><span class="line">      - &#39;3000:80&#39;</span><br><span class="line"></span><br><span class="line">    depands_on: # 这个是为了当前docker绑定前面docker时使用，因为当前Docker绑定了用名字命名的服务，但是名字会变化的，因此，这个时候需要这个。</span><br><span class="line">      - mongodb</span><br><span class="line"></span><br><span class="line">  frontend: # 容器三名称</span><br><span class="line">    build: .&#x2F;frontend</span><br><span class="line">    ports:</span><br><span class="line">      - &#39;3000:3000&#39;</span><br><span class="line">    volumes:</span><br><span class="line">      - .&#x2F;frontend&#x2F;src:&#x2F;app&#x2F;src</span><br><span class="line">    stdin_open: true # 这个是docker run -ti 的交互模式</span><br><span class="line">    tty: true # 这个是docker run -ti 的交互模</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">volumes: # 只要绑定了命名卷，最后需要说明一下, 这个命令就是如果没有此卷，需要创建一下。</span><br><span class="line">  data:</span><br></pre></td></tr></table></figure>
+<h1 id="使用流程"><a href="#使用流程" class="headerlink" title="使用流程"></a>使用流程</h1><h2 id="常规使用流程"><a href="#常规使用流程" class="headerlink" title="常规使用流程"></a>常规使用流程</h2><p>一个Docker从头到尾的常规的使用顺序是</p>
+<ol>
+<li><p>创建Dockerfile，通过Dockerfile构建image</p>
+<ul>
+<li><code>docker build -t 名字:版本号 目录</code></li>
+</ul>
+</li>
+<li><p>构建完成后运行镜像，如果需要集成volumes，ports，network，env，cmd还需要一一加载命令。</p>
+<ul>
+<li><code>docker run --name 容器名称</code>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run -v 执行bind mount</span><br><span class="line">docker run -p ports映射</span><br><span class="line">docker run -e 环境变量设置</span><br><span class="line">docker run --network 绑定网络，注意这个是需要创建一个网络，才能使用</span><br><span class="line"># 创建网络</span><br><span class="line">docker network create 名字</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>一般到这一个步骤之后就算是完成了。</p>
+</li>
+</ol>
+<h2 id="docker-compose的使用流程"><a href="#docker-compose的使用流程" class="headerlink" title="docker-compose的使用流程"></a>docker-compose的使用流程</h2><blockquote>
+<p>Docker Compose是一个用于定义和运行多容器Docker应用程序的工具。通过使用Docker Compose，您可以使用YAML文件定义应用程序的各个服务、网络和数据卷，然后使用单个命令来创建、启动、停止和重启整个应用程序栈。Docker Compose是一个非常适合在开发、测试和生产环境中部署和管理多容器应用程序的工具。</p>
+</blockquote>
+<ol>
+<li><p>创建docker-compose.yaml的内容，运行以下命令进行构建并运行</p>
+<ul>
+<li>构建并运行<code>docker-compose up -d --build</code></li>
+<li>只构建<code>docker-compose build # 只build，不run</code></li>
+</ul>
+</li>
+<li><p>关闭命令</p>
+<ul>
+<li><code>docker-compose down# 关闭，但不会删除卷，如果需要删除卷 + &#39;-v&#39;</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="docker在生产环境使用流程"><a href="#docker在生产环境使用流程" class="headerlink" title="docker在生产环境使用流程"></a>docker在生产环境使用流程</h2><p>其实生产环境使用Docker一般情况下就是在<strong>常规使用流程</strong>的基础上，结合了<strong>bind mounts</strong>，代码修改后可以直接在Docker上运行。<br>而部署环境下则尽量不用<strong>bind mount</strong>这类操作，而是转换为<strong>volume</strong>或者是<strong>database</strong>下使用。</p>
+<h2 id="docker在部署环境使用流程"><a href="#docker在部署环境使用流程" class="headerlink" title="docker在部署环境使用流程"></a>docker在部署环境使用流程</h2><ul>
+<li>上面其实讲到的“常规流程”与docker-compose使用流程，其实都是部署流程，但是还有比如说<ul>
+<li>CI / CD：依靠自动集成自动部署的方式，使用上会更加方便</li>
+<li>k8s：其实k8s集成了很多能够多机部署以及自动重启等等的内容</li>
+</ul>
+</li>
+</ul>
+<h2 id="docker非常规流程"><a href="#docker非常规流程" class="headerlink" title="docker非常规流程"></a>docker非常规流程</h2><ul>
+<li>这个是我以前的一个<strong>非常不好</strong>但很<strong>实用</strong>的使用流程：<ol>
+<li>直接<code>docker pull 一个原始镜像</code></li>
+<li>docker进入交互模式 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 这个是直接运行时进入交互模式 t &#x3D; tty 终端，i &#x3D; 交互模式</span><br><span class="line">docker run -ti</span><br><span class="line"></span><br><span class="line"># 这个是重启docker进入交互模式 a &#x3D; attach </span><br><span class="line">docker start -a -i</span><br><span class="line"></span><br><span class="line"># 这个是在docker运行过程中进入交互模式</span><br><span class="line">docker exec -ti 容器名称&#x2F;id 执行的命令</span><br></pre></td></tr></table></figure></li>
+<li>把docker里需要做的事情做完后，容器转换为镜像，然后压缩（上传）分发 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 容器转为镜像</span><br><span class="line">docker commit 容器id 镜像名称:版本号</span><br><span class="line"></span><br><span class="line"># 将镜像压缩</span><br><span class="line">docker save -o 压缩文件名称 镜像名称:版本号</span><br><span class="line"></span><br><span class="line"># 上传</span><br><span class="line">docker push 镜像名称:版本号</span><br><span class="line"></span><br><span class="line"># 将压缩文件还原为镜像</span><br><span class="line">docker load -i 压缩文件名称</span><br></pre></td></tr></table></figure>
+<h1 id="Docker使用经验，GPT生成并挑选过"><a href="#Docker使用经验，GPT生成并挑选过" class="headerlink" title="Docker使用经验，GPT生成并挑选过"></a>Docker使用经验，GPT生成并挑选过</h1></li>
+</ol>
+</li>
+</ul>
+<ol>
+<li><p>保持Docker镜像简洁：使用精简的基础镜像，如Alpine Linux，并使用多阶段构建来减小镜像大小。这有助于降低部署时间、节省存储空间和提高运行效率。</p>
+</li>
+<li><p>使用版本控制：为Docker镜像和容器使用版本控制，确保您的环境可以重现。为镜像添加标签，以便于版本追踪和回滚。</p>
+</li>
+<li><p>利用Dockerfile的缓存机制：Docker在构建镜像时会缓存中间层。将不经常更改的指令放在Dockerfile的前面，以充分利用缓存加快构建速度。</p>
+</li>
+<li><p>单一职责原则：让每个容器只执行一个任务或服务。这有助于容器的可维护性、可扩展性和可替换性。</p>
+</li>
+<li><p>使用数据卷管理数据：使用数据卷（Volumes）而不是绑定挂载（Bind mounts）来存储持久化数据。数据卷可以更好地管理数据，同时保持容器的独立性。</p>
+</li>
+<li><p>通过环境变量进行配置：使用环境变量为容器提供配置信息，而不是在镜像中硬编码配置。这使得容器在不同环境中更易于重用。</p>
+</li>
+<li><p>使用Docker Compose简化部署：使用Docker Compose编排多容器应用，以便在开发、测试和生产环境中一致地部署和管理应用。</p>
+</li>
+<li><p>利用Docker的安全特性：限制容器的资源使用、网络访问，并使用Docker Secrets等机制管理敏感数据。</p>
+</li>
+<li><p>监控和日志：确保收集并监控容器的运行时指标和日志。可以使用像Prometheus、Grafana和ELK Stack这样的工具来分析和可视化这些数据。</p>
+</li>
+<li><p>学习和使用Docker的最佳实践：关注Docker官方文档、博客和社区，以获取最新的技巧和最佳实践。<br>保持Docker环境的更新：定期更新Docker引擎、镜像和依赖库，以修复安全漏洞和获取新功能。</p>
+</li>
+<li><p>使用CI/CD：将Docker集成到持续集成/持续部署（CI/CD）流程中，以自动化构建、测试和部署应用。</p>
+</li>
+</ol>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/zhongqian97">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
