@@ -116,3 +116,13 @@ Closing a Mac tab does not delete configuration. Uninstalling is not a guarantee
 ### Why is there no system VPN entry?
 
 System VPN is not included in this public version. SSH terminals and in-app web forwarding remain available. VPN parameters and tokens from older backups can be preserved and exported again, but this version does not activate them. No future availability date is promised.
+
+## Third-party acknowledgements / 第三方致谢
+
+This product includes software developed by Niels Provos.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)
+
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).
+
+This product includes software written by Tim Hudson (tjh@cryptsoft.com).
